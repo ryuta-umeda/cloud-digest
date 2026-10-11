@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-10-11T00:00:00+09:00</updated><entry><id>digest-2026-10-11</id><title>【クラウドダイジェスト 10/11】</title><updated>2026-10-11T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/11】
+■ AWS What's New｜AWS Security Hub now exports findings to S3 in CSV or JSON format
+要約：AWS Security Hubが、検出結果をCSVまたはJSON形式でAmazon S3へ直接エクスポートする機能に対応しました。コンソール上の各ページから、カスタム抽出パイプラインを構築することなくデータを出力できます。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/security-hub-exports-s3-csv-json/
+
+■ AWS What's New｜Amazon Bedrock now supports reasoning summaries for OpenAI models
+要約：Amazon Bedrockが、Responses APIを通じたOpenAIモデルの推論サマリーパラメータをサポートしました。タスクへのアプローチを示す人間可読な要約を取得できるようになり、開発者の評価やデバッグを支援します。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-bedrock-reasoning-summaries-openai/
+
+■ AWS What's New｜AWS Lambda supports OAuth authentication for self-managed Apache Kafka event sources
+要約：AWS Lambdaが、自己管理型Apache KafkaイベントソースマッピングにおけるOAuth認証をサポートしました。企業のアイデンティティプロバイダーを通じた認証が可能になり、セキュリティ要件への適合を助けます。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/aws-Lambda-supports-oauth-kafka-esm/
+
+■ AWS What's New｜AWS Cost Explorer, Budgets, and Dashboards now support Amazon Bedrock product attributes
+要約：AWS Cost Explorer、Budgets、DashboardsがAmazon Bedrockの製品属性によるコスト分析に対応しました。モデルやプロバイダー単位での費用細分化や、属性を条件とした予算管理が可能になります。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/aws-bedrock-attributes-in-cost-explorer/
+
+■ Publickey｜さくらインターネット、GPU専有によりトークン消費量を気にせず定額で利用できる「さくらのAI Engineプライベートエディション」提供開始を発表
+要約：さくらインターネットが、企業がGPUを専有して基盤モデルを利用できる「さくらのAI Engine プライベートエディション」の提供開始を発表しました。トークン消費量を気にせず定額で利用できるマネージドサービスです。
+→ https://www.publickey1.jp/blog/26/gpuai_engine.html
+
+※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry></feed>
