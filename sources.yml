@@ -1,0 +1,5 @@
+sources:
+  - name: AWS What's New
+    url: https://aws.amazon.com/about-aws/whats-new/recent/feed/
+  - name: Publickey
+    url: https://www.publickey1.jp/atom.xml
