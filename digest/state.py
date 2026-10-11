@@ -3,7 +3,7 @@ from dataclasses import dataclass
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
-from digest.models import Article
+from digest.models import Article, DigestEntry
 
 SEEN_RETENTION_DAYS = 30
 
@@ -42,3 +42,20 @@ def mark_seen(state: SeenState, articles: list[Article], now: datetime) -> SeenS
     kept = {article_id: day for article_id, day in state.seen.items() if day >= cutoff}
     kept.update({article.id: now.date() for article in articles})
     return SeenState(last_run=now, seen=kept)
+
+
+def load_entries(path: Path) -> list[DigestEntry]:
+    if not path.exists():
+        return []
+    raw = json.loads(path.read_text(encoding="utf-8"))
+    return [
+        DigestEntry(item["id"], item["title"], datetime.fromisoformat(item["published"]), item["body"])
+        for item in raw
+    ]
+
+
+def save_entries(entries: list[DigestEntry], path: Path) -> None:
+    payload = [
+        {"id": e.id, "title": e.title, "published": e.published.isoformat(), "body": e.body} for e in entries
+    ]
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

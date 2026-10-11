@@ -41,3 +41,16 @@ def test_save_then_load_roundtrip(tmp_path):
     save_seen(state, path)
     assert json.loads(path.read_text(encoding="utf-8"))["seen"] == {"a": "2026-10-11"}
     assert load_seen(path) == state
+
+
+def test_entries_roundtrip(tmp_path):
+    from datetime import timedelta
+
+    from digest.models import DigestEntry
+    from digest.state import load_entries, save_entries
+
+    path = tmp_path / "entries.json"
+    entries = [DigestEntry("digest-2026-10-12", "【t】", datetime(2026, 10, 12, tzinfo=timezone(timedelta(hours=9))), "本文 🚀")]
+    save_entries(entries, path)
+    assert load_entries(path) == entries
+    assert load_entries(tmp_path / "missing.json") == []
