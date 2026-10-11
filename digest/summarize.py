@@ -11,8 +11,17 @@ logger = logging.getLogger(__name__)
 
 DEFAULT_MAX_ITEMS = 5
 MAX_RETRIES = 3
+SUMMARY_MAX_CHARS = 200
+# Characters that let an LLM-written summary forge a second digest item or smuggle in a link.
+_FORBIDDEN_IN_SUMMARY = ("http", "://", "■", "→")
+# HTTP codes meaning "our configuration is wrong": retrying or degrading silently would hide it.
+_CONFIG_ERROR_CODES = frozenset({400, 401, 403, 404})
 INITIAL_BACKOFF_SECONDS = 1.0
 _CODE_FENCE_PATTERN = re.compile(r"^```(?:json)?\s*|\s*```$")
+
+
+class LlmConfigError(Exception):
+    """Bad API key, wrong model name, etc. Never retried and never papered over by the fallback."""
 
 
 class LlmClient(Protocol):
@@ -29,7 +38,14 @@ class GeminiClient:
         self._model = model
 
     def generate(self, prompt: str) -> str:
-        response = self._client.models.generate_content(model=self._model, contents=prompt)
+        from google.genai import errors
+
+        try:
+            response = self._client.models.generate_content(model=self._model, contents=prompt)
+        except errors.APIError as error:
+            if error.code in _CONFIG_ERROR_CODES:
+                raise LlmConfigError(f"Gemini rejected the request ({error.code}): {error}") from error
+            raise
         return response.text or ""
 
 
@@ -53,6 +69,8 @@ def summarize(
             items = _parse_reply(llm.generate(prompt), articles, max_items)
             if items:
                 return items
+        except LlmConfigError:
+            raise
         except Exception as error:
             logger.warning("LLM attempt %d failed: %s", attempt + 1, error)
         if attempt < MAX_RETRIES:
@@ -84,14 +102,34 @@ def _parse_reply(reply: str, articles: list[Article], max_items: int) -> list[Di
     for raw in raw_items:
         if not isinstance(raw, dict):
             continue
-        url, summary = raw.get("url"), raw.get("summary")
-        if url not in by_url or url in seen_urls or not isinstance(summary, str) or not summary.strip():
+        url = raw.get("url")
+        summary = _clean_summary(raw.get("summary"))
+        if url not in by_url or url in seen_urls or summary is None:
             continue
         seen_urls.add(url)
         article = by_url[url]
-        items.append(DigestItem(article.source, article.title, summary.strip(), article.url))
+        items.append(DigestItem(article.source, article.title, summary, article.url))
     return items[:max_items]
 
 
+def _clean_summary(raw_summary: object) -> str | None:
+    """Return a one-line, length-capped summary, or None when it looks like an injected post."""
+    if not isinstance(raw_summary, str):
+        return None
+    summary = " ".join(raw_summary.split())
+    if not summary or any(token in summary for token in _FORBIDDEN_IN_SUMMARY):
+        return None
+    return summary[:SUMMARY_MAX_CHARS]
+
+
 def _fallback_items(articles: list[Article], max_items: int) -> list[DigestItem]:
-    return [DigestItem(a.source, a.title, "", a.url) for a in articles[:max_items]]
+    """Newest first, interleaved across sources so one chatty feed cannot crowd out the rest."""
+    queues: dict[str, list[Article]] = {}
+    for article in sorted(articles, key=lambda a: a.published, reverse=True):
+        queues.setdefault(article.source, []).append(article)
+    picked: list[Article] = []
+    while len(picked) < max_items and any(queues.values()):
+        for queue in queues.values():
+            if queue and len(picked) < max_items:
+                picked.append(queue.pop(0))
+    return [DigestItem(a.source, a.title, "", a.url) for a in picked]

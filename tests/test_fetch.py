@@ -40,7 +40,7 @@ def test_fetch_filters_by_since():
 def test_fetch_uses_link_when_no_guid():
     feed = _rss(_item("t", "https://e/a", None, "Sun, 11 Oct 2026 03:00:00 GMT"))
     articles, _ = fetch_articles([Source("S", "u1")], SINCE, _parser_for({"u1": feed}))
-    assert articles[0].id == "https://e/a"
+    assert articles[0].id == "S:https://e/a"
     assert articles[0].url == "https://e/a"
     assert articles[0].source == "S"
 
@@ -68,3 +68,52 @@ def test_fetch_strips_html_and_truncates_text():
     articles, _ = fetch_articles([Source("S", "u1")], SINCE, _parser_for({"u1": feed}))
     assert "<" not in articles[0].text
     assert len(articles[0].text) == 500
+
+
+def test_fetch_prefixes_ids_with_source_name_so_sources_cannot_collide():
+    a = _rss(_item("a", "https://e/a", "1", "Sun, 11 Oct 2026 03:00:00 GMT"))
+    b = _rss(_item("b", "https://e/b", "1", "Sun, 11 Oct 2026 03:00:00 GMT"))
+    articles, _ = fetch_articles([Source("A", "ua"), Source("B", "ub")], SINCE, _parser_for({"ua": a, "ub": b}))
+    assert sorted(x.id for x in articles) == ["A:1", "B:1"]
+
+
+def test_fetch_drops_duplicate_ids_within_a_run():
+    feed = _rss(
+        _item("first", "https://e/a", "1", "Sun, 11 Oct 2026 03:00:00 GMT")
+        + _item("again", "https://e/a2", "1", "Sun, 11 Oct 2026 03:00:00 GMT")
+    )
+    articles, _ = fetch_articles([Source("S", "u1")], SINCE, _parser_for({"u1": feed}))
+    assert [x.title for x in articles] == ["first"]
+
+
+def test_fetch_collapses_newlines_in_title():
+    feed = _rss(_item("a\n■ 偽｜偽記事", "https://e/a", "1", "Sun, 11 Oct 2026 03:00:00 GMT"))
+    articles, _ = fetch_articles([Source("S", "u1")], SINCE, _parser_for({"u1": feed}))
+    assert articles[0].title == "a ■ 偽｜偽記事"
+
+
+def test_default_parser_downloads_with_timeout(monkeypatch):
+    import urllib.request
+
+    from digest.fetch import FETCH_TIMEOUT_SECONDS, parse_with_timeout
+
+    captured = {}
+
+    class FakeResponse:
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *exc):
+            return False
+
+        def read(self):
+            return _rss(_item("t", "https://e/a", "1", "Sun, 11 Oct 2026 03:00:00 GMT")).encode("utf-8")
+
+    def fake_urlopen(request, timeout):
+        captured["timeout"] = timeout
+        return FakeResponse()
+
+    monkeypatch.setattr(urllib.request, "urlopen", fake_urlopen)
+    parsed = parse_with_timeout("https://feed/1")
+    assert captured["timeout"] == FETCH_TIMEOUT_SECONDS
+    assert len(parsed.entries) == 1

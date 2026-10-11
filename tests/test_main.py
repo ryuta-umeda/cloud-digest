@@ -9,7 +9,7 @@ import feedparser
 from digest.main import JobConfig, run
 from digest.render import validate_atom
 from digest.state import load_entries
-from digest.summarize import summarize
+from digest.summarize import LlmConfigError, summarize
 
 NOW = datetime(2026, 10, 12, 8, 17, tzinfo=timezone(timedelta(hours=9)))
 FEED_URL = "https://example.github.io/cloud-digest/digest.xml"
@@ -99,3 +99,34 @@ def test_run_picks_up_articles_published_over_the_weekend(tmp_path):
     feed = _rss(("Weekend news", "https://e/1"), pub=format_datetime(monday - timedelta(hours=60)))
     run(monday, _config(tmp_path), _summarizer(FakeLlm(GOOD_REPLY)), _parse(feed))
     assert len(load_entries(tmp_path / "entries.json")) == 1
+
+
+def test_same_day_rerun_keeps_morning_entry_and_defers_new_articles_to_next_day(tmp_path):
+    config = _config(tmp_path)
+    reply_1 = json.dumps([{"url": "https://e/1", "summary": "要約1"}], ensure_ascii=False)
+    run(NOW, config, _summarizer(FakeLlm(reply_1)), _parse(_rss(("Title 1", "https://e/1"))))
+    feed_2 = _rss(("Title 1", "https://e/1"), ("Title 3", "https://e/3"))
+    run(NOW + timedelta(hours=1), config, _summarizer(FakeLlm(GOOD_REPLY)), _parse(feed_2))
+    morning = load_entries(tmp_path / "entries.json")
+    assert len(morning) == 1 and "Title 1" in morning[0].body and "Title 3" not in morning[0].body
+
+    reply_3 = json.dumps([{"url": "https://e/3", "summary": "要約3"}], ensure_ascii=False)
+    next_day = NOW + timedelta(days=1)
+    run(next_day, config, _summarizer(FakeLlm(reply_3)), _parse(_rss(("Title 3", "https://e/3"), pub=format_datetime(next_day - timedelta(hours=1)))))
+    assert "Title 3" in load_entries(tmp_path / "entries.json")[0].body
+
+
+def test_llm_failure_marks_only_shown_articles_seen(tmp_path):
+    feed = _rss(*[(f"Title {i}", f"https://e/{i}") for i in range(7)])
+    run(NOW, _config(tmp_path), _summarizer(FakeLlm(error=RuntimeError("429"))), _parse(feed))
+    seen = json.loads((tmp_path / "seen.json").read_text(encoding="utf-8"))["seen"]
+    assert len(seen) == 5
+
+
+def test_config_error_propagates_and_publishes_nothing(tmp_path):
+    import pytest
+
+    summarizer = _summarizer(FakeLlm(error=LlmConfigError("invalid API key")))
+    with pytest.raises(LlmConfigError):
+        run(NOW, _config(tmp_path), summarizer, _parse(FEED))
+    assert not (tmp_path / "digest.xml").exists()

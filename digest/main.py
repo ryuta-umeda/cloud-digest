@@ -6,9 +6,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
-import feedparser
-
-from digest.fetch import fetch_articles
+from digest.fetch import fetch_articles, parse_with_timeout
 from digest.models import Article, DigestItem
 from digest.render import JST, build_atom, render_entry, validate_atom
 from digest.sources import load_sources
@@ -32,7 +30,7 @@ def run(
     now: datetime,
     config: JobConfig,
     summarize_articles: Callable[[list[Article]], list[DigestItem]],
-    parse: Callable[[str], Any] = feedparser.parse,
+    parse: Callable[[str], Any] = parse_with_timeout,
 ) -> int:
     """Fetch, summarize and publish one digest. Re-running on the same day is idempotent."""
     articles, failed_sources = fetch_articles(load_sources(config.sources_path), now - FETCH_WINDOW, parse)
@@ -45,19 +43,33 @@ def run(
     fresh_articles = filter_unseen(articles, state)
 
     entries = load_entries(entries_path)
+    today = now.astimezone(JST).date()
+    # Today's entry is published once. Replacing it after Power Automate posted it would drop
+    # the morning's articles; new ones are left unseen and roll into tomorrow's digest.
+    if any(entry.id == f"digest-{today.isoformat()}" for entry in entries):
+        fresh_articles = []
+
     items = summarize_articles(fresh_articles)
     if items:
-        entry = render_entry(items, now.astimezone(JST).date())
-        entries = [entry] + [existing for existing in entries if existing.id != entry.id]
-        entries = entries[:MAX_ENTRIES]
+        entries = ([render_entry(items, today)] + entries)[:MAX_ENTRIES]
 
     atom_xml = build_atom(entries, config.feed_url)
     validate_atom(atom_xml)
     (config.output_dir / "digest.xml").write_text(atom_xml, encoding="utf-8")
     save_entries(entries, entries_path)
     # last_run is saved even on an empty day: the daily commit keeps the repo active (schedule auto-disable).
-    save_seen(mark_seen(state, fresh_articles, now), seen_path)
+    save_seen(mark_seen(state, _articles_to_mark_seen(fresh_articles, items), now), seen_path)
     return 0
+
+
+def _articles_to_mark_seen(fresh_articles: list[Article], items: list[DigestItem]) -> list[Article]:
+    """After an LLM selection, unpicked articles are consciously passed over. After the
+    title-only fallback nothing was judged, so only what was actually shown counts as seen."""
+    used_fallback = any(not item.summary for item in items)
+    if not used_fallback:
+        return fresh_articles
+    shown_urls = {item.url for item in items}
+    return [article for article in fresh_articles if article.url in shown_urls]
 
 
 def main() -> int:
