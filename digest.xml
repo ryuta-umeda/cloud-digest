@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-10-13T00:00:00+09:00</updated><entry><id>digest-2026-10-13</id><title>【クラウドダイジェスト 10/13】</title><updated>2026-10-13T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/13】
+<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-10-14T00:00:00+09:00</updated><entry><id>digest-2026-10-14</id><title>【クラウドダイジェスト 10/14】</title><updated>2026-10-14T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/14】
+今日の 5 件
+1. AWS Agent Registryがカスタムメタデータをサポート（AWS What's New）
+2. Amazon DCV 2026.0がリリース（AWS What's New）
+3. Amazon Location ServiceのAPIプレイグラウンド（AWS What's New）
+4. AWS DataSync Enhancedモードの機能拡張（AWS What's New）
+5. Webアプリフレームワーク「SvelteKit 3」正式リリース（Publickey）
+
+──────────
+
+1. AWS Agent Registry now supports custom metadata for registry records
+AWS Agent Registryのレジストリレコードにカスタムメタデータが追加可能になりました。独自の構造化フィールドにより、組織内でのリソース管理や発見を効率化します。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/aws-agent-registry-custom-metadata-registry-records
+
+2. Amazon DCV releases version 2026.0 with RHEL 10 support and new clients
+Amazon DCVの最新バージョン2026.0が提供開始され、RHEL 10などの新しいOSサポートや新しいmacOSクライアントが追加されました。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-dcv-2026-0/
+
+3. Amazon Location Service launches an interactive API Playground featuring Places, Routes and Maps APIs
+コードを書かずにPlaces、Routes、Mapsの各APIを視覚的に探索・テストできる対話型APIプレイグラウンドが提供開始されました。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-location-service-api-playground
+
+4. AWS DataSync Enhanced mode now supports FSx for OpenZFS, NFS 4.2, and object metadata controls
+AWS DataSyncのEnhancedモードがFSx for OpenZFS、NFS 4.2、およびオブジェクトメタデータコントロールに対応しました。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/datasync-enhanced-openzfs-nfs42-metadata/
+
+5. Webアプリフレームワークの「SvelteKit 3」正式リリース。設定をViteに集約、型安全やエラー処理の改善など
+Webアプリケーションフレームワーク「SvelteKit 3」が正式リリースされ、設定のViteへの集約や型安全・エラー処理の改善が行われました。
+→ https://www.publickey1.jp/blog/26/websveltekit_3vite.html
+
+※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>digest-2026-10-13</id><title>【クラウドダイジェスト 10/13】</title><updated>2026-10-13T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/13】
 ■ AWS What's New｜AWS Lambda announces Lambda Web Functions
 要約：AWS Lambdaが、コードがHTTPリクエストを直接処理できる「Lambda Web Functions」を発表しました。 ExpressやHonoなどの馴染みのあるフレームワークをアダプターなしでそのまま利用可能です。
 → https://aws.amazon.com/about-aws/whats-new/2026/10/aws-lambda-web-functions/
