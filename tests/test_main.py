@@ -80,7 +80,7 @@ def test_run_with_llm_failure_still_writes_fallback_digest(tmp_path):
     run(NOW, _config(tmp_path), _summarizer(FakeLlm(error=RuntimeError("429"))), _parse(FEED))
     xml = (tmp_path / "digest.xml").read_text(encoding="utf-8")
     validate_atom(xml)
-    assert "■ AWS｜Title 1" in xml and "要約：" not in xml
+    assert "1. Title 1（AWS）" in xml and "1. Title 1\n→ https://e/1" in xml
 
 
 def test_run_keeps_only_latest_14_entries(tmp_path):

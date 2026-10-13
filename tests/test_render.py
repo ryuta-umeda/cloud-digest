@@ -15,9 +15,9 @@ def _entry(day: int, body: str = "本文") -> DigestEntry:
     return DigestEntry(f"digest-2026-10-{day:02d}", f"【クラウドダイジェスト 10/{day}】", datetime(2026, 10, day, tzinfo=JST), body)
 
 
-def test_render_entry_matches_spec_format():
+def test_render_entry_lists_overview_before_details():
     items = [
-        DigestItem("AWS", "Title A", "要約A", "https://e/a"),
+        DigestItem("AWS", "Title A", "要約A", "https://e/a", "見出しA"),
         DigestItem("Azure", "Title B", "要約B", "https://e/b"),
     ]
     entry = render_entry(items, date(2026, 10, 7))
@@ -25,9 +25,15 @@ def test_render_entry_matches_spec_format():
     assert entry.title == "【クラウドダイジェスト 10/7】"
     assert entry.body == (
         "【クラウドダイジェスト 10/7】\n"
-        "■ AWS｜Title A\n要約：要約A\n→ https://e/a\n"
+        "今日の 2 件\n"
+        "1. 見出しA（AWS）\n"
+        "2. Title B（Azure）\n"
         "\n"
-        "■ Azure｜Title B\n要約：要約B\n→ https://e/b\n"
+        "──────────\n"
+        "\n"
+        "1. Title A\n要約A\n→ https://e/a\n"
+        "\n"
+        "2. Title B\n要約B\n→ https://e/b\n"
         "\n"
         "※ AIによる自動要約です。正確な情報は元記事を確認してください。"
     )
@@ -35,8 +41,8 @@ def test_render_entry_matches_spec_format():
 
 def test_render_entry_omits_summary_line_for_fallback():
     entry = render_entry([DigestItem("AWS", "Title A", "", "https://e/a")], date(2026, 10, 7))
-    assert "要約：" not in entry.body
-    assert "■ AWS｜Title A\n→ https://e/a" in entry.body
+    assert "1. Title A\n→ https://e/a" in entry.body
+    assert entry.body.count("Title A") == 2
 
 
 def test_build_atom_strips_invalid_xml_chars():

@@ -7,6 +7,7 @@ from digest.models import DigestEntry, DigestItem
 ATOM_NS = "http://www.w3.org/2005/Atom"
 FEED_TITLE = "クラウドダイジェスト"
 DISCLAIMER = "※ AIによる自動要約です。正確な情報は元記事を確認してください。"
+SEPARATOR = "──────────"
 JST = timezone(timedelta(hours=9))
 _EPOCH = datetime(1970, 1, 1, tzinfo=timezone.utc)
 # XML 1.0 forbids most control characters; one stray char from a source feed would break the whole feed.
@@ -14,20 +15,26 @@ _INVALID_XML_CHARS = re.compile("[^\x09\x0a\x0d\x20-퟿-�\U00010000-\U0010f
 
 
 def render_entry(items: list[DigestItem], day: date) -> DigestEntry:
+    """Overview list first, details after: Viva Engage folds long posts, so the top must stand alone."""
     heading = f"【クラウドダイジェスト {day.month}/{day.day}】"
-    item_blocks = "\n\n".join(_render_item(item) for item in items)
+    overview = "\n".join(_render_overview_line(number, item) for number, item in enumerate(items, start=1))
+    details = "\n\n".join(_render_detail(number, item) for number, item in enumerate(items, start=1))
     return DigestEntry(
         id=f"digest-{day.isoformat()}",
         title=heading,
         published=datetime.combine(day, time(0, 0), tzinfo=JST),
-        body=f"{heading}\n{item_blocks}\n\n{DISCLAIMER}",
+        body=f"{heading}\n今日の {len(items)} 件\n{overview}\n\n{SEPARATOR}\n\n{details}\n\n{DISCLAIMER}",
     )
 
 
-def _render_item(item: DigestItem) -> str:
-    lines = [f"■ {item.source}｜{item.title}"]
+def _render_overview_line(number: int, item: DigestItem) -> str:
+    return f"{number}. {item.headline or item.title}（{item.source}）"
+
+
+def _render_detail(number: int, item: DigestItem) -> str:
+    lines = [f"{number}. {item.title}"]
     if item.summary:
-        lines.append(f"要約：{item.summary}")
+        lines.append(item.summary)
     lines.append(f"→ {item.url}")
     return "\n".join(lines)
 

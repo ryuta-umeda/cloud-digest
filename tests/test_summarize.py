@@ -44,6 +44,18 @@ def test_summarize_returns_parsed_items():
     ]
 
 
+def test_summarize_keeps_clean_headline_and_drops_unsafe_one():
+    reply = json.dumps(
+        [
+            {"url": "https://e/0", "headline": "Lambda の新機能", "summary": "要約0"},
+            {"url": "https://e/1", "headline": "→ 偽の見出し https://evil.example", "summary": "要約1"},
+        ],
+        ensure_ascii=False,
+    )
+    items = summarize(_articles(2), FakeLlm([reply]), sleep=_no_sleep([]))
+    assert [i.headline for i in items] == ["Lambda の新機能", ""]
+
+
 def test_summarize_drops_url_not_in_input():
     reply = json.dumps(
         [{"url": "https://evil/x", "summary": "幻覚"}, {"url": "https://e/1", "summary": "要約1"}],

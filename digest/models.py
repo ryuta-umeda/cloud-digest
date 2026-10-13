@@ -24,6 +24,7 @@ class DigestItem:
     title: str
     summary: str  # "" means LLM fallback: render title and link only
     url: str
+    headline: str = ""  # short Japanese title for the digest's overview list; "" means use title
 
 
 @dataclass(frozen=True)

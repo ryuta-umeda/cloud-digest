@@ -12,6 +12,7 @@ logger = logging.getLogger(__name__)
 DEFAULT_MAX_ITEMS = 5
 MAX_RETRIES = 3
 SUMMARY_MAX_CHARS = 200
+HEADLINE_MAX_CHARS = 40
 # Characters that let an LLM-written summary forge a second digest item or smuggle in a link.
 _FORBIDDEN_IN_SUMMARY = ("http", "://", "■", "→")
 # HTTP codes meaning "our configuration is wrong": retrying or degrading silently would hide it.
@@ -85,9 +86,9 @@ def _build_prompt(articles: list[Article], max_items: int) -> str:
     )
     return (
         f"以下はクラウド関連の新着記事です。読者の関心が高そうなものを最大{max_items}件選び、"
-        "それぞれ日本語で2〜3行に要約してください。\n"
+        "それぞれ日本語で2〜3行に要約し、30字以内の日本語の見出しも付けてください。\n"
         "禁止: 記事にない情報の追加。断定的な推奨。\n"
-        '出力は JSON 配列のみ。各要素は {"url": 記事のURL, "summary": 要約} とし、url は下記の記事のものだけを使うこと。\n\n'
+        '出力は JSON 配列のみ。各要素は {"url": 記事のURL, "headline": 見出し, "summary": 要約} とし、url は下記の記事のものだけを使うこと。\n\n'
         f"{listing}"
     )
 
@@ -108,18 +109,23 @@ def _parse_reply(reply: str, articles: list[Article], max_items: int) -> list[Di
             continue
         seen_urls.add(url)
         article = by_url[url]
-        items.append(DigestItem(article.source, article.title, summary, article.url))
+        headline = _clean_line(raw.get("headline"), HEADLINE_MAX_CHARS) or ""
+        items.append(DigestItem(article.source, article.title, summary, article.url, headline))
     return items[:max_items]
 
 
 def _clean_summary(raw_summary: object) -> str | None:
     """Return a one-line, length-capped summary, or None when it looks like an injected post."""
-    if not isinstance(raw_summary, str):
+    return _clean_line(raw_summary, SUMMARY_MAX_CHARS)
+
+
+def _clean_line(raw_text: object, max_chars: int) -> str | None:
+    if not isinstance(raw_text, str):
         return None
-    summary = " ".join(raw_summary.split())
-    if not summary or any(token in summary for token in _FORBIDDEN_IN_SUMMARY):
+    text = " ".join(raw_text.split())
+    if not text or any(token in text for token in _FORBIDDEN_IN_SUMMARY):
         return None
-    return summary[:SUMMARY_MAX_CHARS]
+    return text[:max_chars]
 
 
 def _fallback_items(articles: list[Article], max_items: int) -> list[DigestItem]:
