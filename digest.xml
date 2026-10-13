@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-10-11T00:00:00+09:00</updated><entry><id>digest-2026-10-11</id><title>【クラウドダイジェスト 10/11】</title><updated>2026-10-11T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/11】
+<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-10-13T00:00:00+09:00</updated><entry><id>digest-2026-10-13</id><title>【クラウドダイジェスト 10/13】</title><updated>2026-10-13T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/13】
+■ AWS What's New｜AWS Lambda announces Lambda Web Functions
+要約：AWS Lambdaが、コードがHTTPリクエストを直接処理できる「Lambda Web Functions」を発表しました。 ExpressやHonoなどの馴染みのあるフレームワークをアダプターなしでそのまま利用可能です。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/aws-lambda-web-functions/
+
+■ AWS What's New｜Amazon CloudFront now supports AWS Lambda Web Functions as an origin
+要約：Amazon CloudFrontが、AWS Lambda Web Functionsをオリジンとしてサポート開始しました。 エッジでのTLS終端やキャッシュ、カスタムドメインの利用が可能になります。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/cloudfront-lambda-web-functions-origin/
+
+■ AWS What's New｜Amazon S3 Express One Zone is now available in 4 additional AWS Regions
+要約：Amazon S3 Express One Zoneストレージクラスが、新たに4つのAWSリージョンで利用可能になりました。 レイテンシーに敏感なアプリケーション向けに、高速なデータアクセスを提供します。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/s3-express-one-zone-4-additional-regions/
+
+■ AWS What's New｜Amazon EC2 G7 instances now available in Europe (Frankfurt) and Europe (Stockholm) Regions
+要約：NVIDIA RTX PRO 4500 Blackwell Server Edition GPUを搭載したAmazon EC2 G7インスタンスが、欧州の2リージョンで利用可能になりました。 G6インスタンスと比較して大幅なAI推論性能の向上を実現します。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-g7-european-regions/
+
+■ Publickey｜Deno開発元がCloudflareに合流。Denoの開発は終了へ、今後はCloudflare WorkersとDurable Objectsのオープンソース実装に注力
+要約：Denoの開発元がCloudflareに合流し、今後はCloudflare WorkersとDurable Objectsのオープンソース実装に注力すると発表されました。 これに伴い、Deno自体の開発は終了となります。
+→ https://www.publickey1.jp/blog/26/denocloudflaredenocloudflare_workersdurable_objects.html
+
+※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>digest-2026-10-11</id><title>【クラウドダイジェスト 10/11】</title><updated>2026-10-11T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/11】
 ■ AWS What's New｜AWS Security Hub now exports findings to S3 in CSV or JSON format
 要約：AWS Security Hubが、検出結果をCSVまたはJSON形式でAmazon S3へ直接エクスポートする機能に対応しました。コンソール上の各ページから、カスタム抽出パイプラインを構築することなくデータを出力できます。
 → https://aws.amazon.com/about-aws/whats-new/2026/10/security-hub-exports-s3-csv-json/
