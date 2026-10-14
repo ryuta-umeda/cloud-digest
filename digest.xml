@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-10-14T00:00:00+09:00</updated><entry><id>digest-2026-10-14</id><title>【クラウドダイジェスト 10/14】</title><updated>2026-10-14T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/14】
+<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-10-15T00:00:00+09:00</updated><entry><id>digest-2026-10-15</id><title>【クラウドダイジェスト 10/15】</title><updated>2026-10-15T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/15】
+今日の 4 件
+1. ARC Region switchの新機能追加（AWS What's New）
+2. Ubuntu Proのライセンス変換対応（AWS What's New）
+3. SageMakerのソーシャルサインイン（AWS What's New）
+4. Microsoft Execution Containers（Publickey）
+
+──────────
+
+1. ARC Region switch adds four new capabilities
+Amazon Application Recovery ControllerのRegion switchに、Systems Manager Run Commandの実行ブロックやLambdaのカスタムペイロードなど4つの機能が追加されました。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/region-switch-target-health-ssm-lambda/
+
+2. AWS License Manager now supports license type conversions for Ubuntu Pro purchased through AWS Marketplace
+AWS License Managerが、AWS Marketplaceで購入したUbuntu Proへのインプレースアップグレードをサポートしました。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/aws-license-manager-conversions-ubuntu-pro-marketplace/
+
+3. Amazon SageMaker Studio simplifies getting started for new AI/ML builders with social sign-in
+Amazon SageMaker Studioで、Google、GitHub、Appleの認証情報を使用した新規サインアップと環境利用が可能になりました。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/sagemaker-studio-social-sign-in/
+
+4. Windows上でAIエージェントの実行を安全に隔離する「Microsoft Execution Containers」（MXC）正式リリース。ファイルやネットワークなどの境界を柔軟にカスタマイズ
+Windows 11上でAIエージェントを安全に隔離して実行できる「Microsoft Execution Containers」が正式リリースされました。
+→ https://www.publickey1.jp/blog/26/windowsaimicrosoft_execution_containersmxc.html
+
+※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>digest-2026-10-14</id><title>【クラウドダイジェスト 10/14】</title><updated>2026-10-14T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/14】
 今日の 5 件
 1. AWS Agent Registryがカスタムメタデータをサポート（AWS What's New）
 2. Amazon DCV 2026.0がリリース（AWS What's New）
