@@ -1,5 +1,11 @@
 [
   {
+    "id": "digest-2026-10-16",
+    "title": "【クラウドダイジェスト 10/16】",
+    "published": "2026-10-16T00:00:00+09:00",
+    "body": "【クラウドダイジェスト 10/16】\n今日の 5 件\n1. EC2 T8iインスタンスがサンパウロで提供開始（AWS What's New）\n2. DynamoDB Streamsがタイムスタンプ処理に対応（AWS What's New）\n3. Go向けLambda Durable Execution SDKが一般提供（AWS What's New）\n4. CloudFrontがVPCオリジンでデュアルスタックをサポート（AWS What's New）\n5. Bun 1.4.3リリース、高速な型チェッカーを搭載（Publickey）\n\n──────────\n\n1. Amazon EC2 T8i instances are now available in South America (São Paulo)\nIntel Xeon 6プロセッサを搭載したAmazon EC2 T8iインスタンスが南米（サンパウロ）リージョンで利用可能になりました。T3インスタンスと比較して最大30%優れた価格性能比を提供します。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/ec2-t8i-instances-south-america/\n\n2. Amazon DynamoDB Streams now supports timestamp-based stream processing\nAmazon DynamoDB Streamsがタイムスタンプベースのストリーム処理をサポートしました。特定の時点を指定して、その時刻以降に書き込まれた最初のレコードから読み取りを開始できます。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-dynamodb-streams-timestamp-processing\n\n3. AWS Lambda Durable Execution SDK for Go is now generally available\nGo開発者がレジリエントで長時間のワークフローを構築できる「AWS Lambda Durable Execution SDK for Go」が一般提供開始されました。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/aws-lambda-durable-go-sdk-support/\n\n4. Amazon CloudFront announces dual-stack support for VPC origins\nAmazon CloudFrontは、VPC内のオリジンへのエンドツーエンドのIPv6配信をサポートするデュアルスタックVPCオリジンの提供を開始しました。プライベートサブネット内のリソースへIPv6トラフィックを送信できます。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/cloudfront-vpc-origin-dualstack/\n\n5. AnthropicのBun、TypeScript 7よりも3倍以上高速なTypeScript型チェッカーを搭載。Bunの新バージョン1.4.3で\nJavaScriptランタイム「Bun」の新バージョン1.4.3がリリースされました。Go言語で実装された、TypeScript 7よりも3倍以上高速とされるTypeScript型チェッカーが搭載されています。\n→ https://www.publickey1.jp/blog/26/anthropicbuntypescript_73typescriptbun143.html\n\n※ AIによる自動要約です。正確な情報は元記事を確認してください。"
+  },
+  {
     "id": "digest-2026-10-15",
     "title": "【クラウドダイジェスト 10/15】",
     "published": "2026-10-15T00:00:00+09:00",
