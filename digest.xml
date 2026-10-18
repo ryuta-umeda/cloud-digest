@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-10-16T00:00:00+09:00</updated><entry><id>digest-2026-10-16</id><title>【クラウドダイジェスト 10/16】</title><updated>2026-10-16T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/16】
+<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-10-19T00:00:00+09:00</updated><entry><id>digest-2026-10-19</id><title>【クラウドダイジェスト 10/19】</title><updated>2026-10-19T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/19】
+今日の 5 件
+1. CloudWatchのログ集約機能が拡大（AWS What's New）
+2. LambdaのDurable Functions拡大（AWS What's New）
+3. Nemotron 3.5モデル追加（AWS What's New）
+4. AzureからAWSへのコード変換機能（AWS What's New）
+5. .NETツールチェーンマネージャ公開（Publickey）
+
+──────────
+
+1. Amazon CloudWatch log centralization now available in AWS GovCloud and additional commercial Regions
+Amazon CloudWatchのログ一元化機能がAWS GovCloudおよび13の商用リージョンで利用可能になりました。 複数アカウントやリージョンのログデータを単一の宛先アカウントに効率的に集約できます。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-cloudwatch-centralization-region-expansion
+
+2. AWS Lambda durable functions are now available in AWS GovCloud (US) Regions
+AWS Lambdaのdurable functionsがAWS GovCloud (US) リージョンで利用可能になりました。 信頼性の高いマルチステップアプリケーションやAIワークフローの開発をサポートします。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/durablefunctions-govcloud/
+
+3. Nemotron 3.5 Super VL model now available on Amazon SageMaker JumpStart
+NVIDIAの視覚言語モデル「Nemotron 3.5 Super VL」がAmazon SageMaker JumpStartに追加されました。 画像や動画、テキストを入力としてマルチモーダルAIソリューションを構築できます。
+→ https://aws.amazon.com/about-aws/whats-new/2026/01/nvidia-nemotron-3.5-super-vl-on-sagemaker-jumpstart/
+
+4. AWS Transform announces Azure-to-AWS cloud-native code conversion
+AWS Transformにて、Azure SDKからAWS SDKへのアプリケーションコード変換機能が一般提供開始されました。 Microsoft Azureの.NETアプリケーションの移行を加速します。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/aws-transform-azure-to-aws-code-conversion/
+
+5. マイクロソフト、.NETのツールチェーンマネージャ「dotnetup」プレビュー公開。複数バージョンの.NET環境を管理可能
+マイクロソフトが.NETのツールチェーンマネージャ「dotnetup」のプレビュー版を公開しました。 複数の.NET環境や関連ツールをまとめてインストールし、バージョン管理を行うことができます。
+→ https://www.publickey1.jp/blog/26/netdotnetupnet.html
+
+※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>digest-2026-10-16</id><title>【クラウドダイジェスト 10/16】</title><updated>2026-10-16T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/16】
 今日の 5 件
 1. EC2 T8iインスタンスがサンパウロで提供開始（AWS What's New）
 2. DynamoDB Streamsがタイムスタンプ処理に対応（AWS What's New）

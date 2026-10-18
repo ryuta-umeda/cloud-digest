@@ -1,5 +1,11 @@
 [
   {
+    "id": "digest-2026-10-19",
+    "title": "【クラウドダイジェスト 10/19】",
+    "published": "2026-10-19T00:00:00+09:00",
+    "body": "【クラウドダイジェスト 10/19】\n今日の 5 件\n1. CloudWatchのログ集約機能が拡大（AWS What's New）\n2. LambdaのDurable Functions拡大（AWS What's New）\n3. Nemotron 3.5モデル追加（AWS What's New）\n4. AzureからAWSへのコード変換機能（AWS What's New）\n5. .NETツールチェーンマネージャ公開（Publickey）\n\n──────────\n\n1. Amazon CloudWatch log centralization now available in AWS GovCloud and additional commercial Regions\nAmazon CloudWatchのログ一元化機能がAWS GovCloudおよび13の商用リージョンで利用可能になりました。 複数アカウントやリージョンのログデータを単一の宛先アカウントに効率的に集約できます。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-cloudwatch-centralization-region-expansion\n\n2. AWS Lambda durable functions are now available in AWS GovCloud (US) Regions\nAWS Lambdaのdurable functionsがAWS GovCloud (US) リージョンで利用可能になりました。 信頼性の高いマルチステップアプリケーションやAIワークフローの開発をサポートします。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/durablefunctions-govcloud/\n\n3. Nemotron 3.5 Super VL model now available on Amazon SageMaker JumpStart\nNVIDIAの視覚言語モデル「Nemotron 3.5 Super VL」がAmazon SageMaker JumpStartに追加されました。 画像や動画、テキストを入力としてマルチモーダルAIソリューションを構築できます。\n→ https://aws.amazon.com/about-aws/whats-new/2026/01/nvidia-nemotron-3.5-super-vl-on-sagemaker-jumpstart/\n\n4. AWS Transform announces Azure-to-AWS cloud-native code conversion\nAWS Transformにて、Azure SDKからAWS SDKへのアプリケーションコード変換機能が一般提供開始されました。 Microsoft Azureの.NETアプリケーションの移行を加速します。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/aws-transform-azure-to-aws-code-conversion/\n\n5. マイクロソフト、.NETのツールチェーンマネージャ「dotnetup」プレビュー公開。複数バージョンの.NET環境を管理可能\nマイクロソフトが.NETのツールチェーンマネージャ「dotnetup」のプレビュー版を公開しました。 複数の.NET環境や関連ツールをまとめてインストールし、バージョン管理を行うことができます。\n→ https://www.publickey1.jp/blog/26/netdotnetupnet.html\n\n※ AIによる自動要約です。正確な情報は元記事を確認してください。"
+  },
+  {
     "id": "digest-2026-10-16",
     "title": "【クラウドダイジェスト 10/16】",
     "published": "2026-10-16T00:00:00+09:00",
