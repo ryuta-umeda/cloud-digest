@@ -1,5 +1,11 @@
 [
   {
+    "id": "digest-2026-10-20",
+    "title": "【クラウドダイジェスト 10/20】",
+    "published": "2026-10-20T00:00:00+09:00",
+    "body": "【クラウドダイジェスト 10/20】\n今日の 2 件\n1. Amazon Connectのレジリエンス可視化（AWS What's New）\n2. AWS Lambda Web Functionsの発表（Publickey）\n\n──────────\n\n1. Amazon Connect Customer Global Resiliency now provides business users visibility into resiliency readiness across linked Regions\nAmazon Connect Customer Global Resiliencyに、管理画面でリージョン切り替えの準備状況を一元的に確認できるページが追加されました。同期状態や対応が必要なリソースの一覧を確認できるようになります。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-connect-global-resiliency-readiness-overview\n\n2. AWS LambdaでNext.jsやHonoなどNode.jsフレームワークとアプリをそのままデプロイ、実行できる「AWS Lambda Web Functions」発表\nAWS Lambda上でNext.jsやHono、ExpressなどのNode.jsフレームワークとアプリをそのままデプロイして実行できる新機能が発表されました。サーバレス環境でのアプリ移行や実行を容易にします。\n→ https://www.publickey1.jp/blog/26/aws_lambdanextjshononodejsaws_lambda_web_functions.html\n\n※ AIによる自動要約です。正確な情報は元記事を確認してください。"
+  },
+  {
     "id": "digest-2026-10-19",
     "title": "【クラウドダイジェスト 10/19】",
     "published": "2026-10-19T00:00:00+09:00",

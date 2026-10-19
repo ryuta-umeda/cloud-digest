@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-10-19T00:00:00+09:00</updated><entry><id>digest-2026-10-19</id><title>【クラウドダイジェスト 10/19】</title><updated>2026-10-19T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/19】
+<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-10-20T00:00:00+09:00</updated><entry><id>digest-2026-10-20</id><title>【クラウドダイジェスト 10/20】</title><updated>2026-10-20T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/20】
+今日の 2 件
+1. Amazon Connectのレジリエンス可視化（AWS What's New）
+2. AWS Lambda Web Functionsの発表（Publickey）
+
+──────────
+
+1. Amazon Connect Customer Global Resiliency now provides business users visibility into resiliency readiness across linked Regions
+Amazon Connect Customer Global Resiliencyに、管理画面でリージョン切り替えの準備状況を一元的に確認できるページが追加されました。同期状態や対応が必要なリソースの一覧を確認できるようになります。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-connect-global-resiliency-readiness-overview
+
+2. AWS LambdaでNext.jsやHonoなどNode.jsフレームワークとアプリをそのままデプロイ、実行できる「AWS Lambda Web Functions」発表
+AWS Lambda上でNext.jsやHono、ExpressなどのNode.jsフレームワークとアプリをそのままデプロイして実行できる新機能が発表されました。サーバレス環境でのアプリ移行や実行を容易にします。
+→ https://www.publickey1.jp/blog/26/aws_lambdanextjshononodejsaws_lambda_web_functions.html
+
+※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>digest-2026-10-19</id><title>【クラウドダイジェスト 10/19】</title><updated>2026-10-19T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/19】
 今日の 5 件
 1. CloudWatchのログ集約機能が拡大（AWS What's New）
 2. LambdaのDurable Functions拡大（AWS What's New）
