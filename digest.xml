@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-10-20T00:00:00+09:00</updated><entry><id>digest-2026-10-20</id><title>【クラウドダイジェスト 10/20】</title><updated>2026-10-20T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/20】
+<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-10-21T00:00:00+09:00</updated><entry><id>digest-2026-10-21</id><title>【クラウドダイジェスト 10/21】</title><updated>2026-10-21T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/21】
+今日の 5 件
+1. Amazon Pollyの音声エンジンが進化（AWS What's New）
+2. AWS TrainiumのPyTorch対応（AWS What's New）
+3. BedrockのClaudeが構造化出力に対応（AWS What's New）
+4. AWS Clean RoomsでDatabricks対応（AWS What's New）
+5. Cloudflare OSのマネージド提供（Publickey）
+
+──────────
+
+1. Polly Generative engine upgraded with more natural speech, 14 new voices, and 2 new languages
+Amazon Pollyの生成エンジンに新モデルが導入されました。より自然な音声出力に加え、14の新音声とヒンディー語、フィンランド語の2つの新言語が利用可能になります。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/polly-generative/
+
+2. AWS announces TorchNeuron: Native PyTorch Support for AWS Trainium (Public Beta)
+AWS Trainium向けオープンソースのネイティブPyTorchバックエンド「TorchNeuron」のパブリックベータが開始されました。コードを変更せずにTrainium上で実験やモデル構築が行えます。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/aws-announce-native-pytorch-support-trainium
+
+3. Structured outputs for Claude models available on Amazon Bedrock
+Amazon Bedrock上のすべてのAnthropic Claudeモデルで構造化出力がサポートされました。カスタムパースなしで、スキーマに準拠したJSONレスポンスの取得が可能です。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/claude-structured-outputs-bedrock/
+
+4. AWS Clean Rooms now supports Databricks as a data source
+AWS Clean RoomsがデータソースとしてDatabricksをサポートしました。元データを移動や公開することなく、Delta Sharingを介して共有されたテーブルを直接クエリできます。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/aws-clean-rooms-supports-databricks
+
+5. 「Cloudflare OS」のマネージドサービス提供へ。GitHubとの接続やGmailとの連携強化など
+CloudflareがAIを活用した業務プラットフォーム「Cloudflare OS」のマネージドサービスを発表しました。GitHubとの接続やGmailとの連携強化などが含まれます。
+→ https://www.publickey1.jp/blog/26/cloudflare_osgithubgmail.html
+
+※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>digest-2026-10-20</id><title>【クラウドダイジェスト 10/20】</title><updated>2026-10-20T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/20】
 今日の 2 件
 1. Amazon Connectのレジリエンス可視化（AWS What's New）
 2. AWS Lambda Web Functionsの発表（Publickey）
