@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-10-21T00:00:00+09:00</updated><entry><id>digest-2026-10-21</id><title>【クラウドダイジェスト 10/21】</title><updated>2026-10-21T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/21】
+<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-10-22T00:00:00+09:00</updated><entry><id>digest-2026-10-22</id><title>【クラウドダイジェスト 10/22】</title><updated>2026-10-22T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/22】
+今日の 5 件
+1. AWS Transformのストレージ移行評価（AWS What's New）
+2. RDS等のオンデマンド容量予約（AWS What's New）
+3. Cognitoのマルチリージョンレプリケーション（AWS What's New）
+4. AWS Neuron 2.33の提供開始（AWS What's New）
+5. Cloudflareが「tsrs」を発表（Publickey）
+
+──────────
+
+1. AWS Transform adds storage migration assessments for Amazon S3, EBS, EFS, and FSx
+AWS Transformがオンプレミスストレージの移行評価に対応しました。 ストレージのインボイスをアップロードすることで、最適なサービスのマッチングや費用算出を自動化します。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/transform-assess-s3-ebs-efs-fsx/
+
+2. Amazon Aurora and Amazon RDS now support On-Demand Capacity Reservations
+Amazon AuroraとAmazon RDSでオンデマンド容量予約が可能になりました。 可用性ゾーン内のコンピューティング容量を事前に確保し、容量不足による失敗を防ぎます。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-aurora-rds-on-demand-capacity-reservations/
+
+3. Amazon Cognito extends multi-Region replication to AWS GovCloud (US) Regions
+Amazon CognitoのマルチリージョンレプリケーションがAWS GovCloud（US）リージョンに対応しました。 IDデータをスタンバイリージョンへリアルタイムに近い形で同期できます。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/cognito-multi-region-us-govcloud/
+
+4. AWS Neuron 2.33 adds native PyTorch support, Neuron Observer, and other new features
+AWS Neuron 2.33が公開され、PyTorchのネイティブバックエンドなどがパブリックベータとして追加されました。 Trainiumインスタンスでのモデル実行を効率化します。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/aws-announce-neuron-2-33-0
+
+5. Cloudflare、TypeScriptをRustに移植した「tsrs」を発表。TypeScript 7より最大で70％少ないメモリで8倍速。今後、LSPなどTypeScriptの全機能をサポート予定
+CloudflareがTypeScriptをRustに移植した「tsrs」を発表しました。 TypeScript 7と比較して少ないメモリと高速な処理を実現し、将来的な全機能サポートを予定しています。
+→ https://www.publickey1.jp/blog/26/cloudflaretypescriptrusttsrstypescript_7708lsptypescript.html
+
+※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>digest-2026-10-21</id><title>【クラウドダイジェスト 10/21】</title><updated>2026-10-21T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/21】
 今日の 5 件
 1. Amazon Pollyの音声エンジンが進化（AWS What's New）
 2. AWS TrainiumのPyTorch対応（AWS What's New）

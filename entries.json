@@ -1,5 +1,11 @@
 [
   {
+    "id": "digest-2026-10-22",
+    "title": "【クラウドダイジェスト 10/22】",
+    "published": "2026-10-22T00:00:00+09:00",
+    "body": "【クラウドダイジェスト 10/22】\n今日の 5 件\n1. AWS Transformのストレージ移行評価（AWS What's New）\n2. RDS等のオンデマンド容量予約（AWS What's New）\n3. Cognitoのマルチリージョンレプリケーション（AWS What's New）\n4. AWS Neuron 2.33の提供開始（AWS What's New）\n5. Cloudflareが「tsrs」を発表（Publickey）\n\n──────────\n\n1. AWS Transform adds storage migration assessments for Amazon S3, EBS, EFS, and FSx\nAWS Transformがオンプレミスストレージの移行評価に対応しました。 ストレージのインボイスをアップロードすることで、最適なサービスのマッチングや費用算出を自動化します。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/transform-assess-s3-ebs-efs-fsx/\n\n2. Amazon Aurora and Amazon RDS now support On-Demand Capacity Reservations\nAmazon AuroraとAmazon RDSでオンデマンド容量予約が可能になりました。 可用性ゾーン内のコンピューティング容量を事前に確保し、容量不足による失敗を防ぎます。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-aurora-rds-on-demand-capacity-reservations/\n\n3. Amazon Cognito extends multi-Region replication to AWS GovCloud (US) Regions\nAmazon CognitoのマルチリージョンレプリケーションがAWS GovCloud（US）リージョンに対応しました。 IDデータをスタンバイリージョンへリアルタイムに近い形で同期できます。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/cognito-multi-region-us-govcloud/\n\n4. AWS Neuron 2.33 adds native PyTorch support, Neuron Observer, and other new features\nAWS Neuron 2.33が公開され、PyTorchのネイティブバックエンドなどがパブリックベータとして追加されました。 Trainiumインスタンスでのモデル実行を効率化します。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/aws-announce-neuron-2-33-0\n\n5. Cloudflare、TypeScriptをRustに移植した「tsrs」を発表。TypeScript 7より最大で70％少ないメモリで8倍速。今後、LSPなどTypeScriptの全機能をサポート予定\nCloudflareがTypeScriptをRustに移植した「tsrs」を発表しました。 TypeScript 7と比較して少ないメモリと高速な処理を実現し、将来的な全機能サポートを予定しています。\n→ https://www.publickey1.jp/blog/26/cloudflaretypescriptrusttsrstypescript_7708lsptypescript.html\n\n※ AIによる自動要約です。正確な情報は元記事を確認してください。"
+  },
+  {
     "id": "digest-2026-10-21",
     "title": "【クラウドダイジェスト 10/21】",
     "published": "2026-10-21T00:00:00+09:00",
