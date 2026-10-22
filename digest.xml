@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-10-22T00:00:00+09:00</updated><entry><id>digest-2026-10-22</id><title>【クラウドダイジェスト 10/22】</title><updated>2026-10-22T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/22】
+<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-10-23T00:00:00+09:00</updated><entry><id>digest-2026-10-23</id><title>【クラウドダイジェスト 10/23】</title><updated>2026-10-23T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/23】
+今日の 5 件
+1. コード脆弱性検出サービスが一般提供開始（AWS What's New）
+2. 検索のデフォルト更新間隔が5秒に短縮（AWS What's New）
+3. CloudFormationがロールバックを簡素化（AWS What's New）
+4. Lambda MicroVMsが4リージョンで提供（AWS What's New）
+5. ネットワークファイアウォールがIP検証に対応（AWS What's New）
+
+──────────
+
+1. AWS Continuum for code vulnerabilities is now generally available
+AWS環境のコンテキストグラフを構築し、コード脆弱性の発見や優先順位付け、修復をマシン速度で実行する機能が一般提供を開始しました。ビジネスリスクの高い脆弱性を特定し、効率的な対処を支援します。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/aws-continuum-for-code-vulnerabilities-is-now-generally-available
+
+2. Amazon OpenSearch Serverless now supports a 5-second default refresh interval
+検索およびベクトルコレクションのデフォルトの更新間隔が10秒から5秒に短縮されました。設定変更なしで新しく取り込まれたデータがより迅速に検索可能になります。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-opensearch-serverless-supports-5-second-refresh-interval/
+
+3. AWS CloudFormation now simplifies stack update rollback operations
+スタック更新のロールバック時に、自動で戻せないリソースがある場合でも単一操作で強制完了できる機能が追加されました。AWS CLIやSDK、CDKなどから利用可能です。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/aws-cloudformation-cdk/
+
+4. AWS Lambda MicroVMs is now available in 4 additional AWS regions
+Lambda MicroVMsが香港、マレーシア、タイ、スペインの4つの新しいAWSリージョンで利用可能になりました。これにより合計14リージョンで展開されます。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/lambda-microvms-4-additional-regions
+
+5. AWS Network Firewall now supports Route 53 Resolved IP Validation
+AWS Network FirewallがRoute 53 Resolverを経由したIP検証をサポートしました。HTTP/HTTPS以外のプロトコルでもドメインベースのフィルタリングが可能になります。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/network-firewall-route-53-ip-validation/
+
+※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>digest-2026-10-22</id><title>【クラウドダイジェスト 10/22】</title><updated>2026-10-22T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/22】
 今日の 5 件
 1. AWS Transformのストレージ移行評価（AWS What's New）
 2. RDS等のオンデマンド容量予約（AWS What's New）
