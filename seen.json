@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-10-22T22:24:51.582027+00:00",
+  "last_run": "2026-10-25T21:52:19.825589+00:00",
   "seen": {
     "AWS What's New:0111862c5ba4909c010244bc46ed537f91528232": "2026-10-15",
     "AWS What's New:0184ff1f60876b153b2a007220036be1a056aaea": "2026-10-15",
@@ -7,6 +7,7 @@
     "AWS What's New:062f10a3df4575a8a21a9036dac88aa9fea5a201": "2026-10-13",
     "AWS What's New:07ed88fe9f8e1b2fe1a16534b1ed3d9b60a24864": "2026-10-21",
     "AWS What's New:0aa2e9269961b9a404b150ebab4a68d98cab8853": "2026-10-13",
+    "AWS What's New:0b31b2ceb63caab736fa4edaa29bfd26865b57e1": "2026-10-25",
     "AWS What's New:0df44dd0e4d25ede7e1429eaaa0a12c92984dfce": "2026-10-21",
     "AWS What's New:10e296f6696af28054f498f88cda7cb9d59d55c9": "2026-10-18",
     "AWS What's New:11c6c3f07cca4caca2efbfbfe967fe2bbdcac5b9": "2026-10-13",
@@ -29,8 +30,10 @@
     "AWS What's New:2ea16b2a59e9bd6bc91afd66fe872df0bb536957": "2026-10-15",
     "AWS What's New:2f09d0667d42d72e79a54ba3ba00762abfcd3b74": "2026-10-22",
     "AWS What's New:2f416a3248b0d45bc8118c31272643fdaeb2061b": "2026-10-11",
+    "AWS What's New:2fd0943493e29a1c860162e25ff1915fb7472216": "2026-10-25",
     "AWS What's New:30622ddfcdeffbbc2c708c495a2cd4ddbe283cd7": "2026-10-14",
     "AWS What's New:315204b9dd0d6aa1fb74818cc1aa408b76ba6477": "2026-10-15",
+    "AWS What's New:329bb709df369b01cc618dec1d38ae392d780fa5": "2026-10-25",
     "AWS What's New:348fd8b9782731379b9e3817851173ce89d058c8": "2026-10-13",
     "AWS What's New:37f5fd09f27f61422216ac34ab861ea4e1359370": "2026-10-11",
     "AWS What's New:3a25ba62642aa675299f9367b21064b2f9c8126b": "2026-10-21",
@@ -48,6 +51,7 @@
     "AWS What's New:53d8a630312f111fa40f8ad015de5c4b48ad15e6": "2026-10-11",
     "AWS What's New:584169939f7dffb6dbf48fb32ad9398defa03a43": "2026-10-14",
     "AWS What's New:5b1e42c0b7253ca414a2c6fd4d1af45299e26a8b": "2026-10-11",
+    "AWS What's New:5f832aa90ce42df9e8b27f09142cb9a6f133c04e": "2026-10-25",
     "AWS What's New:5fbfb72381fa592cedddb6e51148739df6abd5f3": "2026-10-11",
     "AWS What's New:5fc97181692d5b273b31a2b96041d6ef5034ea5d": "2026-10-22",
     "AWS What's New:5ff92a0f293eff5c329c6e9a4fb5e6a85e55dd67": "2026-10-13",
@@ -72,6 +76,7 @@
     "AWS What's New:838ad9ad2f50a29005a9220d94e70e0ec5f9c268": "2026-10-20",
     "AWS What's New:8394141a5727b3fe3b9f49cf37d5fa56685f8da9": "2026-10-22",
     "AWS What's New:86855a2f88a0af85cad1ec827814b3a0946609fe": "2026-10-19",
+    "AWS What's New:86f4a6d69637c7de4b0ac7ab60df8db423270cd3": "2026-10-25",
     "AWS What's New:8b98b64596ba654f62aba1f1dcc665bae9650d99": "2026-10-13",
     "AWS What's New:8bd721819f380c79930d285c4aeae10ee2504efc": "2026-10-22",
     "AWS What's New:8d97487f2c92bf944af9a04f0f2dac48eebf96c3": "2026-10-22",
@@ -113,6 +118,7 @@
     "AWS What's New:e11e180c22d33452ff594d59026f8421d7b901e6": "2026-10-18",
     "AWS What's New:eaf9f3d7d5a671fbcc1b030aa164c0117ff54df6": "2026-10-15",
     "AWS What's New:eb36d722e3c66e69b923d431c528a07334fc1347": "2026-10-19",
+    "AWS What's New:ebf5b1a88138a8bd0acf1b066161888ef1fdcced": "2026-10-25",
     "AWS What's New:ec3912cd048a09be47d4f3a92ed0f45245f27882": "2026-10-19",
     "AWS What's New:ed10968223ac2f815097d61042a29e63c5d4cfd9": "2026-10-11",
     "AWS What's New:f1f53c7d6c30635fbc0c2456afbabc000b3fbf01": "2026-10-21",
@@ -135,6 +141,7 @@
     "Publickey:tag:www.publickey1.jp,2026://2.8739": "2026-10-19",
     "Publickey:tag:www.publickey1.jp,2026://2.8740": "2026-10-19",
     "Publickey:tag:www.publickey1.jp,2026://2.8741": "2026-10-20",
-    "Publickey:tag:www.publickey1.jp,2026://2.8742": "2026-10-21"
+    "Publickey:tag:www.publickey1.jp,2026://2.8742": "2026-10-21",
+    "Publickey:tag:www.publickey1.jp,2026://2.8744": "2026-10-25"
   }
 }

@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-10-23T00:00:00+09:00</updated><entry><id>digest-2026-10-23</id><title>【クラウドダイジェスト 10/23】</title><updated>2026-10-23T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/23】
+<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-10-26T00:00:00+09:00</updated><entry><id>digest-2026-10-26</id><title>【クラウドダイジェスト 10/26】</title><updated>2026-10-26T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/26】
+今日の 4 件
+1. BedrockのWeb検索が機能追加（AWS What's New）
+2. Connectがチャット機能拡張（AWS What's New）
+3. Transit Gatewayなどが1:1 NAT対応（AWS What's New）
+4. EMR on EKSの料金が30%引き下げ（AWS What's New）
+
+──────────
+
+1. Web Search on Amazon Bedrock now supports domain filtering and user location controls
+Amazon BedrockのWeb Searchが、ドメインフィルタリングとユーザーロケーション制御の2つの新しいコントロールをサポートしました。既存のリクエスト内で信頼できるソースへの制限などが設定可能です。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/bedrock-web-search-domain-user-location/
+
+2. Amazon Connect Customer Global Resiliency now supports persistent chat across linked AWS Regions
+Amazon Connectのグローバル耐障害性が、連携したAWSリージョン間で永続的なチャットを引き継ぐ機能をサポートしました。エンドユーザーは会話のコンテキストや履歴を保持したままリージョン間で再開できます。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-connect-global-resiliency-persistent-chat
+
+3. AWS Transit Gateway and AWS Cloud WAN now support 1:1 NAT
+AWS Transit GatewayとAWS Cloud WANが、アタッチメント上で直接1:1のネットワークアドレス変換（NAT）をサポートしました。重複するIPアドレス範囲を持つプライベートネットワーク同士の接続が可能になります。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/aws-transit-gateway-cloud-wan-1-1-nat/
+
+4. Amazon EMR on EKS reduces EMR charge by 30 percent
+Amazon EMRは、EKS上でEMRを実行する際に追加されるEMR料金の30%引き下げを発表しました。vCPU時間あたりおよびGB時間あたりの料金が減少し、すべてのワークロードで自動的に適用されます。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/emr-eks-reduces-emr-charge-30-percent/
+
+※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>digest-2026-10-23</id><title>【クラウドダイジェスト 10/23】</title><updated>2026-10-23T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/23】
 今日の 5 件
 1. コード脆弱性検出サービスが一般提供開始（AWS What's New）
 2. 検索のデフォルト更新間隔が5秒に短縮（AWS What's New）
