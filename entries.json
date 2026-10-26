@@ -1,5 +1,11 @@
 [
   {
+    "id": "digest-2026-10-27",
+    "title": "【クラウドダイジェスト 10/27】",
+    "published": "2026-10-27T00:00:00+09:00",
+    "body": "【クラウドダイジェスト 10/27】\n今日の 4 件\n1. OpenAI GPT-6.1 Terraが提供開始（AWS What's New）\n2. ModifyVolume APIに対応（AWS What's New）\n3. アカウント単位での置換動作に対応（AWS What's New）\n4. PyTorchの自社AIプロセッサ版が公開（Publickey）\n\n──────────\n\n1. OpenAI GPT-6.1 Terra is now generally available on Amazon Bedrock\nAmazon BedrockでOpenAI GPT-6.1 Terraが一般提供を開始しました。 日常的なワークロードに向けて、能力、速度、コスト効率のバランスを実現しています。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/openai-gpt-6-1-terra-on-amazon-bedrock/\n\n2. Amazon WorkSpaces Core Managed Instances now supports ModifyVolume API\nAmazon WorkSpaces Core Managed InstancesがModifyVolume APIをサポートしました。 ボリュームの切り離しやインスタンスの再起動なしで、ボリュームの変更が可能です。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-workspaces-cmi-modifyvolume/\n\n3. AWS EC2 Auto Scaling now supports Launch Before Terminate at account-level to replace instances\nAWS EC2 Auto Scalingは、アカウント内のすべてのグループで Launch Before Terminate をデフォルトの置換動作として有効にできるようになりました。 インスタンス置換イベント時にアプリケーションの容量維持を支援します。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/ec2-auto-scaling-launch-before-terminate/\n\n4. AWSとGoogle Cloudが「PyTorch」のAWS Trainium、Google Cloud TPU対応版をオープンソースで公開。NVIDIAからの移行に挑む\nAWSとGoogle CloudがPyTorchの自社AIプロセッサ対応版をオープンソースとして発表しました。 AWS TrainiumやGoogle Cloud TPUに対応しています。\n→ https://www.publickey1.jp/blog/26/awsgoogle_cloudpytorchaws_trainiumgoogle_cloud_tpunvidia.html\n\n※ AIによる自動要約です。正確な情報は元記事を確認してください。"
+  },
+  {
     "id": "digest-2026-10-26",
     "title": "【クラウドダイジェスト 10/26】",
     "published": "2026-10-26T00:00:00+09:00",
