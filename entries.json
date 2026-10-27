@@ -1,5 +1,11 @@
 [
   {
+    "id": "digest-2026-10-28",
+    "title": "【クラウドダイジェスト 10/28】",
+    "published": "2026-10-28T00:00:00+09:00",
+    "body": "【クラウドダイジェスト 10/28】\n今日の 5 件\n1. SageMaker MLflowがv3.16に対応（AWS What's New）\n2. Aurora Serverlessが容量拡大（AWS What's New）\n3. ElastiCache for Valkeyの耐久性変更（AWS What's New）\n4. ECRが既存イメージのレプリケーションに対応（AWS What's New）\n5. Bunが高速なフォーマッタ機能を搭載（Publickey）\n\n──────────\n\n1. SageMaker MLflow Apps now support MLflow 3.16\nAmazon SageMaker AIのMLflow AppsがMLflow 3.16をサポートしました。生成AIワークフロー向けに、再設計されたトレース機能や高速な実験トラッキングを提供します。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/mflow-version-3-16/\n\n2. Amazon Aurora serverless now supports up to 384 ACUs\nPostgreSQL互換のAmazon Aurora Serverlessが最大384ACUまでのデータベース容量をサポートしました。従来の上限から50%増加し、ワークフロー完了時にはゼロまでスケールダウンします。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/aurora-serverless-supports-384-acu/\n\n3. Amazon ElastiCache for Valkey now supports changing durability on existing clusters\n既存のノードベースクラスターで耐久性の有効化や無効化の切り替えが可能になりました。新規クラスターを作成することなく、アプリケーションの要件変化に合わせて設定変更が行えます。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/elasticache-changing-durability/\n\n4. Amazon ECR now supports replication backfill for existing container images\nAmazon ECRが既存コンテナイメージのレプリケーションバックフィルをサポートしました。プライベートレジストリ内の既存イメージを、設定したレプリケーション先に複製できるようになります。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/replication-backfill-amazon-ecr\n\n5. JavaScriptランタイムの「Bun」がPrettier互換で300倍以上高速なフォーマッタに。Prettier設定ファイルもそのまま利用可能\nJavaScriptランタイムの「Bun」にPrettier互換で300倍以上高速なフォーマッタが搭載されました。既存のPrettier設定ファイルもそのまま利用可能です。\n→ https://www.publickey1.jp/blog/26/javascriptbunprettier300prettier.html\n\n※ AIによる自動要約です。正確な情報は元記事を確認してください。"
+  },
+  {
     "id": "digest-2026-10-27",
     "title": "【クラウドダイジェスト 10/27】",
     "published": "2026-10-27T00:00:00+09:00",

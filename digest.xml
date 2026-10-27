@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-10-27T00:00:00+09:00</updated><entry><id>digest-2026-10-27</id><title>【クラウドダイジェスト 10/27】</title><updated>2026-10-27T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/27】
+<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-10-28T00:00:00+09:00</updated><entry><id>digest-2026-10-28</id><title>【クラウドダイジェスト 10/28】</title><updated>2026-10-28T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/28】
+今日の 5 件
+1. SageMaker MLflowがv3.16に対応（AWS What's New）
+2. Aurora Serverlessが容量拡大（AWS What's New）
+3. ElastiCache for Valkeyの耐久性変更（AWS What's New）
+4. ECRが既存イメージのレプリケーションに対応（AWS What's New）
+5. Bunが高速なフォーマッタ機能を搭載（Publickey）
+
+──────────
+
+1. SageMaker MLflow Apps now support MLflow 3.16
+Amazon SageMaker AIのMLflow AppsがMLflow 3.16をサポートしました。生成AIワークフロー向けに、再設計されたトレース機能や高速な実験トラッキングを提供します。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/mflow-version-3-16/
+
+2. Amazon Aurora serverless now supports up to 384 ACUs
+PostgreSQL互換のAmazon Aurora Serverlessが最大384ACUまでのデータベース容量をサポートしました。従来の上限から50%増加し、ワークフロー完了時にはゼロまでスケールダウンします。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/aurora-serverless-supports-384-acu/
+
+3. Amazon ElastiCache for Valkey now supports changing durability on existing clusters
+既存のノードベースクラスターで耐久性の有効化や無効化の切り替えが可能になりました。新規クラスターを作成することなく、アプリケーションの要件変化に合わせて設定変更が行えます。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/elasticache-changing-durability/
+
+4. Amazon ECR now supports replication backfill for existing container images
+Amazon ECRが既存コンテナイメージのレプリケーションバックフィルをサポートしました。プライベートレジストリ内の既存イメージを、設定したレプリケーション先に複製できるようになります。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/replication-backfill-amazon-ecr
+
+5. JavaScriptランタイムの「Bun」がPrettier互換で300倍以上高速なフォーマッタに。Prettier設定ファイルもそのまま利用可能
+JavaScriptランタイムの「Bun」にPrettier互換で300倍以上高速なフォーマッタが搭載されました。既存のPrettier設定ファイルもそのまま利用可能です。
+→ https://www.publickey1.jp/blog/26/javascriptbunprettier300prettier.html
+
+※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>digest-2026-10-27</id><title>【クラウドダイジェスト 10/27】</title><updated>2026-10-27T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/27】
 今日の 4 件
 1. OpenAI GPT-6.1 Terraが提供開始（AWS What's New）
 2. ModifyVolume APIに対応（AWS What's New）
