@@ -1,5 +1,11 @@
 [
   {
+    "id": "digest-2026-10-29",
+    "title": "【クラウドダイジェスト 10/29】",
+    "published": "2026-10-29T00:00:00+09:00",
+    "body": "【クラウドダイジェスト 10/29】\n今日の 5 件\n1. AWS LambdaがSOCIによる遅延読み込みに対応（AWS What's New）\n2. ECSマネージドインスタンスに集約機能を追加（AWS What's New）\n3. EKS Auto ModeがGateway APIをサポート（AWS What's New）\n4. Amazon ECSがNVIDIA MPSによるGPU共有に対応（AWS What's New）\n5. オラクル、AIで業務アプリを作成するApp Composer発表（Publickey）\n\n──────────\n\n1. AWS Lambda supports Seekable OCI (SOCI) lazy loading for Lambda Managed Instances\nAWS LambdaがマネージドインスタンスでのOCIイメージ実行において、Seekable OCI（SOCI）による遅延読み込みをサポートしました。必要なファイルのみをフェッチすることで、コンテナの起動時間を最大70%短縮します。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/aws-lambda-seekable-oci-soci/\n\n2. Amazon ECS Managed Instances adds cross-instance and Spot consolidation\nAmazon ECS Managed Instancesに、クロスインスタンスとSpotインスタンスの集約機能が追加されました。複数インスタンスのタスクを効率的に配置し、リソース利用率の向上とコスト削減を実現します。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/ecs-managed-instances-consolidation/\n\n3. Amazon EKS Auto Mode now supports Kubernetes Gateway API\nAmazon EKS Auto ModeがKubernetes Gateway APIに対応しました。追加のコントローラーなしで、標準的かつポータブルなトラフィック管理機能を利用できるようになります。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-eks-auto-mode-kubernetes-gateway-api/\n\n4. Amazon ECS now supports GPU sharing with NVIDIA Multi-Process Service (MPS)\nAmazon ECSがNVIDIA Multi-Process Service（MPS）によるGPU共有をサポートしました。1台のGPUで複数のタスクを同時に実行し、GPUの利用効率を高めることが可能です。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-ecs-gpu-sharing-nvidia-mps/\n\n5. オラクル、社員が業務アプリをAIで自動作成、Oracle Cloud上で共有できる「Oracle App Composer」発表。Oracle AI World 2026\nオラクルは社員がAIを使って業務アプリを自動生成し、Oracle Cloud上で共有できる「Oracle App Composer」を発表しました。Oracle AI World 2026で公開された新機能です。\n→ https://www.publickey1.jp/blog/26/aioracle_cloudoracle_app_composeroracle_ai_world_2026.html\n\n※ AIによる自動要約です。正確な情報は元記事を確認してください。"
+  },
+  {
     "id": "digest-2026-10-28",
     "title": "【クラウドダイジェスト 10/28】",
     "published": "2026-10-28T00:00:00+09:00",
