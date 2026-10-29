@@ -1,5 +1,11 @@
 [
   {
+    "id": "digest-2026-10-30",
+    "title": "【クラウドダイジェスト 10/30】",
+    "published": "2026-10-30T00:00:00+09:00",
+    "body": "【クラウドダイジェスト 10/30】\n今日の 1 件\n1. RDS for Oracle/SQLのストレージ自動拡張（AWS What's New）\n\n──────────\n\n1. Amazon RDS for Oracle and SQL Server now support storage autoscaling on additional storage volumes\nAmazon RDS for OracleおよびSQL Serverが、追加ストレージボリュームでのストレージ自動スケーリングをサポートしました。 データベースのワークロード増加に応じて、ダウンタイムなしで最大4つのボリュームと合計256 TiBまで容量を自動拡張します。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-rds-oracle-sqlserver-autoscaling-additional-storage-volumes\n\n※ AIによる自動要約です。正確な情報は元記事を確認してください。"
+  },
+  {
     "id": "digest-2026-10-29",
     "title": "【クラウドダイジェスト 10/29】",
     "published": "2026-10-29T00:00:00+09:00",
@@ -76,11 +82,5 @@
     "title": "【クラウドダイジェスト 10/13】",
     "published": "2026-10-13T00:00:00+09:00",
     "body": "【クラウドダイジェスト 10/13】\n■ AWS What's New｜AWS Lambda announces Lambda Web Functions\n要約：AWS Lambdaが、コードがHTTPリクエストを直接処理できる「Lambda Web Functions」を発表しました。 ExpressやHonoなどの馴染みのあるフレームワークをアダプターなしでそのまま利用可能です。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/aws-lambda-web-functions/\n\n■ AWS What's New｜Amazon CloudFront now supports AWS Lambda Web Functions as an origin\n要約：Amazon CloudFrontが、AWS Lambda Web Functionsをオリジンとしてサポート開始しました。 エッジでのTLS終端やキャッシュ、カスタムドメインの利用が可能になります。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/cloudfront-lambda-web-functions-origin/\n\n■ AWS What's New｜Amazon S3 Express One Zone is now available in 4 additional AWS Regions\n要約：Amazon S3 Express One Zoneストレージクラスが、新たに4つのAWSリージョンで利用可能になりました。 レイテンシーに敏感なアプリケーション向けに、高速なデータアクセスを提供します。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/s3-express-one-zone-4-additional-regions/\n\n■ AWS What's New｜Amazon EC2 G7 instances now available in Europe (Frankfurt) and Europe (Stockholm) Regions\n要約：NVIDIA RTX PRO 4500 Blackwell Server Edition GPUを搭載したAmazon EC2 G7インスタンスが、欧州の2リージョンで利用可能になりました。 G6インスタンスと比較して大幅なAI推論性能の向上を実現します。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-g7-european-regions/\n\n■ Publickey｜Deno開発元がCloudflareに合流。Denoの開発は終了へ、今後はCloudflare WorkersとDurable Objectsのオープンソース実装に注力\n要約：Denoの開発元がCloudflareに合流し、今後はCloudflare WorkersとDurable Objectsのオープンソース実装に注力すると発表されました。 これに伴い、Deno自体の開発は終了となります。\n→ https://www.publickey1.jp/blog/26/denocloudflaredenocloudflare_workersdurable_objects.html\n\n※ AIによる自動要約です。正確な情報は元記事を確認してください。"
-  },
-  {
-    "id": "digest-2026-10-11",
-    "title": "【クラウドダイジェスト 10/11】",
-    "published": "2026-10-11T00:00:00+09:00",
-    "body": "【クラウドダイジェスト 10/11】\n■ AWS What's New｜AWS Security Hub now exports findings to S3 in CSV or JSON format\n要約：AWS Security Hubが、検出結果をCSVまたはJSON形式でAmazon S3へ直接エクスポートする機能に対応しました。コンソール上の各ページから、カスタム抽出パイプラインを構築することなくデータを出力できます。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/security-hub-exports-s3-csv-json/\n\n■ AWS What's New｜Amazon Bedrock now supports reasoning summaries for OpenAI models\n要約：Amazon Bedrockが、Responses APIを通じたOpenAIモデルの推論サマリーパラメータをサポートしました。タスクへのアプローチを示す人間可読な要約を取得できるようになり、開発者の評価やデバッグを支援します。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-bedrock-reasoning-summaries-openai/\n\n■ AWS What's New｜AWS Lambda supports OAuth authentication for self-managed Apache Kafka event sources\n要約：AWS Lambdaが、自己管理型Apache KafkaイベントソースマッピングにおけるOAuth認証をサポートしました。企業のアイデンティティプロバイダーを通じた認証が可能になり、セキュリティ要件への適合を助けます。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/aws-Lambda-supports-oauth-kafka-esm/\n\n■ AWS What's New｜AWS Cost Explorer, Budgets, and Dashboards now support Amazon Bedrock product attributes\n要約：AWS Cost Explorer、Budgets、DashboardsがAmazon Bedrockの製品属性によるコスト分析に対応しました。モデルやプロバイダー単位での費用細分化や、属性を条件とした予算管理が可能になります。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/aws-bedrock-attributes-in-cost-explorer/\n\n■ Publickey｜さくらインターネット、GPU専有によりトークン消費量を気にせず定額で利用できる「さくらのAI Engineプライベートエディション」提供開始を発表\n要約：さくらインターネットが、企業がGPUを専有して基盤モデルを利用できる「さくらのAI Engine プライベートエディション」の提供開始を発表しました。トークン消費量を気にせず定額で利用できるマネージドサービスです。\n→ https://www.publickey1.jp/blog/26/gpuai_engine.html\n\n※ AIによる自動要約です。正確な情報は元記事を確認してください。"
   }
 ]

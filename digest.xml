@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-10-29T00:00:00+09:00</updated><entry><id>digest-2026-10-29</id><title>【クラウドダイジェスト 10/29】</title><updated>2026-10-29T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/29】
+<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-10-30T00:00:00+09:00</updated><entry><id>digest-2026-10-30</id><title>【クラウドダイジェスト 10/30】</title><updated>2026-10-30T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/30】
+今日の 1 件
+1. RDS for Oracle/SQLのストレージ自動拡張（AWS What's New）
+
+──────────
+
+1. Amazon RDS for Oracle and SQL Server now support storage autoscaling on additional storage volumes
+Amazon RDS for OracleおよびSQL Serverが、追加ストレージボリュームでのストレージ自動スケーリングをサポートしました。 データベースのワークロード増加に応じて、ダウンタイムなしで最大4つのボリュームと合計256 TiBまで容量を自動拡張します。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-rds-oracle-sqlserver-autoscaling-additional-storage-volumes
+
+※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>digest-2026-10-29</id><title>【クラウドダイジェスト 10/29】</title><updated>2026-10-29T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/29】
 今日の 5 件
 1. AWS LambdaがSOCIによる遅延読み込みに対応（AWS What's New）
 2. ECSマネージドインスタンスに集約機能を追加（AWS What's New）
@@ -349,26 +359,5 @@ Webアプリケーションフレームワーク「SvelteKit 3」が正式リリ
 ■ Publickey｜Deno開発元がCloudflareに合流。Denoの開発は終了へ、今後はCloudflare WorkersとDurable Objectsのオープンソース実装に注力
 要約：Denoの開発元がCloudflareに合流し、今後はCloudflare WorkersとDurable Objectsのオープンソース実装に注力すると発表されました。 これに伴い、Deno自体の開発は終了となります。
 → https://www.publickey1.jp/blog/26/denocloudflaredenocloudflare_workersdurable_objects.html
-
-※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>digest-2026-10-11</id><title>【クラウドダイジェスト 10/11】</title><updated>2026-10-11T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/11】
-■ AWS What's New｜AWS Security Hub now exports findings to S3 in CSV or JSON format
-要約：AWS Security Hubが、検出結果をCSVまたはJSON形式でAmazon S3へ直接エクスポートする機能に対応しました。コンソール上の各ページから、カスタム抽出パイプラインを構築することなくデータを出力できます。
-→ https://aws.amazon.com/about-aws/whats-new/2026/10/security-hub-exports-s3-csv-json/
-
-■ AWS What's New｜Amazon Bedrock now supports reasoning summaries for OpenAI models
-要約：Amazon Bedrockが、Responses APIを通じたOpenAIモデルの推論サマリーパラメータをサポートしました。タスクへのアプローチを示す人間可読な要約を取得できるようになり、開発者の評価やデバッグを支援します。
-→ https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-bedrock-reasoning-summaries-openai/
-
-■ AWS What's New｜AWS Lambda supports OAuth authentication for self-managed Apache Kafka event sources
-要約：AWS Lambdaが、自己管理型Apache KafkaイベントソースマッピングにおけるOAuth認証をサポートしました。企業のアイデンティティプロバイダーを通じた認証が可能になり、セキュリティ要件への適合を助けます。
-→ https://aws.amazon.com/about-aws/whats-new/2026/10/aws-Lambda-supports-oauth-kafka-esm/
-
-■ AWS What's New｜AWS Cost Explorer, Budgets, and Dashboards now support Amazon Bedrock product attributes
-要約：AWS Cost Explorer、Budgets、DashboardsがAmazon Bedrockの製品属性によるコスト分析に対応しました。モデルやプロバイダー単位での費用細分化や、属性を条件とした予算管理が可能になります。
-→ https://aws.amazon.com/about-aws/whats-new/2026/10/aws-bedrock-attributes-in-cost-explorer/
-
-■ Publickey｜さくらインターネット、GPU専有によりトークン消費量を気にせず定額で利用できる「さくらのAI Engineプライベートエディション」提供開始を発表
-要約：さくらインターネットが、企業がGPUを専有して基盤モデルを利用できる「さくらのAI Engine プライベートエディション」の提供開始を発表しました。トークン消費量を気にせず定額で利用できるマネージドサービスです。
-→ https://www.publickey1.jp/blog/26/gpuai_engine.html
 
 ※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry></feed>
