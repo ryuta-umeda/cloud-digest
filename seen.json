@@ -1,11 +1,13 @@
 {
-  "last_run": "2026-11-03T01:39:08.978603+00:00",
+  "last_run": "2026-11-04T00:00:13.153055+00:00",
   "seen": {
     "AWS What's New:000083a5ad322d97910107aa397f720aa7d047fc": "2026-11-03",
     "AWS What's New:0111862c5ba4909c010244bc46ed537f91528232": "2026-10-15",
     "AWS What's New:0184ff1f60876b153b2a007220036be1a056aaea": "2026-10-15",
     "AWS What's New:022eae085f250edc2c6295f645328accae4b1c06": "2026-10-18",
     "AWS What's New:02e968798e00983065fb64ed95c3312a0d7db390": "2026-10-27",
+    "AWS What's New:03bf0c63db81def5cda0fa8fba8fbcabdaed8959": "2026-11-04",
+    "AWS What's New:03eaf64b7d3e93d37021e3fe144250a1c1f50618": "2026-11-04",
     "AWS What's New:062f10a3df4575a8a21a9036dac88aa9fea5a201": "2026-10-13",
     "AWS What's New:07aebc8dcce1260f793b3d68cc0fe418bce0c558": "2026-10-28",
     "AWS What's New:07ed88fe9f8e1b2fe1a16534b1ed3d9b60a24864": "2026-10-21",
@@ -38,6 +40,7 @@
     "AWS What's New:22a5d1fad4cd49ee8ad19a23807834dfc41f6a77": "2026-10-22",
     "AWS What's New:2378eff049fb752685060dbde386b349b1993ddd": "2026-10-26",
     "AWS What's New:24cc59d5a7df1a89f5b19b51a898940b69cd556e": "2026-10-14",
+    "AWS What's New:282ae2276740d0cab2442abc6cb00f23af6023cf": "2026-11-04",
     "AWS What's New:29044607ae843e5c599cfb5c3e3f635a8636a262": "2026-10-21",
     "AWS What's New:295fcb09a0d81c3093bf071b423088156f3e96fd": "2026-10-15",
     "AWS What's New:299514e963fee2299882c211483246d8655b2c33": "2026-10-29",
@@ -66,6 +69,7 @@
     "AWS What's New:4d2b5cbc00b810e8dcbfac3bd49c7f754d3d2ab2": "2026-10-11",
     "AWS What's New:4e2a17a42c94a42f38e06b1fc534c58ff2411fd7": "2026-10-11",
     "AWS What's New:4f40ee8b3ccb9631a633e729cb1161e3590c5eb8": "2026-10-15",
+    "AWS What's New:4fc32f2f322f3ee915fae1a07439d8943a2ba03e": "2026-11-04",
     "AWS What's New:50919efc139f36c47022a2b03be796a8017c2803": "2026-10-18",
     "AWS What's New:51394e29679c98b5e16fde925542e43fb0ffd0a8": "2026-10-29",
     "AWS What's New:53d8a630312f111fa40f8ad015de5c4b48ad15e6": "2026-10-11",
@@ -89,6 +93,7 @@
     "AWS What's New:6768dd6f1239e1e3e2ade018b67678530416080b": "2026-10-15",
     "AWS What's New:681fbadb036e1a75613347acab6b248c8aff090d": "2026-10-13",
     "AWS What's New:684adca7753d41094e153834c9c8981e9f0f00d8": "2026-11-03",
+    "AWS What's New:694823d2c8580fe07e4af365bd37e1f292586a9d": "2026-11-04",
     "AWS What's New:6a144260487c990b3439413a03e5206226a61f43": "2026-11-03",
     "AWS What's New:6b01aa15dfdaff90dbbb86ac3f4ab01fdf22e6f5": "2026-10-20",
     "AWS What's New:6e3e52bdf29c45b355c9969402a561dd38eb99fa": "2026-10-13",
@@ -149,6 +154,7 @@
     "AWS What's New:b5e2645c181344e7a8937c2a0fcb27e23b2263e1": "2026-10-18",
     "AWS What's New:b67137aab065cab2e9c0d1c9305bb73a6268d08b": "2026-10-11",
     "AWS What's New:b7a29c601af051b84bc2ba29ee88822a7398532d": "2026-10-28",
+    "AWS What's New:b98196ed032920a1f754c112d39dc2a641a9b771": "2026-11-04",
     "AWS What's New:bb228c8dc7d26f2dab160da874367138b859b877": "2026-10-26",
     "AWS What's New:bd097fe58f1f5c2a6612b2fad48d8104feacb590": "2026-11-01",
     "AWS What's New:bd3512132333424f74718c5e5f4d7687d63a1839": "2026-11-01",
@@ -192,6 +198,7 @@
     "AWS What's New:f218fc40886c7e7dd5feb0df2b3fabfc4018d8f3": "2026-10-19",
     "AWS What's New:f36dd0823949baaf925b57f75e57b15163665dba": "2026-10-21",
     "AWS What's New:f4695226ea2d8376e6a6dfecb91ff38ac7dbc417": "2026-11-01",
+    "AWS What's New:f493f9bf672ed26d239aa652f0a7cef3ca79fca2": "2026-11-04",
     "AWS What's New:f4d917433faa395c1cda9eaabf6b9569da778e37": "2026-10-15",
     "AWS What's New:f642327ff28e004e9e652e42fd7df6b0bf6202ac": "2026-10-11",
     "AWS What's New:f66cbf1ffc3565baf8fe828d30335c5cf81d64a2": "2026-10-22",
@@ -218,6 +225,8 @@
     "Publickey:tag:www.publickey1.jp,2026://2.8746": "2026-10-27",
     "Publickey:tag:www.publickey1.jp,2026://2.8747": "2026-10-27",
     "Publickey:tag:www.publickey1.jp,2026://2.8748": "2026-10-28",
-    "Publickey:tag:www.publickey1.jp,2026://2.8749": "2026-11-01"
+    "Publickey:tag:www.publickey1.jp,2026://2.8749": "2026-11-01",
+    "Publickey:tag:www.publickey1.jp,2026://2.8750": "2026-11-04",
+    "Publickey:tag:www.publickey1.jp,2026://2.8751": "2026-11-04"
   }
 }
