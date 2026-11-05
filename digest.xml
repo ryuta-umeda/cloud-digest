@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-11-04T00:00:00+09:00</updated><entry><id>digest-2026-11-04</id><title>【クラウドダイジェスト 11/4】</title><updated>2026-11-04T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/4】
+<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-11-05T00:00:00+09:00</updated><entry><id>digest-2026-11-05</id><title>【クラウドダイジェスト 11/5】</title><updated>2026-11-05T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/5】
+今日の 5 件
+1. ECS Managed Instancesのログ収集機能（AWS What's New）
+2. AWS Interconnectプレビュー開始（AWS What's New）
+3. EC2とVPCの関連リソース表示機能（AWS What's New）
+4. 2026年第3四半期のクラウド市場動向（Publickey）
+5. GitHub Copilot Dreaming発表（Publickey）
+
+──────────
+
+1. Amazon ECS Managed Daemons can now collect json-file logs from application containers on Amazon ECS Managed Instances
+Amazon ECS Managed Instancesでjson-fileログドライバーがサポートされ、任意のオブザーバビリティエージェントを使用してアプリケーションログを収集・転送できるようになりました。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ecs-managed-instances-json-file-log-driver/
+
+2. AWS announces AWS Interconnect - last mile preview with Equinix
+EquinixのデータセンターネットワークからAWSへ、数回クリックでマネージドかつプライベートな接続を構築できる機能のプレビューが提供開始されました。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/interconnect-last-mile-preview-equinix/
+
+3. Amazon EC2 and VPC now display related resources for all resource types
+Amazon EC2、Amazon VPC、AWS Global Viewのコンソールにおいて、すべてのリソースタイプで関連リソースが表示されるようになりました。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/ec2-vpc-related-resources-all-types/
+
+4. クラウドインフラのシェア、AWSが26％に後退、Google Cloudは16％に上昇。クラウドインフラ市場全体は過去最大の高成長率へ。2026年第3四半期、Synergy Research
+Synergy Researchの調査により、2026年第3四半期のグローバルクラウドインフラ市場におけるシェア動向や市場全体の高成長率が発表されました。
+→ https://www.publickey1.jp/blog/26/aws26google_cloud1620263synergy_research.html
+
+5. 「GitHub Copilot Dreaming」発表。作業を振り返ってパーソナルメモリやガイダンスをバックグラウンドで整理、アップデート。GitHub Universe 2026
+GitHub Universe 2026にて、作業を振り返ってパーソナルメモリやガイダンスをバックグラウンドで整理する新機能が発表されました。
+→ https://www.publickey1.jp/blog/26/github_copilot_dreaminggithub_universe_2026.html
+
+※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>digest-2026-11-04</id><title>【クラウドダイジェスト 11/4】</title><updated>2026-11-04T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/4】
 今日の 5 件
 1. Amazon Connectでメールの一時停止が可能に（AWS What's New）
 2. Amazon Connectでメールアドレスを自動入力（AWS What's New）
@@ -343,35 +373,5 @@ AWS Transformにて、Azure SDKからAWS SDKへのアプリケーションコー
 5. マイクロソフト、.NETのツールチェーンマネージャ「dotnetup」プレビュー公開。複数バージョンの.NET環境を管理可能
 マイクロソフトが.NETのツールチェーンマネージャ「dotnetup」のプレビュー版を公開しました。 複数の.NET環境や関連ツールをまとめてインストールし、バージョン管理を行うことができます。
 → https://www.publickey1.jp/blog/26/netdotnetupnet.html
-
-※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>digest-2026-10-16</id><title>【クラウドダイジェスト 10/16】</title><updated>2026-10-16T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/16】
-今日の 5 件
-1. EC2 T8iインスタンスがサンパウロで提供開始（AWS What's New）
-2. DynamoDB Streamsがタイムスタンプ処理に対応（AWS What's New）
-3. Go向けLambda Durable Execution SDKが一般提供（AWS What's New）
-4. CloudFrontがVPCオリジンでデュアルスタックをサポート（AWS What's New）
-5. Bun 1.4.3リリース、高速な型チェッカーを搭載（Publickey）
-
-──────────
-
-1. Amazon EC2 T8i instances are now available in South America (São Paulo)
-Intel Xeon 6プロセッサを搭載したAmazon EC2 T8iインスタンスが南米（サンパウロ）リージョンで利用可能になりました。T3インスタンスと比較して最大30%優れた価格性能比を提供します。
-→ https://aws.amazon.com/about-aws/whats-new/2026/10/ec2-t8i-instances-south-america/
-
-2. Amazon DynamoDB Streams now supports timestamp-based stream processing
-Amazon DynamoDB Streamsがタイムスタンプベースのストリーム処理をサポートしました。特定の時点を指定して、その時刻以降に書き込まれた最初のレコードから読み取りを開始できます。
-→ https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-dynamodb-streams-timestamp-processing
-
-3. AWS Lambda Durable Execution SDK for Go is now generally available
-Go開発者がレジリエントで長時間のワークフローを構築できる「AWS Lambda Durable Execution SDK for Go」が一般提供開始されました。
-→ https://aws.amazon.com/about-aws/whats-new/2026/10/aws-lambda-durable-go-sdk-support/
-
-4. Amazon CloudFront announces dual-stack support for VPC origins
-Amazon CloudFrontは、VPC内のオリジンへのエンドツーエンドのIPv6配信をサポートするデュアルスタックVPCオリジンの提供を開始しました。プライベートサブネット内のリソースへIPv6トラフィックを送信できます。
-→ https://aws.amazon.com/about-aws/whats-new/2026/10/cloudfront-vpc-origin-dualstack/
-
-5. AnthropicのBun、TypeScript 7よりも3倍以上高速なTypeScript型チェッカーを搭載。Bunの新バージョン1.4.3で
-JavaScriptランタイム「Bun」の新バージョン1.4.3がリリースされました。Go言語で実装された、TypeScript 7よりも3倍以上高速とされるTypeScript型チェッカーが搭載されています。
-→ https://www.publickey1.jp/blog/26/anthropicbuntypescript_73typescriptbun143.html
 
 ※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry></feed>
