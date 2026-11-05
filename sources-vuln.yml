@@ -1,0 +1,11 @@
+sources:
+  - name: AWS Security Bulletins
+    url: https://aws.amazon.com/security/security-bulletins/feed/
+  - name: Google Cloud Security Bulletins
+    url: https://cloud.google.com/feeds/google-cloud-security-bulletins.xml
+  # MSRC covers every Microsoft product (5,000+ items); keep only the Azure family by title.
+  - name: MSRC (Azure)
+    url: https://api.msrc.microsoft.com/update-guide/rss
+    include: [Azure, Entra, Defender for Cloud]
+  - name: JPCERT/CC
+    url: https://www.jpcert.or.jp/rss/jpcert.rdf

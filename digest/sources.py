@@ -23,4 +23,7 @@ def _parse_source(entry: object) -> Source:
         raise ValueError(f"source is missing 'name': {entry!r}")
     if not isinstance(url, str) or not url.startswith(_ALLOWED_SCHEMES):
         raise ValueError(f"source '{name}' needs an http(s) 'url': {url!r}")
-    return Source(name=name, url=url)
+    include = entry.get("include", [])
+    if not isinstance(include, list) or not all(isinstance(word, str) and word for word in include):
+        raise ValueError(f"source '{name}' 'include' must be a list of non-empty strings: {include!r}")
+    return Source(name=name, url=url, include=tuple(include))

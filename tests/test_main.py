@@ -130,3 +130,15 @@ def test_config_error_propagates_and_publishes_nothing(tmp_path):
     with pytest.raises(LlmConfigError):
         run(NOW, _config(tmp_path), summarizer, _parse(FEED))
     assert not (tmp_path / "digest.xml").exists()
+
+
+def test_vuln_profile_uses_its_own_files_and_labels(tmp_path):
+    sources = tmp_path / "sources-vuln.yml"
+    sources.write_text("sources:\n  - name: AWS\n    url: https://feed/1\n", encoding="utf-8")
+    config = JobConfig(sources, tmp_path, FEED_URL, name="vuln", label="クラウド脆弱性ダイジェスト")
+    run(NOW, config, _summarizer(FakeLlm(GOOD_REPLY)), _parse(FEED))
+    xml = (tmp_path / "digest-vuln.xml").read_text(encoding="utf-8")
+    validate_atom(xml)
+    assert "vuln-2026-10-12" in xml and "クラウド脆弱性ダイジェスト 10/12" in xml
+    assert (tmp_path / "entries-vuln.json").exists() and (tmp_path / "seen-vuln.json").exists()
+    assert not (tmp_path / "digest.xml").exists()

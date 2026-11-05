@@ -32,3 +32,16 @@ def test_load_sources_rejects_non_http_url(tmp_path):
     path = _write(tmp_path, "sources:\n  - name: Bad\n    url: file:///etc/passwd\n")
     with pytest.raises(ValueError):
         load_sources(path)
+
+
+def test_load_sources_reads_include_keywords(tmp_path):
+    path = tmp_path / "s.yml"
+    path.write_text("sources:\n  - name: M\n    url: https://m/\n    include: [Azure, Entra]\n", encoding="utf-8")
+    assert load_sources(path)[0].include == ("Azure", "Entra")
+
+
+def test_load_sources_rejects_bad_include(tmp_path):
+    path = tmp_path / "s.yml"
+    path.write_text("sources:\n  - name: M\n    url: https://m/\n    include: Azure\n", encoding="utf-8")
+    with pytest.raises(ValueError):
+        load_sources(path)

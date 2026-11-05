@@ -6,6 +6,7 @@ from datetime import datetime
 class Source:
     name: str
     url: str
+    include: tuple[str, ...] = ()  # keep only articles whose title has one of these (case-insensitive); () keeps all
 
 
 @dataclass(frozen=True)

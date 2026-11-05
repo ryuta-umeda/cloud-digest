@@ -18,6 +18,11 @@ _FORBIDDEN_IN_SUMMARY = ("http", "://", "■", "→")
 # HTTP codes meaning "our configuration is wrong": retrying or degrading silently would hide it.
 _CONFIG_ERROR_CODES = frozenset({400, 401, 403, 404})
 INITIAL_BACKOFF_SECONDS = 1.0
+NEWS_INSTRUCTION = "以下はクラウド関連の新着記事です。読者の関心が高そうなものを最大{max_items}件選び、"
+VULN_INSTRUCTION = (
+    "以下はクラウド（AWS・Azure・Google Cloud）の脆弱性情報です。"
+    "深刻度や影響が大きく、利用者の対応が必要そうなものを優先して最大{max_items}件選び、"
+)
 _CODE_FENCE_PATTERN = re.compile(r"^```(?:json)?\s*|\s*```$")
 
 
@@ -55,6 +60,7 @@ def summarize(
     llm: LlmClient,
     max_items: int = DEFAULT_MAX_ITEMS,
     sleep: Callable[[float], None] = time.sleep,
+    instruction: str = NEWS_INSTRUCTION,
 ) -> list[DigestItem]:
     """Pick up to `max_items` articles and summarize them in Japanese.
 
@@ -63,7 +69,7 @@ def summarize(
     """
     if not articles:
         return []
-    prompt = _build_prompt(articles, max_items)
+    prompt = _build_prompt(articles, max_items, instruction)
     backoff = INITIAL_BACKOFF_SECONDS
     for attempt in range(MAX_RETRIES + 1):
         try:
@@ -80,12 +86,12 @@ def summarize(
     return _fallback_items(articles, max_items)
 
 
-def _build_prompt(articles: list[Article], max_items: int) -> str:
+def _build_prompt(articles: list[Article], max_items: int, instruction: str = NEWS_INSTRUCTION) -> str:
     listing = "\n".join(
         f"- 出典: {a.source}\n  タイトル: {a.title}\n  URL: {a.url}\n  本文冒頭: {a.text}" for a in articles
     )
     return (
-        f"以下はクラウド関連の新着記事です。読者の関心が高そうなものを最大{max_items}件選び、"
+        f"{instruction.format(max_items=max_items)}"
         "それぞれ日本語で2〜3行に要約し、30字以内の日本語の見出しも付けてください。\n"
         "禁止: 記事にない情報の追加。断定的な推奨。\n"
         '出力は JSON 配列のみ。各要素は {"url": 記事のURL, "headline": 見出し, "summary": 要約} とし、url は下記の記事のものだけを使うこと。\n\n'

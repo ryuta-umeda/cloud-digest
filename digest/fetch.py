@@ -52,7 +52,14 @@ def fetch_articles(
 
 def _to_articles(source: Source, entries: list[Any], since: datetime) -> list[Article]:
     converted = (_to_article(source, entry, since) for entry in entries)
-    return [article for article in converted if article.published >= since]
+    return [a for a in converted if a.published >= since and _matches(source, a.title)]
+
+
+def _matches(source: Source, title: str) -> bool:
+    if not source.include:
+        return True
+    lowered = title.lower()
+    return any(word.lower() in lowered for word in source.include)
 
 
 def _to_article(source: Source, entry: Any, since: datetime) -> Article:

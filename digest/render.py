@@ -14,13 +14,15 @@ _EPOCH = datetime(1970, 1, 1, tzinfo=timezone.utc)
 _INVALID_XML_CHARS = re.compile("[^\x09\x0a\x0d\x20-퟿-�\U00010000-\U0010ffff]")
 
 
-def render_entry(items: list[DigestItem], day: date) -> DigestEntry:
+def render_entry(
+    items: list[DigestItem], day: date, label: str = FEED_TITLE, id_prefix: str = "digest"
+) -> DigestEntry:
     """Overview list first, details after: Viva Engage folds long posts, so the top must stand alone."""
-    heading = f"【クラウドダイジェスト {day.month}/{day.day}】"
+    heading = f"【{label} {day.month}/{day.day}】"
     overview = "\n".join(_render_overview_line(number, item) for number, item in enumerate(items, start=1))
     details = "\n\n".join(_render_detail(number, item) for number, item in enumerate(items, start=1))
     return DigestEntry(
-        id=f"digest-{day.isoformat()}",
+        id=f"{id_prefix}-{day.isoformat()}",
         title=heading,
         published=datetime.combine(day, time(0, 0), tzinfo=JST),
         body=f"{heading}\n今日の {len(items)} 件\n{overview}\n\n{SEPARATOR}\n\n{details}\n\n{DISCLAIMER}",
@@ -39,11 +41,11 @@ def _render_detail(number: int, item: DigestItem) -> str:
     return "\n".join(lines)
 
 
-def build_atom(entries: list[DigestEntry], feed_url: str) -> str:
+def build_atom(entries: list[DigestEntry], feed_url: str, title: str = FEED_TITLE) -> str:
     ElementTree.register_namespace("", ATOM_NS)
     newest_first = sorted(entries, key=lambda entry: entry.published, reverse=True)
     feed = ElementTree.Element(f"{{{ATOM_NS}}}feed")
-    _text_child(feed, "title", FEED_TITLE)
+    _text_child(feed, "title", title)
     _text_child(feed, "id", feed_url)
     _text_child(feed, "updated", (newest_first[0].published if newest_first else _EPOCH).isoformat())
     for entry in newest_first:

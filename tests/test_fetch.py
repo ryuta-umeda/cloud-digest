@@ -117,3 +117,13 @@ def test_default_parser_downloads_with_timeout(monkeypatch):
     parsed = parse_with_timeout("https://feed/1")
     assert captured["timeout"] == FETCH_TIMEOUT_SECONDS
     assert len(parsed.entries) == 1
+
+
+def test_include_keeps_only_matching_titles_case_insensitively():
+    feed = _rss(
+        _item("CVE-1 Azure Key Vault flaw", "https://e/a", "1", "Sun, 11 Oct 2026 03:00:00 GMT")
+        + _item("Windows kernel flaw", "https://e/b", "2", "Sun, 11 Oct 2026 03:00:00 GMT")
+    )
+    source = Source(name="M", url="https://m/", include=("azure",))
+    articles, failed = fetch_articles([source], SINCE, lambda url: feedparser.parse(feed))
+    assert [a.url for a in articles] == ["https://e/a"] and failed == []
