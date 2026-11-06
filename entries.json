@@ -1,5 +1,11 @@
 [
   {
+    "id": "digest-2026-11-06",
+    "title": "【クラウドダイジェスト 11/6】",
+    "published": "2026-11-06T00:00:00+09:00",
+    "body": "【クラウドダイジェスト 11/6】\n今日の 5 件\n1. Bedrock AgentCoreにWeb Answer追加（AWS What's New）\n2. DynamoDBがS3からのバルク書き込みに対応（AWS What's New）\n3. Cognito PlusプランのSLAが99.99%に（AWS What's New）\n4. RDS for OracleがActive Directory連携に対応（AWS What's New）\n5. S3 TablesがHiveからIcebergへの移行を支援（AWS What's New）\n\n──────────\n\n1. Announcing Web Answer on Amazon Bedrock AgentCore\nAmazon Bedrock AgentCoreでWeb Answerが一般提供開始されました。 自然言語の質問に対して現在のウェブソースに基づいた回答を単一の呼び出しで生成します。\n→ https://aws.amazon.com/about-aws/whats-new/2026/11/web-answer-amazon-bedrock/\n\n2. Amazon DynamoDB now supports bulk put items\nAmazon DynamoDBは、Amazon S3から既存のテーブルへデータを書き込める新機能の一般提供を開始しました。 カスタムパイプラインを構築することなくデータを移行できます。\n→ https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-dynamodb-now-supports-bulk-put-items/\n\n3. Amazon Cognito announces 99.99% Service Level Agreement for the Plus feature plan\nAmazon Cognitoは、Plus機能プランのユーザープールに対する月間稼働率のSLAを99.99%に引き上げました。 対象のユーザープールは自動的に新しいSLAの適用対象となります。\n→ https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cognito-sla-update/\n\n4. Amazon RDS for Oracle now supports Kerberos authentication with self-managed Active Directory\nAmazon RDS for Oracleは、セルフマネージドのMicrosoft Active Directoryドメインへの直接参加をサポートしました。 ユーザーはKerberosを使用してデータベースインスタンスへ認証できます。\n→ https://aws.amazon.com/about-aws/whats-new/2026/11/rds-oracle-kerberos-self-managed-ad/\n\n5. Amazon S3 Tables now provide a simple, cost-effective path for data lake modernization\nAmazon S3 Tablesは、Apache HiveテーブルからApache Icebergへのマネージド移行機能の提供を開始しました。 本番ワークロードを稼働させたままデータの検証や変換を行います。\n→ https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-s3-tables-managed-migration-hive-to-iceberg/\n\n※ AIによる自動要約です。正確な情報は元記事を確認してください。"
+  },
+  {
     "id": "digest-2026-11-05",
     "title": "【クラウドダイジェスト 11/5】",
     "published": "2026-11-05T00:00:00+09:00",
@@ -76,11 +82,5 @@
     "title": "【クラウドダイジェスト 10/20】",
     "published": "2026-10-20T00:00:00+09:00",
     "body": "【クラウドダイジェスト 10/20】\n今日の 2 件\n1. Amazon Connectのレジリエンス可視化（AWS What's New）\n2. AWS Lambda Web Functionsの発表（Publickey）\n\n──────────\n\n1. Amazon Connect Customer Global Resiliency now provides business users visibility into resiliency readiness across linked Regions\nAmazon Connect Customer Global Resiliencyに、管理画面でリージョン切り替えの準備状況を一元的に確認できるページが追加されました。同期状態や対応が必要なリソースの一覧を確認できるようになります。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-connect-global-resiliency-readiness-overview\n\n2. AWS LambdaでNext.jsやHonoなどNode.jsフレームワークとアプリをそのままデプロイ、実行できる「AWS Lambda Web Functions」発表\nAWS Lambda上でNext.jsやHono、ExpressなどのNode.jsフレームワークとアプリをそのままデプロイして実行できる新機能が発表されました。サーバレス環境でのアプリ移行や実行を容易にします。\n→ https://www.publickey1.jp/blog/26/aws_lambdanextjshononodejsaws_lambda_web_functions.html\n\n※ AIによる自動要約です。正確な情報は元記事を確認してください。"
-  },
-  {
-    "id": "digest-2026-10-19",
-    "title": "【クラウドダイジェスト 10/19】",
-    "published": "2026-10-19T00:00:00+09:00",
-    "body": "【クラウドダイジェスト 10/19】\n今日の 5 件\n1. CloudWatchのログ集約機能が拡大（AWS What's New）\n2. LambdaのDurable Functions拡大（AWS What's New）\n3. Nemotron 3.5モデル追加（AWS What's New）\n4. AzureからAWSへのコード変換機能（AWS What's New）\n5. .NETツールチェーンマネージャ公開（Publickey）\n\n──────────\n\n1. Amazon CloudWatch log centralization now available in AWS GovCloud and additional commercial Regions\nAmazon CloudWatchのログ一元化機能がAWS GovCloudおよび13の商用リージョンで利用可能になりました。 複数アカウントやリージョンのログデータを単一の宛先アカウントに効率的に集約できます。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-cloudwatch-centralization-region-expansion\n\n2. AWS Lambda durable functions are now available in AWS GovCloud (US) Regions\nAWS Lambdaのdurable functionsがAWS GovCloud (US) リージョンで利用可能になりました。 信頼性の高いマルチステップアプリケーションやAIワークフローの開発をサポートします。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/durablefunctions-govcloud/\n\n3. Nemotron 3.5 Super VL model now available on Amazon SageMaker JumpStart\nNVIDIAの視覚言語モデル「Nemotron 3.5 Super VL」がAmazon SageMaker JumpStartに追加されました。 画像や動画、テキストを入力としてマルチモーダルAIソリューションを構築できます。\n→ https://aws.amazon.com/about-aws/whats-new/2026/01/nvidia-nemotron-3.5-super-vl-on-sagemaker-jumpstart/\n\n4. AWS Transform announces Azure-to-AWS cloud-native code conversion\nAWS Transformにて、Azure SDKからAWS SDKへのアプリケーションコード変換機能が一般提供開始されました。 Microsoft Azureの.NETアプリケーションの移行を加速します。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/aws-transform-azure-to-aws-code-conversion/\n\n5. マイクロソフト、.NETのツールチェーンマネージャ「dotnetup」プレビュー公開。複数バージョンの.NET環境を管理可能\nマイクロソフトが.NETのツールチェーンマネージャ「dotnetup」のプレビュー版を公開しました。 複数の.NET環境や関連ツールをまとめてインストールし、バージョン管理を行うことができます。\n→ https://www.publickey1.jp/blog/26/netdotnetupnet.html\n\n※ AIによる自動要約です。正確な情報は元記事を確認してください。"
   }
 ]
