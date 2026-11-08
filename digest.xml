@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-11-06T00:00:00+09:00</updated><entry><id>digest-2026-11-06</id><title>【クラウドダイジェスト 11/6】</title><updated>2026-11-06T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/6】
+<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-11-09T00:00:00+09:00</updated><entry><id>digest-2026-11-09</id><title>【クラウドダイジェスト 11/9】</title><updated>2026-11-09T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/9】
+今日の 4 件
+1. Kimi K3.1 ProがAmazon Bedrockに登場（AWS What's New）
+2. Agent RegistryがGovCloudに追加（AWS What's New）
+3. EC2 Capacity Blocksの費用償却に対応（AWS What's New）
+4. Security HubにSBOMインベントリ機能（AWS What's New）
+
+──────────
+
+1. Kimi K3.1 Pro (Highspeed) now available on Amazon Bedrock
+Moonshot AIのオープンウェイトモデル「Kimi K3.1 Pro (Highspeed)」がAmazon Bedrockで利用可能になりました。 マルチモーダルなエージェント用途向けに、コーディングや文書処理などの高速な処理をサポートします。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/moonshot-ai-kimi-k3-1-pro-on-amazon-bedrock
+
+2. Agent Registry is now generally available in AWS GovCloud (US-West) Region
+AWS Agent RegistryがAWS GovCloud (US-West)リージョンで一般提供が開始されました。 組織内のMCPサーバーやツール、エージェントなどを一元管理できるカタログ機能を提供します。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/aws-agent-registry-govcloud-us-west/
+
+3. AWS launches support for amortization of EC2 Capacity Blocks for ML
+AWS Cost ExplorerおよびCUR 2.0において、EC2 Capacity Blocks for MLの前払い料金を予約期間全体にわたって償却できるようになりました。 未使用のキャパシティも含めて費用の按分と確認が可能になります。
+→ https://aws.amazon.com/about-aws/whats-new/2026/10/aws-ec2-capacity-blocks-ml/
+
+4. AWS Security Hub now provides an SBOM inventory for your compute resources
+AWS Security Hubが、コンピューティングリソース向けのSBOMインベントリ機能の提供を開始しました。 Amazon Inspectorが生成するSBOMを基に、インストールされているソフトウェアのパッケージ情報を一元管理できます。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/security-hub-sbom-inventory/
+
+※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>digest-2026-11-06</id><title>【クラウドダイジェスト 11/6】</title><updated>2026-11-06T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/6】
 今日の 5 件
 1. Bedrock AgentCoreにWeb Answer追加（AWS What's New）
 2. DynamoDBがS3からのバルク書き込みに対応（AWS What's New）
@@ -358,20 +383,5 @@ AWS Clean RoomsがデータソースとしてDatabricksをサポートしまし�
 5. 「Cloudflare OS」のマネージドサービス提供へ。GitHubとの接続やGmailとの連携強化など
 CloudflareがAIを活用した業務プラットフォーム「Cloudflare OS」のマネージドサービスを発表しました。GitHubとの接続やGmailとの連携強化などが含まれます。
 → https://www.publickey1.jp/blog/26/cloudflare_osgithubgmail.html
-
-※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>digest-2026-10-20</id><title>【クラウドダイジェスト 10/20】</title><updated>2026-10-20T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/20】
-今日の 2 件
-1. Amazon Connectのレジリエンス可視化（AWS What's New）
-2. AWS Lambda Web Functionsの発表（Publickey）
-
-──────────
-
-1. Amazon Connect Customer Global Resiliency now provides business users visibility into resiliency readiness across linked Regions
-Amazon Connect Customer Global Resiliencyに、管理画面でリージョン切り替えの準備状況を一元的に確認できるページが追加されました。同期状態や対応が必要なリソースの一覧を確認できるようになります。
-→ https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-connect-global-resiliency-readiness-overview
-
-2. AWS LambdaでNext.jsやHonoなどNode.jsフレームワークとアプリをそのままデプロイ、実行できる「AWS Lambda Web Functions」発表
-AWS Lambda上でNext.jsやHono、ExpressなどのNode.jsフレームワークとアプリをそのままデプロイして実行できる新機能が発表されました。サーバレス環境でのアプリ移行や実行を容易にします。
-→ https://www.publickey1.jp/blog/26/aws_lambdanextjshononodejsaws_lambda_web_functions.html
 
 ※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry></feed>

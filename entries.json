@@ -1,5 +1,11 @@
 [
   {
+    "id": "digest-2026-11-09",
+    "title": "【クラウドダイジェスト 11/9】",
+    "published": "2026-11-09T00:00:00+09:00",
+    "body": "【クラウドダイジェスト 11/9】\n今日の 4 件\n1. Kimi K3.1 ProがAmazon Bedrockに登場（AWS What's New）\n2. Agent RegistryがGovCloudに追加（AWS What's New）\n3. EC2 Capacity Blocksの費用償却に対応（AWS What's New）\n4. Security HubにSBOMインベントリ機能（AWS What's New）\n\n──────────\n\n1. Kimi K3.1 Pro (Highspeed) now available on Amazon Bedrock\nMoonshot AIのオープンウェイトモデル「Kimi K3.1 Pro (Highspeed)」がAmazon Bedrockで利用可能になりました。 マルチモーダルなエージェント用途向けに、コーディングや文書処理などの高速な処理をサポートします。\n→ https://aws.amazon.com/about-aws/whats-new/2026/11/moonshot-ai-kimi-k3-1-pro-on-amazon-bedrock\n\n2. Agent Registry is now generally available in AWS GovCloud (US-West) Region\nAWS Agent RegistryがAWS GovCloud (US-West)リージョンで一般提供が開始されました。 組織内のMCPサーバーやツール、エージェントなどを一元管理できるカタログ機能を提供します。\n→ https://aws.amazon.com/about-aws/whats-new/2026/11/aws-agent-registry-govcloud-us-west/\n\n3. AWS launches support for amortization of EC2 Capacity Blocks for ML\nAWS Cost ExplorerおよびCUR 2.0において、EC2 Capacity Blocks for MLの前払い料金を予約期間全体にわたって償却できるようになりました。 未使用のキャパシティも含めて費用の按分と確認が可能になります。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/aws-ec2-capacity-blocks-ml/\n\n4. AWS Security Hub now provides an SBOM inventory for your compute resources\nAWS Security Hubが、コンピューティングリソース向けのSBOMインベントリ機能の提供を開始しました。 Amazon Inspectorが生成するSBOMを基に、インストールされているソフトウェアのパッケージ情報を一元管理できます。\n→ https://aws.amazon.com/about-aws/whats-new/2026/11/security-hub-sbom-inventory/\n\n※ AIによる自動要約です。正確な情報は元記事を確認してください。"
+  },
+  {
     "id": "digest-2026-11-06",
     "title": "【クラウドダイジェスト 11/6】",
     "published": "2026-11-06T00:00:00+09:00",
@@ -76,11 +82,5 @@
     "title": "【クラウドダイジェスト 10/21】",
     "published": "2026-10-21T00:00:00+09:00",
     "body": "【クラウドダイジェスト 10/21】\n今日の 5 件\n1. Amazon Pollyの音声エンジンが進化（AWS What's New）\n2. AWS TrainiumのPyTorch対応（AWS What's New）\n3. BedrockのClaudeが構造化出力に対応（AWS What's New）\n4. AWS Clean RoomsでDatabricks対応（AWS What's New）\n5. Cloudflare OSのマネージド提供（Publickey）\n\n──────────\n\n1. Polly Generative engine upgraded with more natural speech, 14 new voices, and 2 new languages\nAmazon Pollyの生成エンジンに新モデルが導入されました。より自然な音声出力に加え、14の新音声とヒンディー語、フィンランド語の2つの新言語が利用可能になります。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/polly-generative/\n\n2. AWS announces TorchNeuron: Native PyTorch Support for AWS Trainium (Public Beta)\nAWS Trainium向けオープンソースのネイティブPyTorchバックエンド「TorchNeuron」のパブリックベータが開始されました。コードを変更せずにTrainium上で実験やモデル構築が行えます。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/aws-announce-native-pytorch-support-trainium\n\n3. Structured outputs for Claude models available on Amazon Bedrock\nAmazon Bedrock上のすべてのAnthropic Claudeモデルで構造化出力がサポートされました。カスタムパースなしで、スキーマに準拠したJSONレスポンスの取得が可能です。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/claude-structured-outputs-bedrock/\n\n4. AWS Clean Rooms now supports Databricks as a data source\nAWS Clean RoomsがデータソースとしてDatabricksをサポートしました。元データを移動や公開することなく、Delta Sharingを介して共有されたテーブルを直接クエリできます。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/aws-clean-rooms-supports-databricks\n\n5. 「Cloudflare OS」のマネージドサービス提供へ。GitHubとの接続やGmailとの連携強化など\nCloudflareがAIを活用した業務プラットフォーム「Cloudflare OS」のマネージドサービスを発表しました。GitHubとの接続やGmailとの連携強化などが含まれます。\n→ https://www.publickey1.jp/blog/26/cloudflare_osgithubgmail.html\n\n※ AIによる自動要約です。正確な情報は元記事を確認してください。"
-  },
-  {
-    "id": "digest-2026-10-20",
-    "title": "【クラウドダイジェスト 10/20】",
-    "published": "2026-10-20T00:00:00+09:00",
-    "body": "【クラウドダイジェスト 10/20】\n今日の 2 件\n1. Amazon Connectのレジリエンス可視化（AWS What's New）\n2. AWS Lambda Web Functionsの発表（Publickey）\n\n──────────\n\n1. Amazon Connect Customer Global Resiliency now provides business users visibility into resiliency readiness across linked Regions\nAmazon Connect Customer Global Resiliencyに、管理画面でリージョン切り替えの準備状況を一元的に確認できるページが追加されました。同期状態や対応が必要なリソースの一覧を確認できるようになります。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-connect-global-resiliency-readiness-overview\n\n2. AWS LambdaでNext.jsやHonoなどNode.jsフレームワークとアプリをそのままデプロイ、実行できる「AWS Lambda Web Functions」発表\nAWS Lambda上でNext.jsやHono、ExpressなどのNode.jsフレームワークとアプリをそのままデプロイして実行できる新機能が発表されました。サーバレス環境でのアプリ移行や実行を容易にします。\n→ https://www.publickey1.jp/blog/26/aws_lambdanextjshononodejsaws_lambda_web_functions.html\n\n※ AIによる自動要約です。正確な情報は元記事を確認してください。"
   }
 ]
