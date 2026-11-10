@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-11-09T00:00:00+09:00</updated><entry><id>digest-2026-11-09</id><title>【クラウドダイジェスト 11/9】</title><updated>2026-11-09T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/9】
+<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-11-10T00:00:00+09:00</updated><entry><id>digest-2026-11-10</id><title>【クラウドダイジェスト 11/10】</title><updated>2026-11-10T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/10】
+今日の 5 件
+1. AWS Glueが100のSaaSコネクタを追加（AWS What's New）
+2. Workdayとのゼロコピー統合（AWS What's New）
+3. ハードウェア分離のNitro Sandboxes（AWS What's New）
+4. CloudWatch Logsの保持ポリシー（AWS What's New）
+5. Route 53 Profilesの複数関連付け（AWS What's New）
+
+──────────
+
+1. AWS Glue adds 100 new native connectors for popular SaaS applications
+AWS GlueがSaaSやREST API向けの100の新しいネイティブコネクタをサポートしました。 カスタムコードを作成することなく、データカタログで一度作成した接続をETLジョブで再利用できます。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/aws-glue-adds-100-new-native-connectors/
+
+2. AWS Analytics services now support Workday Data Cloud integration
+AWS AnalyticsサービスとWorkday Data Cloud間の双方向ゼロコピー統合が発表されました。 ETLパイプラインを構築することなく、データを移動させずに両方の環境のデータセットをクエリできます。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/aws-analytics-workday-data-cloud/
+
+3. Introducing AWS Nitro Sandboxes on Amazon EKS, ECS and EC2 for hardware isolated pods, tasks and VMs
+Amazon EKS、ECS、EC2向けにAWS Nitro Sandboxesが提供開始されました。 Nitroハイパーバイザーにより管理され、マルチテナントや信頼性の低いワークロードをハードウェアレベルで分離します。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/nitro-sandboxes-eks-ecs-ec2/
+
+4. Amazon CloudWatch Logs announces account-level retention policies
+Amazon CloudWatch Logsがアカウントレベルの保持ポリシーをサポートしました。 単一のポリシーを使用して、アカウント内のすべてのロググループの保持期間を設定できるようになります。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cloudwatch-log-retention/
+
+5. Amazon Route 53 Profiles now supports multiple Profiles per VPC
+Amazon Route 53 Profilesで、1つのVPCに対して複数のプロファイル関連付けが可能になりました。 チームごとに異なるDNS設定やファイアウォールルールを独立して管理できるようになります。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/route-53-profiles-multiple-per-vpc/
+
+※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>digest-2026-11-09</id><title>【クラウドダイジェスト 11/9】</title><updated>2026-11-09T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/9】
 今日の 4 件
 1. Kimi K3.1 ProがAmazon Bedrockに登場（AWS What's New）
 2. Agent RegistryがGovCloudに追加（AWS What's New）
@@ -353,35 +383,5 @@ AWS Neuron 2.33が公開され、PyTorchのネイティブバックエンドな�
 5. Cloudflare、TypeScriptをRustに移植した「tsrs」を発表。TypeScript 7より最大で70％少ないメモリで8倍速。今後、LSPなどTypeScriptの全機能をサポート予定
 CloudflareがTypeScriptをRustに移植した「tsrs」を発表しました。 TypeScript 7と比較して少ないメモリと高速な処理を実現し、将来的な全機能サポートを予定しています。
 → https://www.publickey1.jp/blog/26/cloudflaretypescriptrusttsrstypescript_7708lsptypescript.html
-
-※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>digest-2026-10-21</id><title>【クラウドダイジェスト 10/21】</title><updated>2026-10-21T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/21】
-今日の 5 件
-1. Amazon Pollyの音声エンジンが進化（AWS What's New）
-2. AWS TrainiumのPyTorch対応（AWS What's New）
-3. BedrockのClaudeが構造化出力に対応（AWS What's New）
-4. AWS Clean RoomsでDatabricks対応（AWS What's New）
-5. Cloudflare OSのマネージド提供（Publickey）
-
-──────────
-
-1. Polly Generative engine upgraded with more natural speech, 14 new voices, and 2 new languages
-Amazon Pollyの生成エンジンに新モデルが導入されました。より自然な音声出力に加え、14の新音声とヒンディー語、フィンランド語の2つの新言語が利用可能になります。
-→ https://aws.amazon.com/about-aws/whats-new/2026/10/polly-generative/
-
-2. AWS announces TorchNeuron: Native PyTorch Support for AWS Trainium (Public Beta)
-AWS Trainium向けオープンソースのネイティブPyTorchバックエンド「TorchNeuron」のパブリックベータが開始されました。コードを変更せずにTrainium上で実験やモデル構築が行えます。
-→ https://aws.amazon.com/about-aws/whats-new/2026/10/aws-announce-native-pytorch-support-trainium
-
-3. Structured outputs for Claude models available on Amazon Bedrock
-Amazon Bedrock上のすべてのAnthropic Claudeモデルで構造化出力がサポートされました。カスタムパースなしで、スキーマに準拠したJSONレスポンスの取得が可能です。
-→ https://aws.amazon.com/about-aws/whats-new/2026/10/claude-structured-outputs-bedrock/
-
-4. AWS Clean Rooms now supports Databricks as a data source
-AWS Clean RoomsがデータソースとしてDatabricksをサポートしました。元データを移動や公開することなく、Delta Sharingを介して共有されたテーブルを直接クエリできます。
-→ https://aws.amazon.com/about-aws/whats-new/2026/10/aws-clean-rooms-supports-databricks
-
-5. 「Cloudflare OS」のマネージドサービス提供へ。GitHubとの接続やGmailとの連携強化など
-CloudflareがAIを活用した業務プラットフォーム「Cloudflare OS」のマネージドサービスを発表しました。GitHubとの接続やGmailとの連携強化などが含まれます。
-→ https://www.publickey1.jp/blog/26/cloudflare_osgithubgmail.html
 
 ※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry></feed>
