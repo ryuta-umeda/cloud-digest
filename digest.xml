@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-11-11T00:00:00+09:00</updated><entry><id>digest-2026-11-11</id><title>【クラウドダイジェスト 11/11】</title><updated>2026-11-11T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/11】
+<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-11-12T00:00:00+09:00</updated><entry><id>digest-2026-11-12</id><title>【クラウドダイジェスト 11/12】</title><updated>2026-11-12T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/12】
+今日の 5 件
+1. DeepSeek最新モデルが利用可能（AWS What's New）
+2. AWS Cloud WANがFlow Logsに対応（AWS What's New）
+3. EKSのetcdデータベースが容量拡大（AWS What's New）
+4. EKS Auto ModeでPod用セキュリティグループ対応（AWS What's New）
+5. AWS Nitro Sandboxes提供開始（Publickey）
+
+──────────
+
+1. DeepSeek-V4-Pro, DeepSeek-V4-Flash, and DeepSeek-V4.1-Flash models now available on Amazon SageMaker JumpStart
+Amazon SageMaker JumpStartでDeepSeekのV4-Pro、V4-Flash、V4.1-Flashモデルが利用可能になりました。推論やコーディングなどのワークロードで高い効率性と性能を発揮します。
+→ https://aws.amazon.com/about-aws/whats-new/2026/01/deepseek-v4-pro-v4-flash-v4.1-flash-on-sagemaker-jumpstart/
+
+2. AWS Cloud WAN now supports Flow Logs
+AWS Cloud WANがVPC Flow Logsをサポートし、グローバルネットワーク全体のIPトラフィックを一元的に可視化できるようになりました。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/aws-cloud-wan-flow-logs/
+
+3. Amazon EKS Provisioned Control Plane now offers a 24 GB etcd database on 4XL and 8XL tiers
+Amazon EKSのプロビジョンドコントロールプレーンで、4XLおよび8XLTierのetcdデータベースが最大24GBに拡張されました。より大規模なクラスターの実行が可能になります。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-eks-provisioned-control-plane-larger-etcd-database/
+
+4. Amazon EKS Auto Mode now supports security groups for Pods
+Amazon EKS Auto ModeがPod用セキュリティグループをサポートしました。同一ノード上の異なるワークロードに個別のセキュリティルールを適用できます。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-eks-auto-mode-security-groups-for-pods/
+
+5. AWS、AIエージェント向けに強力な隔離環境とネイティブなEC2性能を備えた軽量VM「AWS Nitro Sandboxes」提供開始
+AWSが、EC2インスタンス上でネイティブに近い性能と強力なハードウェアレベルの隔離環境を備えたAIエージェント向けの軽量仮想マシンを提供開始しました。
+→ https://www.publickey1.jp/blog/26/awsaiec2vmaws_nitro_sandboxes.html
+
+※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>digest-2026-11-11</id><title>【クラウドダイジェスト 11/11】</title><updated>2026-11-11T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/11】
 今日の 5 件
 1. Amazon OpenSearchが災害対策を強化（AWS What's New）
 2. ElastiCacheが検索機能に対応（AWS What's New）
@@ -353,35 +383,5 @@ AWS Transit GatewayとAWS Cloud WANが、アタッチメント上で直接1:1の
 4. Amazon EMR on EKS reduces EMR charge by 30 percent
 Amazon EMRは、EKS上でEMRを実行する際に追加されるEMR料金の30%引き下げを発表しました。vCPU時間あたりおよびGB時間あたりの料金が減少し、すべてのワークロードで自動的に適用されます。
 → https://aws.amazon.com/about-aws/whats-new/2026/10/emr-eks-reduces-emr-charge-30-percent/
-
-※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>digest-2026-10-23</id><title>【クラウドダイジェスト 10/23】</title><updated>2026-10-23T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/23】
-今日の 5 件
-1. コード脆弱性検出サービスが一般提供開始（AWS What's New）
-2. 検索のデフォルト更新間隔が5秒に短縮（AWS What's New）
-3. CloudFormationがロールバックを簡素化（AWS What's New）
-4. Lambda MicroVMsが4リージョンで提供（AWS What's New）
-5. ネットワークファイアウォールがIP検証に対応（AWS What's New）
-
-──────────
-
-1. AWS Continuum for code vulnerabilities is now generally available
-AWS環境のコンテキストグラフを構築し、コード脆弱性の発見や優先順位付け、修復をマシン速度で実行する機能が一般提供を開始しました。ビジネスリスクの高い脆弱性を特定し、効率的な対処を支援します。
-→ https://aws.amazon.com/about-aws/whats-new/2026/10/aws-continuum-for-code-vulnerabilities-is-now-generally-available
-
-2. Amazon OpenSearch Serverless now supports a 5-second default refresh interval
-検索およびベクトルコレクションのデフォルトの更新間隔が10秒から5秒に短縮されました。設定変更なしで新しく取り込まれたデータがより迅速に検索可能になります。
-→ https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-opensearch-serverless-supports-5-second-refresh-interval/
-
-3. AWS CloudFormation now simplifies stack update rollback operations
-スタック更新のロールバック時に、自動で戻せないリソースがある場合でも単一操作で強制完了できる機能が追加されました。AWS CLIやSDK、CDKなどから利用可能です。
-→ https://aws.amazon.com/about-aws/whats-new/2026/10/aws-cloudformation-cdk/
-
-4. AWS Lambda MicroVMs is now available in 4 additional AWS regions
-Lambda MicroVMsが香港、マレーシア、タイ、スペインの4つの新しいAWSリージョンで利用可能になりました。これにより合計14リージョンで展開されます。
-→ https://aws.amazon.com/about-aws/whats-new/2026/10/lambda-microvms-4-additional-regions
-
-5. AWS Network Firewall now supports Route 53 Resolved IP Validation
-AWS Network FirewallがRoute 53 Resolverを経由したIP検証をサポートしました。HTTP/HTTPS以外のプロトコルでもドメインベースのフィルタリングが可能になります。
-→ https://aws.amazon.com/about-aws/whats-new/2026/10/network-firewall-route-53-ip-validation/
 
 ※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry></feed>
