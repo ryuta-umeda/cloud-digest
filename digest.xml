@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-11-12T00:00:00+09:00</updated><entry><id>digest-2026-11-12</id><title>【クラウドダイジェスト 11/12】</title><updated>2026-11-12T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/12】
+<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-11-13T00:00:00+09:00</updated><entry><id>digest-2026-11-13</id><title>【クラウドダイジェスト 11/13】</title><updated>2026-11-13T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/13】
+今日の 5 件
+1. Amazon CognitoがOAuth 2.0トークン交換に対応（AWS What's New）
+2. Graviton5ベースのR9gデータベースインスタンスが登場（AWS What's New）
+3. Route 53ドメインのセルフサービス復元が可能に（AWS What's New）
+4. FSx for Lustreのインテリジェント階層化コスト削減（AWS What's New）
+5. Google Antigravityにリモートエージェント機能（Publickey）
+
+──────────
+
+1. Amazon Cognito now supports OAuth 2.0 token exchange
+Amazon CognitoがRFC 8693のOAuth 2.0トークン交換をサポートしました。ユーザーの代わりに動作するサービスやAIエージェントが、トークンを特定のダウンストリームサービス向けに交換できるようになります。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/cognito-token-exchange/
+
+2. Amazon Aurora and RDS now support Graviton5-based R9g database instances
+Amazon AuroraおよびRDSにおいて、Graviton5ベースのR9gインスタンスが一般提供開始されました。従来と比較して最大30%のパフォーマンス向上と最大22%の価格性能比の改善を実現しています。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-aurora-rds-postgresql-mysql-mariadb-r9g-instances/
+
+3. Amazon Route 53 Domains now supports self-service restore for expired and deleted domains
+Amazon Route 53 Domainsで、期限切れや削除されたドメインのセルフサービス復元がサポートされました。コンソールやCLIを使用して、サポートへの依頼なしで自身でドメインを回復できるようになります。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/route-53-domains-self-service-restore/
+
+4. Amazon FSx for Lustre lowers the entry cost of Intelligent-Tiering file systems by 75%
+Amazon FSx for Lustreは、インテリジェント階層化ファイルシステムの最低プロビジョンドスループットとメタデータIOPSを75%削減しました。これにより、HPCや機械学習ワークロードでのコスト効率が向上します。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/fsx-lustre-intelligent-tiering-lower-throughput/
+
+5. Google Antigravity、クラウド上でAIエージェントが働く「リモートエージェント」機能を搭載。就業時間外でもAIエージェントは働き続ける
+GoogleのAIエージェント開発環境「Antigravity」に「リモートエージェント」機能が搭載されました。クラウド上でAIエージェントが就業時間外も含めて継続的に働き続けることが可能になります。
+→ https://www.publickey1.jp/blog/26/google_antigravityaiai.html
+
+※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>digest-2026-11-12</id><title>【クラウドダイジェスト 11/12】</title><updated>2026-11-12T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/12】
 今日の 5 件
 1. DeepSeek最新モデルが利用可能（AWS What's New）
 2. AWS Cloud WANがFlow Logsに対応（AWS What's New）
@@ -358,30 +388,5 @@ AWS EC2 Auto Scalingは、アカウント内のすべてのグループで Launc
 4. AWSとGoogle Cloudが「PyTorch」のAWS Trainium、Google Cloud TPU対応版をオープンソースで公開。NVIDIAからの移行に挑む
 AWSとGoogle CloudがPyTorchの自社AIプロセッサ対応版をオープンソースとして発表しました。 AWS TrainiumやGoogle Cloud TPUに対応しています。
 → https://www.publickey1.jp/blog/26/awsgoogle_cloudpytorchaws_trainiumgoogle_cloud_tpunvidia.html
-
-※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>digest-2026-10-26</id><title>【クラウドダイジェスト 10/26】</title><updated>2026-10-26T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/26】
-今日の 4 件
-1. BedrockのWeb検索が機能追加（AWS What's New）
-2. Connectがチャット機能拡張（AWS What's New）
-3. Transit Gatewayなどが1:1 NAT対応（AWS What's New）
-4. EMR on EKSの料金が30%引き下げ（AWS What's New）
-
-──────────
-
-1. Web Search on Amazon Bedrock now supports domain filtering and user location controls
-Amazon BedrockのWeb Searchが、ドメインフィルタリングとユーザーロケーション制御の2つの新しいコントロールをサポートしました。既存のリクエスト内で信頼できるソースへの制限などが設定可能です。
-→ https://aws.amazon.com/about-aws/whats-new/2026/10/bedrock-web-search-domain-user-location/
-
-2. Amazon Connect Customer Global Resiliency now supports persistent chat across linked AWS Regions
-Amazon Connectのグローバル耐障害性が、連携したAWSリージョン間で永続的なチャットを引き継ぐ機能をサポートしました。エンドユーザーは会話のコンテキストや履歴を保持したままリージョン間で再開できます。
-→ https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-connect-global-resiliency-persistent-chat
-
-3. AWS Transit Gateway and AWS Cloud WAN now support 1:1 NAT
-AWS Transit GatewayとAWS Cloud WANが、アタッチメント上で直接1:1のネットワークアドレス変換（NAT）をサポートしました。重複するIPアドレス範囲を持つプライベートネットワーク同士の接続が可能になります。
-→ https://aws.amazon.com/about-aws/whats-new/2026/10/aws-transit-gateway-cloud-wan-1-1-nat/
-
-4. Amazon EMR on EKS reduces EMR charge by 30 percent
-Amazon EMRは、EKS上でEMRを実行する際に追加されるEMR料金の30%引き下げを発表しました。vCPU時間あたりおよびGB時間あたりの料金が減少し、すべてのワークロードで自動的に適用されます。
-→ https://aws.amazon.com/about-aws/whats-new/2026/10/emr-eks-reduces-emr-charge-30-percent/
 
 ※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry></feed>
