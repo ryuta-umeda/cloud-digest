@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-11-13T00:00:00+09:00</updated><entry><id>digest-2026-11-13</id><title>【クラウドダイジェスト 11/13】</title><updated>2026-11-13T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/13】
+<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-11-16T00:00:00+09:00</updated><entry><id>digest-2026-11-16</id><title>【クラウドダイジェスト 11/16】</title><updated>2026-11-16T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/16】
+今日の 5 件
+1. Aurora PostgreSQLの迅速な設定（AWS What's New）
+2. RDS for Oracleの停止時間短縮（AWS What's New）
+3. Security Hubの組織ポリシー対応（AWS What's New）
+4. Secrets Managerのクロスアカウント複製（AWS What's New）
+5. Google Cloud VMの統合管理（AWS What's New）
+
+──────────
+
+1. Aurora PostgreSQL with express configuration now supported in CloudFormation
+AWS CloudFormationでのAurora PostgreSQLの迅速な設定が可能になりました。インフラストラクチャのデプロイを自動化し、数秒でサーバーレスデータベースを作成してクエリを実行できます。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/aurora-postgresql-cloudformation/
+
+2. Amazon RDS for Oracle reduces downtime for automatic minor version upgrades and scheduled maintenance
+Amazon RDS for Oracleは、自動マイナーバージョンアップグレードやスケジュールされたメンテナンス時のダウンタイムを削減します。アプリケーションへの影響を抑えながら最新バージョンへの維持が容易になります。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/rds-oracle-reduces-maintenance-downtime-for-amvu-scheduled-upgrades/
+
+3. AWS Security Hub CSPM now supports centralized configuration with AWS Organizations declarative policies
+AWS Security Hub CSPMがAWS Organizationsの宣言的ポリシーをサポートしました。組織内の全アカウントとリージョンで構成の統一と設定ドリフトの防止が可能になります。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/security-hub-cspm-org-policies/
+
+4. AWS Secrets Manager now supports cross-account replication
+AWS Secrets Managerがクロスアカウント複製をサポートしました。セカンダリAWSアカウントでプライマリシークレットの同期コピーを維持し、バックアップや災害復旧に活用できます。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/secrets-manager-cross-account/
+
+5. AWS Systems Manager simplifies onboarding of Google Cloud VMs for centralized management
+AWS Systems Manager Cloud ConnectorがGoogle Cloudに対応しました。手動のエージェントインストールなしで既存のGoogle Cloud VMを接続し、一元管理が可能になります。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/systems-manager-google-cloud-support/
+
+※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>digest-2026-11-13</id><title>【クラウドダイジェスト 11/13】</title><updated>2026-11-13T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/13】
 今日の 5 件
 1. Amazon CognitoがOAuth 2.0トークン交換に対応（AWS What's New）
 2. Graviton5ベースのR9gデータベースインスタンスが登場（AWS What's New）
@@ -363,30 +393,5 @@ Amazon ECRが既存コンテナイメージのレプリケーションバック�
 5. JavaScriptランタイムの「Bun」がPrettier互換で300倍以上高速なフォーマッタに。Prettier設定ファイルもそのまま利用可能
 JavaScriptランタイムの「Bun」にPrettier互換で300倍以上高速なフォーマッタが搭載されました。既存のPrettier設定ファイルもそのまま利用可能です。
 → https://www.publickey1.jp/blog/26/javascriptbunprettier300prettier.html
-
-※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>digest-2026-10-27</id><title>【クラウドダイジェスト 10/27】</title><updated>2026-10-27T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/27】
-今日の 4 件
-1. OpenAI GPT-6.1 Terraが提供開始（AWS What's New）
-2. ModifyVolume APIに対応（AWS What's New）
-3. アカウント単位での置換動作に対応（AWS What's New）
-4. PyTorchの自社AIプロセッサ版が公開（Publickey）
-
-──────────
-
-1. OpenAI GPT-6.1 Terra is now generally available on Amazon Bedrock
-Amazon BedrockでOpenAI GPT-6.1 Terraが一般提供を開始しました。 日常的なワークロードに向けて、能力、速度、コスト効率のバランスを実現しています。
-→ https://aws.amazon.com/about-aws/whats-new/2026/10/openai-gpt-6-1-terra-on-amazon-bedrock/
-
-2. Amazon WorkSpaces Core Managed Instances now supports ModifyVolume API
-Amazon WorkSpaces Core Managed InstancesがModifyVolume APIをサポートしました。 ボリュームの切り離しやインスタンスの再起動なしで、ボリュームの変更が可能です。
-→ https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-workspaces-cmi-modifyvolume/
-
-3. AWS EC2 Auto Scaling now supports Launch Before Terminate at account-level to replace instances
-AWS EC2 Auto Scalingは、アカウント内のすべてのグループで Launch Before Terminate をデフォルトの置換動作として有効にできるようになりました。 インスタンス置換イベント時にアプリケーションの容量維持を支援します。
-→ https://aws.amazon.com/about-aws/whats-new/2026/10/ec2-auto-scaling-launch-before-terminate/
-
-4. AWSとGoogle Cloudが「PyTorch」のAWS Trainium、Google Cloud TPU対応版をオープンソースで公開。NVIDIAからの移行に挑む
-AWSとGoogle CloudがPyTorchの自社AIプロセッサ対応版をオープンソースとして発表しました。 AWS TrainiumやGoogle Cloud TPUに対応しています。
-→ https://www.publickey1.jp/blog/26/awsgoogle_cloudpytorchaws_trainiumgoogle_cloud_tpunvidia.html
 
 ※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry></feed>
