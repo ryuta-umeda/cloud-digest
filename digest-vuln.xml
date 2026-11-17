@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウド脆弱性ダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest-vuln.xml</id><updated>2026-11-17T00:00:00+09:00</updated><entry><id>vuln-2026-11-17</id><title>【クラウド脆弱性ダイジェスト 11/17】</title><updated>2026-11-17T00:00:00+09:00</updated><content type="text">【クラウド脆弱性ダイジェスト 11/17】
+今日の 3 件
+1. Deep Java Libraryのファイル読み取り脆弱性（AWS Security Bulletins）
+2. aws-pricing-mcp-serverのファイル書き込み（AWS Security Bulletins）
+3. Timestream MCP Serverの接続設定不備（AWS Security Bulletins）
+
+──────────
+
+1. CVE-2026-129266 - Arbitrary local file read via unvalidated resource location in model archive metadata in Deep Java Library
+Deep Java Libraryにファイルパスの外部制御に関する脆弱性が存在します。細工されたモデルアーカイブにより、ライブラリプロセスがアクセス可能な任意のファイルを第三者が読み取れる可能性があります。
+→ https://aws.amazon.com/security/security-bulletins/rss/2026-183-aws/
+
+2. CVE-2026-126816 - Path traversal and arbitrary file write in the cost report generator of aws-pricing-mcp-server
+AWS Pricing MCP Serverのコストレポート生成ツールにパスの制限不備があります。MCPエージェントに影響を与えるアクターが、意図しない外部の場所へ任意のコンテンツを書き込める可能性があります。
+→ https://aws.amazon.com/security/security-bulletins/rss/2026-184-aws/
+
+3. CVE-2026-126681 - Improper restriction of intended endpoints in AWS Labs Timestream for InfluxDB MCP Server
+AWS Labs Timestream for InfluxDB MCP Serverの接続設定処理に不備があります。プロンプトインジェクション等により、設定されたInfluxDB APIトークンが外部に取得される可能性があります。
+→ https://aws.amazon.com/security/security-bulletins/rss/2026-185-aws/
+
+※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry></feed>

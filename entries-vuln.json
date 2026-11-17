@@ -1,0 +1,8 @@
+[
+  {
+    "id": "vuln-2026-11-17",
+    "title": "【クラウド脆弱性ダイジェスト 11/17】",
+    "published": "2026-11-17T00:00:00+09:00",
+    "body": "【クラウド脆弱性ダイジェスト 11/17】\n今日の 3 件\n1. Deep Java Libraryのファイル読み取り脆弱性（AWS Security Bulletins）\n2. aws-pricing-mcp-serverのファイル書き込み（AWS Security Bulletins）\n3. Timestream MCP Serverの接続設定不備（AWS Security Bulletins）\n\n──────────\n\n1. CVE-2026-129266 - Arbitrary local file read via unvalidated resource location in model archive metadata in Deep Java Library\nDeep Java Libraryにファイルパスの外部制御に関する脆弱性が存在します。細工されたモデルアーカイブにより、ライブラリプロセスがアクセス可能な任意のファイルを第三者が読み取れる可能性があります。\n→ https://aws.amazon.com/security/security-bulletins/rss/2026-183-aws/\n\n2. CVE-2026-126816 - Path traversal and arbitrary file write in the cost report generator of aws-pricing-mcp-server\nAWS Pricing MCP Serverのコストレポート生成ツールにパスの制限不備があります。MCPエージェントに影響を与えるアクターが、意図しない外部の場所へ任意のコンテンツを書き込める可能性があります。\n→ https://aws.amazon.com/security/security-bulletins/rss/2026-184-aws/\n\n3. CVE-2026-126681 - Improper restriction of intended endpoints in AWS Labs Timestream for InfluxDB MCP Server\nAWS Labs Timestream for InfluxDB MCP Serverの接続設定処理に不備があります。プロンプトインジェクション等により、設定されたInfluxDB APIトークンが外部に取得される可能性があります。\n→ https://aws.amazon.com/security/security-bulletins/rss/2026-185-aws/\n\n※ AIによる自動要約です。正確な情報は元記事を確認してください。"
+  }
+]
