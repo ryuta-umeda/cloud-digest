@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-11-16T00:00:00+09:00</updated><entry><id>digest-2026-11-16</id><title>【クラウドダイジェスト 11/16】</title><updated>2026-11-16T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/16】
+<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-11-17T00:00:00+09:00</updated><entry><id>digest-2026-11-17</id><title>【クラウドダイジェスト 11/17】</title><updated>2026-11-17T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/17】
+今日の 5 件
+1. ECRが画像削除のレプリケーションに対応（AWS What's New）
+2. S3 Vectorsがハイブリッド検索に対応（AWS What's New）
+3. RedshiftがIcebergの高度な機能に対応（AWS What's New）
+4. IAM Identity CenterがVPCエンドポイント対応（AWS What's New）
+5. Hyperlight-Unikraftが登場（Publickey）
+
+──────────
+
+1. Amazon ECR now replicates image deletions across regions and accounts
+Amazon ECRが、レプリケーション先への画像削除およびタグ削除の同期をサポートしました。これにより、マルチリージョンやマルチアカウント環境において、手動での削除管理が不要になりリポジトリの整合性を自動で維持できます。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/replication-deletes-amazon-ecr
+
+2. Amazon S3 Vectors now supports hybrid search combining vector and full text for more relevant search results
+Amazon S3 Vectorsが、ベクトル類似度検索と全文検索を単一のクエリで組み合わせるハイブリッド検索をサポートしました。意図と正確な用語一致の両方を捉え、RAGや検索アプリケーションにおいてより関連性の高い結果を提供します。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/s3-vectors-hybrid-search/
+
+3. Amazon Redshift now supports multi-statement transactions, conflict resolution, and time travel for Apache Iceberg
+Amazon Redshiftが、Apache Icebergテーブル向けにマルチステートメントトランザクション、競合解決、タイムトラベル機能をサポートしました。データウェアハウスのセマンティクスを維持しながら、本番スケールでの柔軟なデータ処理が可能になります。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/redshift-time-travel-multi-statement
+
+4. IAM Identity Center now supports VPC endpoints and network access controls
+AWS IAM Identity CenterがインターフェイスVPCエンドポイントおよびネットワークアクセス制御をサポートしました。これにより通信をプライベートに保ち、サービスへのアクセス元ネットワークを制限できるようになります。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/iam-identity-center-vpc-endpoints/
+
+5. 軽量なマイクロVMでネイティブよりアプリを高速起動できる「Hyperlight-Unikraft」登場
+Linuxアプリケーションを再コンパイルせずに、Unikernelのような軽量な実行環境で仮想マシンの堅牢な隔離環境とともに実行できる技術が登場しました。ネイティブよりも高速なアプリケーション起動を実現します。
+→ https://www.publickey1.jp/blog/26/vmhyperlight-unikraft.html
+
+※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>digest-2026-11-16</id><title>【クラウドダイジェスト 11/16】</title><updated>2026-11-16T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/16】
 今日の 5 件
 1. Aurora PostgreSQLの迅速な設定（AWS What's New）
 2. RDS for Oracleの停止時間短縮（AWS What's New）
@@ -363,35 +393,5 @@ Amazon ECSがNVIDIA Multi-Process Service（MPS）によるGPU共有をサポー
 5. オラクル、社員が業務アプリをAIで自動作成、Oracle Cloud上で共有できる「Oracle App Composer」発表。Oracle AI World 2026
 オラクルは社員がAIを使って業務アプリを自動生成し、Oracle Cloud上で共有できる「Oracle App Composer」を発表しました。Oracle AI World 2026で公開された新機能です。
 → https://www.publickey1.jp/blog/26/aioracle_cloudoracle_app_composeroracle_ai_world_2026.html
-
-※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>digest-2026-10-28</id><title>【クラウドダイジェスト 10/28】</title><updated>2026-10-28T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/28】
-今日の 5 件
-1. SageMaker MLflowがv3.16に対応（AWS What's New）
-2. Aurora Serverlessが容量拡大（AWS What's New）
-3. ElastiCache for Valkeyの耐久性変更（AWS What's New）
-4. ECRが既存イメージのレプリケーションに対応（AWS What's New）
-5. Bunが高速なフォーマッタ機能を搭載（Publickey）
-
-──────────
-
-1. SageMaker MLflow Apps now support MLflow 3.16
-Amazon SageMaker AIのMLflow AppsがMLflow 3.16をサポートしました。生成AIワークフロー向けに、再設計されたトレース機能や高速な実験トラッキングを提供します。
-→ https://aws.amazon.com/about-aws/whats-new/2026/10/mflow-version-3-16/
-
-2. Amazon Aurora serverless now supports up to 384 ACUs
-PostgreSQL互換のAmazon Aurora Serverlessが最大384ACUまでのデータベース容量をサポートしました。従来の上限から50%増加し、ワークフロー完了時にはゼロまでスケールダウンします。
-→ https://aws.amazon.com/about-aws/whats-new/2026/10/aurora-serverless-supports-384-acu/
-
-3. Amazon ElastiCache for Valkey now supports changing durability on existing clusters
-既存のノードベースクラスターで耐久性の有効化や無効化の切り替えが可能になりました。新規クラスターを作成することなく、アプリケーションの要件変化に合わせて設定変更が行えます。
-→ https://aws.amazon.com/about-aws/whats-new/2026/10/elasticache-changing-durability/
-
-4. Amazon ECR now supports replication backfill for existing container images
-Amazon ECRが既存コンテナイメージのレプリケーションバックフィルをサポートしました。プライベートレジストリ内の既存イメージを、設定したレプリケーション先に複製できるようになります。
-→ https://aws.amazon.com/about-aws/whats-new/2026/10/replication-backfill-amazon-ecr
-
-5. JavaScriptランタイムの「Bun」がPrettier互換で300倍以上高速なフォーマッタに。Prettier設定ファイルもそのまま利用可能
-JavaScriptランタイムの「Bun」にPrettier互換で300倍以上高速なフォーマッタが搭載されました。既存のPrettier設定ファイルもそのまま利用可能です。
-→ https://www.publickey1.jp/blog/26/javascriptbunprettier300prettier.html
 
 ※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry></feed>
