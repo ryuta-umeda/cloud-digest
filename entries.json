@@ -1,5 +1,11 @@
 [
   {
+    "id": "digest-2026-11-19",
+    "title": "【クラウドダイジェスト 11/19】",
+    "published": "2026-11-19T00:00:00+09:00",
+    "body": "【クラウドダイジェスト 11/19】\n今日の 5 件\n1. OpenSearchのAIエージェント向け永続メモリ（AWS What's New）\n2. SageMakerのクロスリージョン推論ルーティング（AWS What's New）\n3. AWS Glue向けSpark最適化エージェント（AWS What's New）\n4. ElastiCacheのLLM向け分散KVキャッシュ（AWS What's New）\n5. マイクロソフトの「Microsoft Perception」（Publickey）\n\n──────────\n\n1. Amazon OpenSearch Memory is now generally available\nAmazon OpenSearch Memoryが一般提供を開始しました。AIエージェントに永続メモリを追加するサーバーレス機能で、セッション間でやり取りやコンテキストを記憶できます。\n→ https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-opensearch-memory-generally-available/\n\n2. Amazon SageMaker AI now supports cross-Region inference routing\nAmazon SageMaker AIがクロスリージョン推論ルーティングのサポートを発表しました。リージョンの容量不足時に他リージョンのエンドポイントへリクエストを送信し、可用性を維持します。\n→ https://aws.amazon.com/about-aws/whats-new/2026/11/sagemaker-cross-region-routing/\n\n3. Introducing the Apache Spark Optimization Agent for AWS Glue ETL\nAWS Glue ETLでApache Spark Optimization Agentが利用可能になりました。完了したSparkジョブを分析し、数分でコストとパフォーマンスの最適化提案を行います。\n→ https://aws.amazon.com/about-aws/whats-new/2026/11/apache-spark-aws-glue-etl/\n\n4. Amazon ElastiCache now supports distributed KV caching for self-hosted LLM inference\nAmazon ElastiCache for Valkeyが分散KVキャッシュの提供を開始しました。セルフホスト型LLMの推論コスト削減と初回トークン生成時間の短縮を支援します。\n→ https://aws.amazon.com/about-aws/whats-new/2026/11/announcing-distributed-kv-caching-for-self-hosted-llms-with-amazon-elasticache/\n\n5. マイクロソフト、AIによるサイバー攻撃にAIエージェントで対抗する新サービス「Microsoft Perception」提供開始\nマイクロソフトは、AIによるサイバー攻撃に対抗するためのAIエージェントを活用した新サービス「Microsoft Perception」の提供開始を発表しました。\n→ https://www.publickey1.jp/blog/26/aiaimicrosoft_perception.html\n\n※ AIによる自動要約です。正確な情報は元記事を確認してください。"
+  },
+  {
     "id": "digest-2026-11-18",
     "title": "【クラウドダイジェスト 11/18】",
     "published": "2026-11-18T00:00:00+09:00",
@@ -76,11 +82,5 @@
     "title": "【クラウドダイジェスト 11/2】",
     "published": "2026-11-02T00:00:00+09:00",
     "body": "【クラウドダイジェスト 11/2】\n今日の 5 件\n1. CloudFrontがISPとTLS詳細を提供（AWS What's New）\n2. Amazon MSKがTLS 1.3に対応（AWS What's New）\n3. Amazon Connectがメールを下書き保存（AWS What's New）\n4. SageMakerがGPUパーティショニングに対応（AWS What's New）\n5. AWS WAFがCloudFrontと自動SDK連携（AWS What's New）\n\n──────────\n\n1. Amazon CloudFront now provides viewer ISP and post-quantum TLS details\nAmazon CloudFrontは、ビューアーのISP名やTLS接続の暗号化方式をオリジンへ転送する新ヘッダーの提供を開始しました。これにより、ネットワーク別のトラフィック分析やポスト量子暗号の利用状況確認が可能になります。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/cloudfront-viewer-isp-post-quantum-visbility/\n\n2. Amazon MSK now supports TLS 1.3 for data in transit\nAmazon MSKは、プロビジョンドクラスター向けにTLSプロトコルバージョン1.3のサポートを開始しました。より高速で安全な暗号化を実現し、企業のセキュリティ基準やコンプライアンス要件に対応します。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-msk-tls/\n\n3. Amazon Connect Customer automatically saves in-progress emails as drafts\nAmazon Connect Customerは、作成中のメールを自動的に下書き保存する機能を追加しました。接続切断やブラウザの閉鎖時でも作業を再開でき、S3バケット経由で外部アプリ連携も可能です。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-connect-email-draft-save/\n\n4. Amazon SageMaker AI inference now supports GPU partitioning for real-time endpoints\nAmazon SageMaker AI推論は、リアルタイムエンドポイント向けのGPUパーティショニングをサポートしました。MIG技術により1つのGPUで複数モデルを実行し、リソース効率を高められます。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/sagemaker-gpu-partitioning/\n\n5. AWS WAF announces automatic SDK integration for Amazon CloudFront distributions\nAWS WAFは、Amazon CloudFrontディストリビューション向けの自動SDK統合を発表しました。アプリケーションコードを変更せずにJavaScript SDKのスクリプトタグを追加できます。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/aws-waf-automatic-sdk-integration-amazon-cloudfront/\n\n※ AIによる自動要約です。正確な情報は元記事を確認してください。"
-  },
-  {
-    "id": "digest-2026-10-30",
-    "title": "【クラウドダイジェスト 10/30】",
-    "published": "2026-10-30T00:00:00+09:00",
-    "body": "【クラウドダイジェスト 10/30】\n今日の 1 件\n1. RDS for Oracle/SQLのストレージ自動拡張（AWS What's New）\n\n──────────\n\n1. Amazon RDS for Oracle and SQL Server now support storage autoscaling on additional storage volumes\nAmazon RDS for OracleおよびSQL Serverが、追加ストレージボリュームでのストレージ自動スケーリングをサポートしました。 データベースのワークロード増加に応じて、ダウンタイムなしで最大4つのボリュームと合計256 TiBまで容量を自動拡張します。\n→ https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-rds-oracle-sqlserver-autoscaling-additional-storage-volumes\n\n※ AIによる自動要約です。正確な情報は元記事を確認してください。"
   }
 ]

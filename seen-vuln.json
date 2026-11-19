@@ -1,6 +1,7 @@
 {
-  "last_run": "2026-11-18T01:39:40.174242+00:00",
+  "last_run": "2026-11-19T01:16:32.569081+00:00",
   "seen": {
+    "AWS Security Bulletins:24fde24e1c343ffce5617fb9bccf5941e64f535b": "2026-11-19",
     "AWS Security Bulletins:465c3dbae5c9b8fe3b3dae9fb6fd5bf9be0aaac4": "2026-11-18",
     "AWS Security Bulletins:54788f8c676b1547122542050a6b12ac04d037ea": "2026-11-17",
     "AWS Security Bulletins:d3adfc1fe68bc634cee1e4a3f237a01374373147": "2026-11-17",

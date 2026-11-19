@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウド脆弱性ダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest-vuln.xml</id><updated>2026-11-18T00:00:00+09:00</updated><entry><id>vuln-2026-11-18</id><title>【クラウド脆弱性ダイジェスト 11/18】</title><updated>2026-11-18T00:00:00+09:00</updated><content type="text">【クラウド脆弱性ダイジェスト 11/18】
+<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウド脆弱性ダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest-vuln.xml</id><updated>2026-11-19T00:00:00+09:00</updated><entry><id>vuln-2026-11-19</id><title>【クラウド脆弱性ダイジェスト 11/19】</title><updated>2026-11-19T00:00:00+09:00</updated><content type="text">【クラウド脆弱性ダイジェスト 11/19】
+今日の 1 件
+1. AutoGluonのパストラバーサル脆弱性（AWS Security Bulletins）
+
+──────────
+
+1. CVE-2026-130638 - Path traversal in the object detection dataset preparation tool in AutoGluon MultiModal
+AutoGluon MultiModalの物体検出データセット準備ツールにおいて、相対パスパストラバーサルの脆弱性が確認されました。細工されたデータセットにより、攻撃者が任意のファイルを書き込める可能性があります。
+→ https://aws.amazon.com/security/security-bulletins/rss/2026-188-aws/
+
+※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>vuln-2026-11-18</id><title>【クラウド脆弱性ダイジェスト 11/18】</title><updated>2026-11-18T00:00:00+09:00</updated><content type="text">【クラウド脆弱性ダイジェスト 11/18】
 今日の 8 件
 1. AWS efs-utilsのTOCTOU競合状態（AWS Security Bulletins）
 2. Kubernetes用Private CAの認可不備（AWS Security Bulletins）

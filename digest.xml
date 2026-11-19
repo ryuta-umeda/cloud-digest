@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-11-18T00:00:00+09:00</updated><entry><id>digest-2026-11-18</id><title>【クラウドダイジェスト 11/18】</title><updated>2026-11-18T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/18】
+<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-11-19T00:00:00+09:00</updated><entry><id>digest-2026-11-19</id><title>【クラウドダイジェスト 11/19】</title><updated>2026-11-19T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/19】
+今日の 5 件
+1. OpenSearchのAIエージェント向け永続メモリ（AWS What's New）
+2. SageMakerのクロスリージョン推論ルーティング（AWS What's New）
+3. AWS Glue向けSpark最適化エージェント（AWS What's New）
+4. ElastiCacheのLLM向け分散KVキャッシュ（AWS What's New）
+5. マイクロソフトの「Microsoft Perception」（Publickey）
+
+──────────
+
+1. Amazon OpenSearch Memory is now generally available
+Amazon OpenSearch Memoryが一般提供を開始しました。AIエージェントに永続メモリを追加するサーバーレス機能で、セッション間でやり取りやコンテキストを記憶できます。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-opensearch-memory-generally-available/
+
+2. Amazon SageMaker AI now supports cross-Region inference routing
+Amazon SageMaker AIがクロスリージョン推論ルーティングのサポートを発表しました。リージョンの容量不足時に他リージョンのエンドポイントへリクエストを送信し、可用性を維持します。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/sagemaker-cross-region-routing/
+
+3. Introducing the Apache Spark Optimization Agent for AWS Glue ETL
+AWS Glue ETLでApache Spark Optimization Agentが利用可能になりました。完了したSparkジョブを分析し、数分でコストとパフォーマンスの最適化提案を行います。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/apache-spark-aws-glue-etl/
+
+4. Amazon ElastiCache now supports distributed KV caching for self-hosted LLM inference
+Amazon ElastiCache for Valkeyが分散KVキャッシュの提供を開始しました。セルフホスト型LLMの推論コスト削減と初回トークン生成時間の短縮を支援します。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/announcing-distributed-kv-caching-for-self-hosted-llms-with-amazon-elasticache/
+
+5. マイクロソフト、AIによるサイバー攻撃にAIエージェントで対抗する新サービス「Microsoft Perception」提供開始
+マイクロソフトは、AIによるサイバー攻撃に対抗するためのAIエージェントを活用した新サービス「Microsoft Perception」の提供開始を発表しました。
+→ https://www.publickey1.jp/blog/26/aiaimicrosoft_perception.html
+
+※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>digest-2026-11-18</id><title>【クラウドダイジェスト 11/18】</title><updated>2026-11-18T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/18】
 今日の 5 件
 1. Amazon EMR 8.2提供開始（AWS What's New）
 2. Graviton4搭載C8gnインスタンス（AWS What's New）
@@ -383,15 +413,5 @@ Amazon SageMaker AI推論は、リアルタイムエンドポイント向けのG
 5. AWS WAF announces automatic SDK integration for Amazon CloudFront distributions
 AWS WAFは、Amazon CloudFrontディストリビューション向けの自動SDK統合を発表しました。アプリケーションコードを変更せずにJavaScript SDKのスクリプトタグを追加できます。
 → https://aws.amazon.com/about-aws/whats-new/2026/10/aws-waf-automatic-sdk-integration-amazon-cloudfront/
-
-※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>digest-2026-10-30</id><title>【クラウドダイジェスト 10/30】</title><updated>2026-10-30T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 10/30】
-今日の 1 件
-1. RDS for Oracle/SQLのストレージ自動拡張（AWS What's New）
-
-──────────
-
-1. Amazon RDS for Oracle and SQL Server now support storage autoscaling on additional storage volumes
-Amazon RDS for OracleおよびSQL Serverが、追加ストレージボリュームでのストレージ自動スケーリングをサポートしました。 データベースのワークロード増加に応じて、ダウンタイムなしで最大4つのボリュームと合計256 TiBまで容量を自動拡張します。
-→ https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-rds-oracle-sqlserver-autoscaling-additional-storage-volumes
 
 ※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry></feed>
