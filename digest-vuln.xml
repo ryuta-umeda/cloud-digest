@@ -1,5 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウド脆弱性ダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest-vuln.xml</id><updated>2026-11-19T00:00:00+09:00</updated><entry><id>vuln-2026-11-19</id><title>【クラウド脆弱性ダイジェスト 11/19】</title><updated>2026-11-19T00:00:00+09:00</updated><content type="text">【クラウド脆弱性ダイジェスト 11/19】
+<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウド脆弱性ダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest-vuln.xml</id><updated>2026-11-20T00:00:00+09:00</updated><entry><id>vuln-2026-11-20</id><title>【クラウド脆弱性ダイジェスト 11/20】</title><updated>2026-11-20T00:00:00+09:00</updated><content type="text">【クラウド脆弱性ダイジェスト 11/20】
+今日の 8 件
+1. OpenJDKのメモリ書き込み問題（AWS Security Bulletins）
+2. PHPの複数セキュリティ修正（AWS Security Bulletins）
+3. PHP用S3クライアントの脆弱性（AWS Security Bulletins）
+4. nginxのHTTP/2実装に関する問題（AWS Security Bulletins）
+5. Rubyの正規表現と文字列変換の修正（AWS Security Bulletins）
+6. VMware製品の脆弱性について（Google Cloud Security Bulletins）
+7. vCenter等の重大な脆弱性（Google Cloud Security Bulletins）
+8. Google Cloudのパストラバーサル（Google Cloud Security Bulletins）
+
+──────────
+
+1. CVE-2026-114938 - OpenJDK Base64 Decoder Intrinsic Out-of-Bounds Write Issue
+x86-64プロセッサのAVX-512 VBMIをサポートする環境のOpenJDK 17.0.6以降のBase64デコーダーでメモリ問題が確認されています。修正版は11月2026 OpenJDKアップデートで提供されており、AWSは対応を進めています。
+→ https://aws.amazon.com/security/security-bulletins/rss/2026-189-aws/
+
+2. PHP Foundation Security Releases – November 19, 2026
+PHP Foundationが公開したセキュリティリリースにより、PHP 8.2、8.3、8.4、8.5の各バージョンで17件の問題が修正されました。PHPエンジンや複数拡張機能などが影響を受けます。
+→ https://aws.amazon.com/security/security-bulletins/rss/2026-190-aws/
+
+3. CVE-2026-132607 - GCM authentication tag length downgrade in Amazon S3 Encryption Client for PHP
+AWS SDK for PHPのAmazon S3 Encryption Clientにおいて、AES-GCM認証タグの長さを検証しない問題が確認されました。細工された暗号文により任意の平文へ復号される可能性があります。
+→ https://aws.amazon.com/security/security-bulletins/rss/2026-191-aws/
+
+4. Issue with nginx HTTP/2 Implementation
+nginxのHTTP/2実装における複数の脆弱性に対処するため、バージョン1.30.7および1.31.9が公開されました。AWSでは最新版へのアップグレード推奨と世界中での緩和策適用が行われています。
+→ https://aws.amazon.com/security/security-bulletins/rss/2026-192-aws/
+
+5. CVE-2026-132825 and related issues – Ruby regular expression engine and string case conversion
+CRubyの正規表現エンジンおよび文字列の大文字小文字変換における7件の問題に対する修正が公開されました。一部の設定ではリモートコード実行につながるおそれがあります。
+→ https://aws.amazon.com/security/security-bulletins/rss/2026-193-aws/
+
+6. GCP-2026-086
+VMwareセキュリティアドバイザリに基づき、VMware Aria OperationsおよびVMware Cloud Foundationでの脆弱性が確認されました。Broadcomから修正パッチが提供される予定です。
+→ https://docs.cloud.google.com/support/bulletins/index#gcp-2026-086
+
+7. GCP-2026-085
+VMware vCenterおよびVMware Cloud Foundationにおいて、深刻度クリティカルの脆弱性が特定されました。報告された脆弱性に対する既知の回避策はありません。
+→ https://docs.cloud.google.com/support/bulletins/index#gcp-2026-085
+
+8. GCP-2026-084
+Dataform、BigQuery Studio、Colab Enterpriseでパストラバーサル脆弱性が発見されました。テナントリポジトリ間でプライベートファイルの読取や任意ファイルの作成が可能になる問題でしたが、既に修正済みです。
+→ https://docs.cloud.google.com/support/bulletins/index#gcp-2026-084
+
+※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>vuln-2026-11-19</id><title>【クラウド脆弱性ダイジェスト 11/19】</title><updated>2026-11-19T00:00:00+09:00</updated><content type="text">【クラウド脆弱性ダイジェスト 11/19】
 今日の 1 件
 1. AutoGluonのパストラバーサル脆弱性（AWS Security Bulletins）
 
