@@ -1,5 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウド脆弱性ダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest-vuln.xml</id><updated>2026-11-20T00:00:00+09:00</updated><entry><id>vuln-2026-11-20</id><title>【クラウド脆弱性ダイジェスト 11/20】</title><updated>2026-11-20T00:00:00+09:00</updated><content type="text">【クラウド脆弱性ダイジェスト 11/20】
+<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウド脆弱性ダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest-vuln.xml</id><updated>2026-11-23T00:00:00+09:00</updated><entry><id>vuln-2026-11-23</id><title>【クラウド脆弱性ダイジェスト 11/23】</title><updated>2026-11-23T00:00:00+09:00</updated><content type="text">【クラウド脆弱性ダイジェスト 11/23】
+今日の 7 件
+1. AWS ssosyncの不適切な権限割り当て（AWS Security Bulletins）
+2. Document Loaderのパス制限不備（AWS Security Bulletins）
+3. PHPのファイルセッション処理の脆弱性（Google Cloud Security Bulletins）
+4. NGINXにおけるHTTP/2の脆弱性（Google Cloud Security Bulletins）
+5. LinuxカーネルTCPのサービス妨害（Google Cloud Security Bulletins）
+6. Apigee EdgeのNGINX脆弱性（Google Cloud Security Bulletins）
+7. Application Integrationの脆弱性（Google Cloud Security Bulletins）
+
+──────────
+
+1. CVE-2026-133199 - Incorrect privilege assignment on reused e-mail addresses or group names in AWS ssosync
+AWS ssosyncのユーザーとグループの再同期ロジックにおいて不適切な権限割り当てが存在します。再利用されたGoogle Workspaceのメールアドレスやグループ名を持つ認証済みリモートユーザーが、以前の無関係なIDのグループメンバーシップやパーミッションセットを引き継ぐ可能性があります。
+→ https://aws.amazon.com/security/security-bulletins/rss/2026-194-aws/
+
+2. CVE-2026-130901 - Improper limitation of a pathname to a restricted directory in Amazon awslabs.document-loader-mcp-server
+Amazon awslabs.document-loader-mcp-serverのファイルアクセスチェックにおいてパス名の制限が不適切です。MCPクライアントで処理された加工済みのドキュメントコンテンツを介して、意図したベースディレクトリ外のファイルの読み取りや、PNGスライド画像の書き込みが行われる可能性があります。
+→ https://aws.amazon.com/security/security-bulletins/rss/2026-195-aws/
+
+3. GCP-2026-090
+PHPのデフォルトのファイルベースセッションハンドラーに重大な脆弱性が発見されました。App Engine、Cloud Run、Cloud Run functionsなどの複数のGoogle Cloud製品に影響が及びます。
+→ https://docs.cloud.google.com/support/bulletins/index#gcp-2026-090
+
+4. GCP-2026-089
+NGINX Open SourceおよびNGINX PlusにおいてHTTP/2の脆弱性が開示されました。特定の構成やトラフィック条件のもとで、認証されていないリモート攻撃者がワーカープロセスをクラッシュさせるか、リモートコード実行に至る可能性があります。
+→ https://docs.cloud.google.com/support/bulletins/index#gcp-2026-089
+
+5. GCP-2026-088
+LinuxカーネルのTCP実装においてサービス妨害脆弱性が発見されました。この欠陥により、影響を受ける仮想マシン上でカーネルパニックが発生する可能性がありますが、ハイパーバイザーには影響しません。
+→ https://docs.cloud.google.com/support/bulletins/index#gcp-2026-088
+
+6. GCP-2026-087
+nginxのHTTP/2モジュールにおける2つの脆弱性により、遠隔の未認証攻撃者がコードを実行する可能性があります。Apigee Edge for Private Cloudのルーターが影響範囲のnginxバージョンを使用しています。
+→ https://docs.cloud.google.com/support/bulletins/index#gcp-2026-087
+
+7. GCP-2026-083
+Application Integrationの統合実行パラメータ処理において、信頼できないデータのデシリアライゼーション脆弱性が発見されました。認証されたユーザーが細工されたシリアル化オブジェクトを使用して任意のコードを実行する可能性があります。
+→ https://docs.cloud.google.com/support/bulletins/index#gcp-2026-083
+
+※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>vuln-2026-11-20</id><title>【クラウド脆弱性ダイジェスト 11/20】</title><updated>2026-11-20T00:00:00+09:00</updated><content type="text">【クラウド脆弱性ダイジェスト 11/20】
 今日の 8 件
 1. OpenJDKのメモリ書き込み問題（AWS Security Bulletins）
 2. PHPの複数セキュリティ修正（AWS Security Bulletins）

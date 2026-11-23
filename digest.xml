@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-11-20T00:00:00+09:00</updated><entry><id>digest-2026-11-20</id><title>【クラウドダイジェスト 11/20】</title><updated>2026-11-20T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/20】
+<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-11-23T00:00:00+09:00</updated><entry><id>digest-2026-11-23</id><title>【クラウドダイジェスト 11/23】</title><updated>2026-11-23T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/23】
+今日の 5 件
+1. CloudWatch OmniがAzureに対応（AWS What's New）
+2. S3の読み取りリクエスト速度が向上（AWS What's New）
+3. RDS for Oracleでプライマリエンドポイント提供（AWS What's New）
+4. Graviton5搭載のEC2 T9gインスタンス（AWS What's New）
+5. AWS BackupがDynamoDBの増分バックアップに対応（AWS What's New）
+
+──────────
+
+1. Amazon CloudWatch Omni now supports Microsoft Azure platform logs, metrics and traces
+Amazon CloudWatch OmniがAzureのプラットフォームログ、メトリクス、トレースの収集に対応しました。 AWSとAzureの環境を別々のツールを使わずに一元管理できるようになります。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cloudwatch-omni-microsoft-azure
+
+2. Amazon S3 increases the read request rate for general purpose buckets by up to 2x
+汎用バケットのGET/HEADリクエストの処理能力が従来の2倍に引き上げられました。 機械学習やデータ分析などの読み取り集約型ワークロードでデータをより高速に取得可能です。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-s3-increases-read-request-rate/
+
+3. Amazon RDS for Oracle now supports Primary Endpoint
+レプリカ構成で現在のプライマリDBインスタンスを指すDNS名「プライマリエンドポイント」が提供されます。 フェイルオーバー時もアプリケーションの接続文字列を変更する必要がなくなります。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/rds-oracle-primary-endpoint-v2/
+
+4. Introducing Amazon EC2 T9g instances based on Graviton5
+AWS Graviton5プロセッサを搭載した低価格のバースト可能EC2 T9gインスタンスが一般提供開始されました。 前世代のT4gインスタンスと比較して最大45%優れた価格性能比を提供します。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/ec2-t9g-instances-ga/
+
+5. AWS Backup now supports incremental backups for Amazon DynamoDB
+AWS BackupによるAmazon DynamoDBテーブルの増分バックアップが可能になりました。 初回以降は変更されたデータのみを保存することで、ストレージ容量を抑えつつ頻繁なバックアップを実現します。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/aws-backup-incremental-backups-dynamodb/
+
+※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>digest-2026-11-20</id><title>【クラウドダイジェスト 11/20】</title><updated>2026-11-20T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/20】
 今日の 5 件
 1. AWS MarketplaceがAIエージェント決済に対応（AWS What's New）
 2. Amazon CognitoがCIMDをサポート（AWS What's New）
@@ -383,35 +413,5 @@ Amazon EKSのArgo CD向けCapabilityがArgo CD Notificationsをサポートし�
 5. GitHub、より高度なコードレビューを行う「Copilot Code Review Max」発表。GitHub Universe 2026
 GitHubは年次イベント「GitHub Universe 2026」において、より高度なコードレビューを行う新機能「Copilot Code Review Max」を発表しました。
 → https://www.publickey1.jp/blog/26/githubcopilot_code_review_maxgithub_universe_2026.html
-
-※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>digest-2026-11-03</id><title>【クラウドダイジェスト 11/3】</title><updated>2026-11-03T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/3】
-今日の 5 件
-1. Amazon RDSがスナップショット単位の課金に対応（AWS What's New）
-2. Amazon InspectorでEC2 AMIの脆弱性スキャンが可能に（AWS What's New）
-3. Amazon CloudFrontのクォータ引き上げがセルフサービス化（AWS What's New）
-4. Amazon Textractが東京リージョン等で利用可能に（AWS What's New）
-5. AWS LambdaがセルフマネージドKafkaのキューをサポート（AWS What's New）
-
-──────────
-
-1. Amazon RDS now supports per snapshot billing
-Amazon RDSで、スナップショットごとの個別コストが確認できる個別スナップショット課金がサポートされました。 これにより、コスト配分タグを活用して個別のスナップショット費用を詳細に把握できるようになります。
-→ https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-rds-per-snapshot-billing/
-
-2. EC2 Amazon Machine Images can now be scanned for vulnerabilities through Amazon Inspector
-Amazon InspectorがEC2のAmazonマシンイメージ（AMI）の脆弱性スキャンに対応しました。 インスタンスを起動したり追加ソフトを導入したりすることなく、AMI内のソフトウェア脆弱性を識別できます。
-→ https://aws.amazon.com/about-aws/whats-new/2026/11/ec2-amis-scanned-through-inspector/
-
-3. Amazon CloudFront now supports self-service increases in AWS Service Quotas
-Amazon CloudFrontがAWS Service Quotasに対応し、28のクォータの確認や引き上げ申請がコンソール等から可能になりました。 公開された閾値内であれば、自動承認される仕組みとなっています。
-→ https://aws.amazon.com/about-aws/whats-new/2026/11/cloudfront-self-service-quotas/
-
-4. Amazon Textract now available in Asia Pacific (Tokyo) and Europe (Zurich)
-Amazon Textractがアジアパシフィック（東京）およびヨーロッパ（チューリッヒ）リージョンで利用できるようになりました。 スキャンされたドキュメントからテキストや手書き文字、構造化データを自動抽出する機械学習サービスです。
-→ https://aws.amazon.com/about-aws/whats-new/2026/11/textract-tokyo-zurich/
-
-5. AWS Lambda now supports queues for Apache Kafka in self-managed Kafka event sources
-AWS LambdaのセルフマネージドKafkaイベントソースマッピングで、Apache Kafkaのキューがサポートされました。 パーティション数を超えたワークロードの処理スケールが可能になり、スループットの向上が図れます。
-→ https://aws.amazon.com/about-aws/whats-new/2026/11/aws-lambda-queue-kafka-esm/
 
 ※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry></feed>
