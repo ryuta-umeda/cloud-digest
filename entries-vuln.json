@@ -1,5 +1,11 @@
 [
   {
+    "id": "vuln-2026-11-24",
+    "title": "【クラウド脆弱性ダイジェスト 11/24】",
+    "published": "2026-11-24T00:00:00+09:00",
+    "body": "【クラウド脆弱性ダイジェスト 11/24】\n今日の 2 件\n1. AWS-LCの領域外書き込み脆弱性（AWS Security Bulletins）\n2. SSMエージェントの暗号鍵問題（AWS Security Bulletins）\n\n──────────\n\n1. CVE-2026-134056 - Out-of-bounds write in padded block cipher decryption in AWS-LC\nAWS-LCのパディング付きブロック暗号復号において、複数回の更新呼び出しでバッファ終端を超えて1バイト書き込む領域外書き込みの脆弱性が確認されました。これにより、アプリケーションのクラッシュや隣接メモリの破損が発生する可能性があります。\n→ https://aws.amazon.com/security/security-bulletins/rss/2026-196-aws/\n\n2. CVE-2026-134069 - Use of a default cryptographic key in the instance registration of Amazon SSM Agent on AWS Windows Server AMIs\n2026年9月9日以前にリリースされたWindows Server AMI上のAmazon SSM Agentにおいて、同一AMIから起動されたインスタンス間で単一のインスタンス登録鍵が共有される問題が確認されました。\n→ https://aws.amazon.com/security/security-bulletins/rss/2026-197-aws/\n\n※ AIによる自動要約です。正確な情報は元記事を確認してください。"
+  },
+  {
     "id": "vuln-2026-11-23",
     "title": "【クラウド脆弱性ダイジェスト 11/23】",
     "published": "2026-11-23T00:00:00+09:00",

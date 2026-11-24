@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-11-23T00:00:00+09:00</updated><entry><id>digest-2026-11-23</id><title>【クラウドダイジェスト 11/23】</title><updated>2026-11-23T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/23】
+<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-11-24T00:00:00+09:00</updated><entry><id>digest-2026-11-24</id><title>【クラウドダイジェスト 11/24】</title><updated>2026-11-24T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/24】
+今日の 5 件
+1. AWS WAFの料金体系が変更（AWS What's New）
+2. Aurora Serverlessが拡張（AWS What's New）
+3. AWS Systems Managerの機能拡張（AWS What's New）
+4. PostgreSQL 19がリリース（Publickey）
+5. ML向け容量ブロックの検索機能（AWS What's New）
+
+──────────
+
+1. AWS WAF introduces simplified pricing
+AWS WAFは、設定方法ではなく保護対象に基づくシンプルな料金体系の提供を開始しました。保護するリソース、検査するトラフィック、適用する保護レベルの3つの次元で料金が決まります。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/aws-waf-introduces-simplified-pricing/
+
+2. Amazon Aurora serverless for MySQL now supports up to 384 ACUs
+Amazon Aurora serverless for MySQLは、最大384 Aurora Capacity Units（ACU）のデータベース容量をサポート開始しました。単一のデータベースで最大768 GiBのメモリまでスケーリング可能です。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/aurora-serverless-mysql-supports-384-acu/
+
+3. AWS Systems Manager Automation now automates operational tasks in Azure and Google Cloud
+AWS Systems Manager Automationは、Microsoft Azure、Google Cloud、AWSのリソースにまたがる運用タスクの自動化に対応しました。カスタムワークフローを作成し、マルチクラウドで一元的に実行できます。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/systems-manager-multicloud-automation/
+
+4. PostgreSQL 19正式リリース。ノンブロッキングなREPACKやI/Oワーカーのオートスケールなど新機能
+オープンソースのリレーショナルデータベース「PostgreSQL」の最新版となる「PostgreSQL 19」正式版がリリースされました。ノンブロッキングなREPACKやI/Oワーカーのオートスケールなどの新機能が搭載されています。
+→ https://www.publickey1.jp/blog/26/postgresql_19repackio.html
+
+5. Amazon EC2 Capacity Blocks for ML now supports search across multiple instance types and AWS Regions
+Amazon EC2 Capacity Blocks for MLは、複数のインスタンスタイプやAWSリージョンを一度に横断して検索できるようになりました。MLワークロードに必要な容量の発見と予約が容易になります。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/ec2-capacity-blocks-ml-flex-search/
+
+※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>digest-2026-11-23</id><title>【クラウドダイジェスト 11/23】</title><updated>2026-11-23T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/23】
 今日の 5 件
 1. CloudWatch OmniがAzureに対応（AWS What's New）
 2. S3の読み取りリクエスト速度が向上（AWS What's New）
@@ -383,35 +413,5 @@ Synergy Researchの調査により、2026年第3四半期のグローバルク�
 5. 「GitHub Copilot Dreaming」発表。作業を振り返ってパーソナルメモリやガイダンスをバックグラウンドで整理、アップデート。GitHub Universe 2026
 GitHub Universe 2026にて、作業を振り返ってパーソナルメモリやガイダンスをバックグラウンドで整理する新機能が発表されました。
 → https://www.publickey1.jp/blog/26/github_copilot_dreaminggithub_universe_2026.html
-
-※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>digest-2026-11-04</id><title>【クラウドダイジェスト 11/4】</title><updated>2026-11-04T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/4】
-今日の 5 件
-1. Amazon Connectでメールの一時停止が可能に（AWS What's New）
-2. Amazon Connectでメールアドレスを自動入力（AWS What's New）
-3. AWS Configが10の新規リソースタイプに対応（AWS What's New）
-4. EKSのArgo CD機能が通知に対応（AWS What's New）
-5. GitHub、高度なコードレビュー新機能を発表（Publickey）
-
-──────────
-
-1. Amazon Connect Customer lets agents pause and resume emails
-Amazon Connect Customerでは、担当者が情報の待ち時間などにメールを一時停止し、優先度の高い対応を先に行うことが可能になりました。停止時間は個別に追跡され、正確な作業時間の把握に役立ちます。
-→ https://aws.amazon.com/about-aws/whats-new/2026/11/connect-pause-resume-email/
-
-2. Amazon Connect Customer prefills the email address for new threads started from cases
-Amazon Connect Customerは、ケースから新しいメールスレッドを開始する際、顧客プロファイルからメールアドレスを自動的に入力します。これにより手動入力の手間とミスを削減します。
-→ https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-connect-cases-email-addresses/
-
-3. AWS Config now supports 10 new resource types
-AWS Configは、Amazon ElastiCacheやAmazon QuickSightを含む主要サービスの10の新しいAWSリソースタイプをサポートしました。これにより、AWS環境全体のより広範なリソースの検出や監査が可能になります。
-→ https://aws.amazon.com/about-aws/whats-new/2026/11/aws-config-new-resource-types
-
-4. Amazon EKS Capabilities now supports Argo CD Notifications
-Amazon EKSのArgo CD向けCapabilityがArgo CD Notificationsをサポートしました。アプリケーションの同期や失敗時に、SlackやAmazon SQSなど16のサービスへ通知を送信できます。
-→ https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-eks-argo-cd-notifications
-
-5. GitHub、より高度なコードレビューを行う「Copilot Code Review Max」発表。GitHub Universe 2026
-GitHubは年次イベント「GitHub Universe 2026」において、より高度なコードレビューを行う新機能「Copilot Code Review Max」を発表しました。
-→ https://www.publickey1.jp/blog/26/githubcopilot_code_review_maxgithub_universe_2026.html
 
 ※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry></feed>
