@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-11-24T00:00:00+09:00</updated><entry><id>digest-2026-11-24</id><title>【クラウドダイジェスト 11/24】</title><updated>2026-11-24T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/24】
+<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-11-25T00:00:00+09:00</updated><entry><id>digest-2026-11-25</id><title>【クラウドダイジェスト 11/25】</title><updated>2026-11-25T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/25】
+今日の 5 件
+1. CloudFormationが206の新リソースタイプに対応（AWS What's New）
+2. RDS for SQL Serverの制限緩和（AWS What's New）
+3. Amazon API GatewayにAPI Portal発表（AWS What's New）
+4. SageMaker HyperPodのハング検出（AWS What's New）
+5. DynamoDB互換ExtendDB v1.0（Publickey）
+
+──────────
+
+1. AWS CloudFormation makes resource coverage comprehensive with 206 new types
+AWS CloudFormationが88サービスにおける206の追加リソースタイプをサポートしました。AI駆動の内部フレームワークを活用し、インフラストラクチャ管理ワークフローの標準化を支援します。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/cloudformation-coverage-expansion/
+
+2. Amazon RDS for SQL Server now supports up to 500 databases per instance
+Amazon RDS for SQL Serverが1インスタンスあたり最大500データベースのサポートを開始しました。マルチテナントアプリケーションなどでデータベースの集約と管理の簡素化が可能になります。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/rds-sqlserver-supports-500-databases-per-instance
+
+3. Amazon API Gateway announces API Portal
+Amazon API Gatewayは、組織内のAPIやAIエンドポイントを検出、ガバナンス、ドキュメント化する新機能「API Portal」を発表しました。トラフィックログ等から継続的にインベントリを構築します。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-api-gateway-announces-api-portal/
+
+4. Amazon SageMaker HyperPod now detects and recovers hung training jobs on Slurm clusters
+Amazon SageMaker HyperPodは、Slurmオーケストレーションクラスターにおけるハングアップしたトレーニングジョブの検出とキューへの復帰をサポートしました。リソースの効率的な利用を助けます。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-sagemaker-hyperpod-slurm-hung-jobs/
+
+5. AWS、DynamoDB互換データベースをローカルマシンで構築可能にするオープンソース「ExtendDB」がバージョン1.0に到達
+AWSは、Amazon DynamoDB互換のオープンソースデータベース「ExtendDB」のバージョン1.0を発表しました。WindowsやLinuxなどのローカルマシン上で構築が可能になります。
+→ https://www.publickey1.jp/blog/26/awsdynamodbextenddb10.html
+
+※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>digest-2026-11-24</id><title>【クラウドダイジェスト 11/24】</title><updated>2026-11-24T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/24】
 今日の 5 件
 1. AWS WAFの料金体系が変更（AWS What's New）
 2. Aurora Serverlessが拡張（AWS What's New）
@@ -383,35 +413,5 @@ Amazon RDS for Oracleは、セルフマネージドのMicrosoft Active Directory
 5. Amazon S3 Tables now provide a simple, cost-effective path for data lake modernization
 Amazon S3 Tablesは、Apache HiveテーブルからApache Icebergへのマネージド移行機能の提供を開始しました。 本番ワークロードを稼働させたままデータの検証や変換を行います。
 → https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-s3-tables-managed-migration-hive-to-iceberg/
-
-※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>digest-2026-11-05</id><title>【クラウドダイジェスト 11/5】</title><updated>2026-11-05T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/5】
-今日の 5 件
-1. ECS Managed Instancesのログ収集機能（AWS What's New）
-2. AWS Interconnectプレビュー開始（AWS What's New）
-3. EC2とVPCの関連リソース表示機能（AWS What's New）
-4. 2026年第3四半期のクラウド市場動向（Publickey）
-5. GitHub Copilot Dreaming発表（Publickey）
-
-──────────
-
-1. Amazon ECS Managed Daemons can now collect json-file logs from application containers on Amazon ECS Managed Instances
-Amazon ECS Managed Instancesでjson-fileログドライバーがサポートされ、任意のオブザーバビリティエージェントを使用してアプリケーションログを収集・転送できるようになりました。
-→ https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ecs-managed-instances-json-file-log-driver/
-
-2. AWS announces AWS Interconnect - last mile preview with Equinix
-EquinixのデータセンターネットワークからAWSへ、数回クリックでマネージドかつプライベートな接続を構築できる機能のプレビューが提供開始されました。
-→ https://aws.amazon.com/about-aws/whats-new/2026/11/interconnect-last-mile-preview-equinix/
-
-3. Amazon EC2 and VPC now display related resources for all resource types
-Amazon EC2、Amazon VPC、AWS Global Viewのコンソールにおいて、すべてのリソースタイプで関連リソースが表示されるようになりました。
-→ https://aws.amazon.com/about-aws/whats-new/2026/11/ec2-vpc-related-resources-all-types/
-
-4. クラウドインフラのシェア、AWSが26％に後退、Google Cloudは16％に上昇。クラウドインフラ市場全体は過去最大の高成長率へ。2026年第3四半期、Synergy Research
-Synergy Researchの調査により、2026年第3四半期のグローバルクラウドインフラ市場におけるシェア動向や市場全体の高成長率が発表されました。
-→ https://www.publickey1.jp/blog/26/aws26google_cloud1620263synergy_research.html
-
-5. 「GitHub Copilot Dreaming」発表。作業を振り返ってパーソナルメモリやガイダンスをバックグラウンドで整理、アップデート。GitHub Universe 2026
-GitHub Universe 2026にて、作業を振り返ってパーソナルメモリやガイダンスをバックグラウンドで整理する新機能が発表されました。
-→ https://www.publickey1.jp/blog/26/github_copilot_dreaminggithub_universe_2026.html
 
 ※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry></feed>

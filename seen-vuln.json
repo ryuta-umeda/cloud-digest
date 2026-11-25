@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-11-24T04:19:12.516054+00:00",
+  "last_run": "2026-11-25T03:04:07.081511+00:00",
   "seen": {
     "AWS Security Bulletins:007dfd39f2506be6dbbaf22ea8e4d6fa10eedc89": "2026-11-20",
     "AWS Security Bulletins:0bada62e5376e7ff04ad2589232c726edc9d9ec3": "2026-11-24",
@@ -7,6 +7,10 @@
     "AWS Security Bulletins:465c3dbae5c9b8fe3b3dae9fb6fd5bf9be0aaac4": "2026-11-18",
     "AWS Security Bulletins:54788f8c676b1547122542050a6b12ac04d037ea": "2026-11-17",
     "AWS Security Bulletins:7508e4544fcccf81041fa1786a819a3a7ef0fcd0": "2026-11-23",
+    "AWS Security Bulletins:894e27f00a93648d0c5efbc5ac12da50db16c339": "2026-11-25",
+    "AWS Security Bulletins:8a3ba16e94b79cd525d1214a165327e022b528b7": "2026-11-25",
+    "AWS Security Bulletins:9dc239af4c7c042dbd17e3d3b2839e9f1cbf1ec2": "2026-11-25",
+    "AWS Security Bulletins:b2366e512e289d41c35483befdee62c51d858f99": "2026-11-25",
     "AWS Security Bulletins:d3adfc1fe68bc634cee1e4a3f237a01374373147": "2026-11-17",
     "AWS Security Bulletins:dff144593749dca3a3f418c5ee75f421ae5adf99": "2026-11-20",
     "AWS Security Bulletins:e5b25bbb67cb84fa3b1d3e37b1874e9bce1133db": "2026-11-17",

@@ -1,5 +1,11 @@
 [
   {
+    "id": "vuln-2026-11-25",
+    "title": "【クラウド脆弱性ダイジェスト 11/25】",
+    "published": "2026-11-25T00:00:00+09:00",
+    "body": "【クラウド脆弱性ダイジェスト 11/25】\n今日の 4 件\n1. pgactiveのバッファオーバーフロー（AWS Security Bulletins）\n2. Graph Explorerのクエリインジェクション（AWS Security Bulletins）\n3. ECS MCP Serverのデータ秘匿回避（AWS Security Bulletins）\n4. OpenSearchのSSRF脆弱性（AWS Security Bulletins）\n\n──────────\n\n1. CVE-2026-134068 - Stack-based buffer overflow in replication origin name parsing in AWS pgactive\nPostgreSQL拡張機能のpgactiveにおいて、レプリケーション元の名前解析コンポーネントに脆弱性が確認されました。特定の権限を持つ認証済みユーザーが、OSコマンドを実行できる可能性があります。\n→ https://aws.amazon.com/security/security-bulletins/rss/2026-198-aws/\n\n2. CVE-2026-134066 - Query injection via schema-derived identifiers in Graph Explorer\nGraph Explorerのバージョン3.2.1未満において、クエリ構築に関する問題が特定されました。接続されたグラフデータベースから読み込んだプロパティキーやラベルがエスケープされずに挿入される可能性があります。\n→ https://aws.amazon.com/security/security-bulletins/rss/2026-199-aws/\n\n3. CVE-2026-135614 - Sensitive data redaction bypass in the troubleshooting tool in Amazon ECS MCP Server\nAmazon ECS MCP Serverのバージョン0.1.36未満のトラブルシューティングツールに問題が確認されました。設定がデフォルトの場合に機密データが返されるおそれがあります。\n→ https://aws.amazon.com/security/security-bulletins/rss/2026-200-aws/\n\n4. CVE-2026-135414 - Server-side request forgery in snapshot repository registration in Amazon OpenSearch Service\nAmazon OpenSearch Serviceのスナップショットリポジトリ登録において、SSRFの脆弱性が確認されました。スナップショット管理権限を持つユーザーがサービス運用ノードに意図しないリクエストを送信させることができます。\n→ https://aws.amazon.com/security/security-bulletins/rss/2026-201-aws/\n\n※ AIによる自動要約です。正確な情報は元記事を確認してください。"
+  },
+  {
     "id": "vuln-2026-11-24",
     "title": "【クラウド脆弱性ダイジェスト 11/24】",
     "published": "2026-11-24T00:00:00+09:00",
