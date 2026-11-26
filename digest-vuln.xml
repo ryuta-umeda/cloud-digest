@@ -1,5 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウド脆弱性ダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest-vuln.xml</id><updated>2026-11-25T00:00:00+09:00</updated><entry><id>vuln-2026-11-25</id><title>【クラウド脆弱性ダイジェスト 11/25】</title><updated>2026-11-25T00:00:00+09:00</updated><content type="text">【クラウド脆弱性ダイジェスト 11/25】
+<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウド脆弱性ダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest-vuln.xml</id><updated>2026-11-26T00:00:00+09:00</updated><entry><id>vuln-2026-11-26</id><title>【クラウド脆弱性ダイジェスト 11/26】</title><updated>2026-11-26T00:00:00+09:00</updated><content type="text">【クラウド脆弱性ダイジェスト 11/26】
+今日の 8 件
+1. Kiro WebにおけるOSコマンドの脆弱性（AWS Security Bulletins）
+2. AWS Configの不適切な入力サニタイズ（AWS Security Bulletins）
+3. Palo Alto Networks製品の複数脆弱性（JPCERT/CC）
+4. Atlassian製品の複数の脆弱性（JPCERT/CC）
+5. GitLabにおける複数の脆弱性（JPCERT/CC）
+6. Apache Shiroの複数の脆弱性（JPCERT/CC）
+7. nginxにおける複数の脆弱性（JPCERT/CC）
+8. Node-REDの制御フロー登録問題（JPCERT/CC）
+
+──────────
+
+1. CVE-2026-136267 - Improper neutralization of special elements used in an OS command in Kiro Web
+Kiro Webはクラウドホスト型のAI駆動型統合開発環境です。エージェントが読み込んだコンテンツ内のツールコールマークアップがモデルによって繰り返され、ホストされた開発環境内でコマンドとして実行される問題が確認されています。
+→ https://aws.amazon.com/security/security-bulletins/rss/2026-202-aws/
+
+2. CVE-2026-134070 - Improper input sanitization in the AWS Config remediation runbook AWSConfigRemediation-EnableSystemsManagerSessionManagerAuditLogsToS3
+AWS Systems Manager AutomationのAWS管理型ランブックに関する脆弱性です。セッションマネージャーが各アカウントのリージョン別セッション環境設定を保存する機能に関連して、不適切な入力検証が存在することが識別されました。
+→ https://aws.amazon.com/security/security-bulletins/rss/2026-203-aws/
+
+3. Weekly Report: 複数のPalo Alto Networks製品に脆弱性
+複数のPalo Alto Networks製品において脆弱性が複数報告されています。JPCERT/CCのウィークリーレポートにて注意喚起が行われています。
+→ https://www.jpcert.or.jp/wr/2026/wr261126.html#1
+
+4. Weekly Report: 複数のAtlassian製品に脆弱性
+複数のAtlassian製品において複数の脆弱性が存在することが確認されています。JPCERT/CCの週次レポートで情報が公開されています。
+→ https://www.jpcert.or.jp/wr/2026/wr261126.html#17
+
+5. Weekly Report: GitLabに複数の脆弱性
+GitLabにおいて複数の脆弱性が含まれていることが報告されています。JPCERT/CCのWeekly Reportに詳細が掲載されています。
+→ https://www.jpcert.or.jp/wr/2026/wr261126.html#18
+
+6. Weekly Report: Apache Shiroに複数の脆弱性
+Apache Shiroにおいて複数の脆弱性が確認されています。JPCERT/CCのウィークリーレポートにて取り上げられています。
+→ https://www.jpcert.or.jp/wr/2026/wr261126.html#20
+
+7. Weekly Report: nginxにおける複数の脆弱性（CVE-2026-123007など）について
+nginxにおいてCVE-2026-123007をはじめとする複数の脆弱性が報告されています。JPCERT/CCのWeekly Reportで公開されました。
+→ https://www.jpcert.or.jp/wr/2026/wr261126.html#21
+
+8. Weekly Report: 認証を有効にしていないNode-REDに悪意ある制御フローが登録される問題（CVE-2026-58115）について
+認証を有効にしていないNode-REDに悪意ある制御フローが登録される問題（CVE-2026-58115）について報告されています。JPCERT/CCのレポートにて注意喚起されています。
+→ https://www.jpcert.or.jp/wr/2026/wr261126.html#22
+
+※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>vuln-2026-11-25</id><title>【クラウド脆弱性ダイジェスト 11/25】</title><updated>2026-11-25T00:00:00+09:00</updated><content type="text">【クラウド脆弱性ダイジェスト 11/25】
 今日の 4 件
 1. pgactiveのバッファオーバーフロー（AWS Security Bulletins）
 2. Graph Explorerのクエリインジェクション（AWS Security Bulletins）
