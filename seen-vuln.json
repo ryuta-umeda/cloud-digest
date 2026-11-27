@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-11-26T02:16:20.603791+00:00",
+  "last_run": "2026-11-27T02:16:12.015378+00:00",
   "seen": {
     "AWS Security Bulletins:007dfd39f2506be6dbbaf22ea8e4d6fa10eedc89": "2026-11-20",
     "AWS Security Bulletins:03b8e5415a84f10f40f3c028b5672da74c360f5b": "2026-11-26",
@@ -60,6 +60,7 @@
     "Google Cloud Security Bulletins:tag:google.com,2016:google-cloud-security-bulletins#gcp-2026-088": "2026-11-23",
     "Google Cloud Security Bulletins:tag:google.com,2016:google-cloud-security-bulletins#gcp-2026-089": "2026-11-23",
     "Google Cloud Security Bulletins:tag:google.com,2016:google-cloud-security-bulletins#gcp-2026-090": "2026-11-23",
+    "Google Cloud Security Bulletins:tag:google.com,2016:google-cloud-security-bulletins#gcp-2026-091": "2026-11-27",
     "JPCERT/CC:https://www.jpcert.or.jp/at/2026/at260033.html": "2026-11-23",
     "JPCERT/CC:https://www.jpcert.or.jp/wr/2026/wr261118.html#1": "2026-11-18",
     "JPCERT/CC:https://www.jpcert.or.jp/wr/2026/wr261118.html#10": "2026-11-18",

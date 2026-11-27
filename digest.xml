@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-11-26T00:00:00+09:00</updated><entry><id>digest-2026-11-26</id><title>【クラウドダイジェスト 11/26】</title><updated>2026-11-26T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/26】
+<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウドダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest.xml</id><updated>2026-11-27T00:00:00+09:00</updated><entry><id>digest-2026-11-27</id><title>【クラウドダイジェスト 11/27】</title><updated>2026-11-27T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/27】
+今日の 5 件
+1. RDS for PostgreSQL更新（AWS What's New）
+2. ELB for Envoyが提供開始（AWS What's New）
+3. OpenSearchの新エンジン機能（AWS What's New）
+4. さくらのクラウドが新基盤を発表（Publickey）
+5. さくらが新AIサービスを発表（Publickey）
+
+──────────
+
+1. Amazon RDS for PostgreSQL supports minor versions 18.7, 17.12, 16.16, 15.20, and 14.25
+Amazon RDS for PostgreSQLが最新のマイナーバージョン（18.7、17.12、16.16、15.20、14.25）に対応しました。脆弱性の修正やバグフィックス、コミュニティによる改善が含まれています。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-rds-postgresql-18-7-17-12-16-16-15-20-14-25/
+
+2. Elastic Load Balancing for Envoy is now generally available
+AWSはオープンソースのEnvoyプロキシを実行する新しいロードバランサータイプ「ELB for Envoy」の一般提供を開始しました。専用のEC2インスタンス上で動作し、アップグレードやパッチ適用などの運用作業を軽減します。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/elastic-load-balancing-for-envoy-generally-available
+
+3. Amazon OpenSearch Service new engine now joins logs, traces, and metadata
+Amazon OpenSearch Serviceの新エンジンが分散結合、高カーディナリティ集約、OpenSearchクエリDSLをサポートしました。PPLやSQLを用いて、ログ、トレース、メタデータなどの多様なデータを横断してクエリできます。
+→ https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-opensearch-service-distributed-joins
+
+4. さくらのクラウド、新ネットワーク基盤、新データベースサービスなど投入。東京リージョン第三ゾーン新設も発表
+さくらインターネットは大規模イベントにて、東京リージョンへの第三ゾーン新設を発表しました。さらに、新ネットワーク基盤や新しいデータベースサービスの投入も明らかにしています。
+→ https://www.publickey1.jp/blog/26/post_310.html
+
+5. さくらインターネット、AIを月額固定料金で提供する「シンプルAI」発表、システムへの組み込み用途を想定
+さくらインターネットは大規模イベントの基調講演において、システムへの組み込み用途を想定した月額固定料金のAI提供サービス「シンプルAI」を発表しました。
+→ https://www.publickey1.jp/blog/26/aiai_1.html
+
+※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>digest-2026-11-26</id><title>【クラウドダイジェスト 11/26】</title><updated>2026-11-26T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/26】
 今日の 5 件
 1. AWS LambdaがMicroVMのオーケストレーションに対応（AWS What's New）
 2. Amazon CloudWatch OmniがPagerDutyと統合（AWS What's New）
@@ -388,30 +418,5 @@ Amazon CloudWatch Logsがアカウントレベルの保持ポリシーをサポ�
 5. Amazon Route 53 Profiles now supports multiple Profiles per VPC
 Amazon Route 53 Profilesで、1つのVPCに対して複数のプロファイル関連付けが可能になりました。 チームごとに異なるDNS設定やファイアウォールルールを独立して管理できるようになります。
 → https://aws.amazon.com/about-aws/whats-new/2026/11/route-53-profiles-multiple-per-vpc/
-
-※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>digest-2026-11-09</id><title>【クラウドダイジェスト 11/9】</title><updated>2026-11-09T00:00:00+09:00</updated><content type="text">【クラウドダイジェスト 11/9】
-今日の 4 件
-1. Kimi K3.1 ProがAmazon Bedrockに登場（AWS What's New）
-2. Agent RegistryがGovCloudに追加（AWS What's New）
-3. EC2 Capacity Blocksの費用償却に対応（AWS What's New）
-4. Security HubにSBOMインベントリ機能（AWS What's New）
-
-──────────
-
-1. Kimi K3.1 Pro (Highspeed) now available on Amazon Bedrock
-Moonshot AIのオープンウェイトモデル「Kimi K3.1 Pro (Highspeed)」がAmazon Bedrockで利用可能になりました。 マルチモーダルなエージェント用途向けに、コーディングや文書処理などの高速な処理をサポートします。
-→ https://aws.amazon.com/about-aws/whats-new/2026/11/moonshot-ai-kimi-k3-1-pro-on-amazon-bedrock
-
-2. Agent Registry is now generally available in AWS GovCloud (US-West) Region
-AWS Agent RegistryがAWS GovCloud (US-West)リージョンで一般提供が開始されました。 組織内のMCPサーバーやツール、エージェントなどを一元管理できるカタログ機能を提供します。
-→ https://aws.amazon.com/about-aws/whats-new/2026/11/aws-agent-registry-govcloud-us-west/
-
-3. AWS launches support for amortization of EC2 Capacity Blocks for ML
-AWS Cost ExplorerおよびCUR 2.0において、EC2 Capacity Blocks for MLの前払い料金を予約期間全体にわたって償却できるようになりました。 未使用のキャパシティも含めて費用の按分と確認が可能になります。
-→ https://aws.amazon.com/about-aws/whats-new/2026/10/aws-ec2-capacity-blocks-ml/
-
-4. AWS Security Hub now provides an SBOM inventory for your compute resources
-AWS Security Hubが、コンピューティングリソース向けのSBOMインベントリ機能の提供を開始しました。 Amazon Inspectorが生成するSBOMを基に、インストールされているソフトウェアのパッケージ情報を一元管理できます。
-→ https://aws.amazon.com/about-aws/whats-new/2026/11/security-hub-sbom-inventory/
 
 ※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry></feed>

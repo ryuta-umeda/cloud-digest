@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウド脆弱性ダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest-vuln.xml</id><updated>2026-11-26T00:00:00+09:00</updated><entry><id>vuln-2026-11-26</id><title>【クラウド脆弱性ダイジェスト 11/26】</title><updated>2026-11-26T00:00:00+09:00</updated><content type="text">【クラウド脆弱性ダイジェスト 11/26】
+<feed xmlns="http://www.w3.org/2005/Atom"><title>クラウド脆弱性ダイジェスト</title><id>https://ryuta-umeda.github.io/cloud-digest/digest-vuln.xml</id><updated>2026-11-27T00:00:00+09:00</updated><entry><id>vuln-2026-11-27</id><title>【クラウド脆弱性ダイジェスト 11/27】</title><updated>2026-11-27T00:00:00+09:00</updated><content type="text">【クラウド脆弱性ダイジェスト 11/27】
+今日の 1 件
+1. VMware製品の複数脆弱性（Google Cloud Security Bulletins）
+
+──────────
+
+1. GCP-2026-091
+VMware vCenterやESXi等において複数の脆弱性が確認された。Google Cloud VMware Engine等に影響があり、対応には提供される情報や製品別の解決策を確認する必要がある。
+→ https://docs.cloud.google.com/support/bulletins/index#gcp-2026-091
+
+※ AIによる自動要約です。正確な情報は元記事を確認してください。</content></entry><entry><id>vuln-2026-11-26</id><title>【クラウド脆弱性ダイジェスト 11/26】</title><updated>2026-11-26T00:00:00+09:00</updated><content type="text">【クラウド脆弱性ダイジェスト 11/26】
 今日の 8 件
 1. Kiro WebにおけるOSコマンドの脆弱性（AWS Security Bulletins）
 2. AWS Configの不適切な入力サニタイズ（AWS Security Bulletins）
