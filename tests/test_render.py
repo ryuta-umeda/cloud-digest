@@ -25,15 +25,17 @@ def test_render_entry_lists_overview_before_details():
     assert entry.title == "【クラウドダイジェスト 10/7】"
     assert entry.body == (
         "【クラウドダイジェスト 10/7】\n"
-        "今日の 2 件\n"
-        "1. 見出しA（AWS）\n"
-        "2. Title B（Azure）\n"
+        "📰 今日の 2 件\n"
+        "⚪ 1. 見出しA（AWS）\n"
+        "⚪ 2. Title B（Azure）\n"
         "\n"
-        "──────────\n"
+        "━━━━━━━━━━\n"
         "\n"
-        "1. Title A\n要約A\n→ https://e/a\n"
+        "▼ 1. 見出しA\n要約A\n🔗 元記事：https://e/a\n"
         "\n"
-        "2. Title B\n要約B\n→ https://e/b\n"
+        "┄┄┄┄┄┄┄┄┄┄\n"
+        "\n"
+        "▼ 2. Title B\n要約B\n🔗 元記事：https://e/b\n"
         "\n"
         "※ AIによる自動要約です。正確な情報は元記事を確認してください。"
     )
@@ -41,7 +43,7 @@ def test_render_entry_lists_overview_before_details():
 
 def test_render_entry_omits_summary_line_for_fallback():
     entry = render_entry([DigestItem("AWS", "Title A", "", "https://e/a")], date(2026, 10, 7))
-    assert "1. Title A\n→ https://e/a" in entry.body
+    assert "▼ 1. Title A\n🔗 元記事：https://e/a" in entry.body
     assert entry.body.count("Title A") == 2
 
 

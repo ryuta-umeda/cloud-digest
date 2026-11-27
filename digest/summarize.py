@@ -14,7 +14,7 @@ MAX_RETRIES = 3
 SUMMARY_MAX_CHARS = 200
 HEADLINE_MAX_CHARS = 40
 # Characters that let an LLM-written summary forge a second digest item or smuggle in a link.
-_FORBIDDEN_IN_SUMMARY = ("http", "://", "■", "→")
+_FORBIDDEN_IN_SUMMARY = ("http", "://", "■", "→", "▼", "🔗")
 # HTTP codes meaning "our configuration is wrong": retrying or degrading silently would hide it.
 _CONFIG_ERROR_CODES = frozenset({400, 401, 403, 404})
 INITIAL_BACKOFF_SECONDS = 1.0

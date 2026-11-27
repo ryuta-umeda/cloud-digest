@@ -7,7 +7,18 @@ from digest.models import DigestEntry, DigestItem
 ATOM_NS = "http://www.w3.org/2005/Atom"
 FEED_TITLE = "クラウドダイジェスト"
 DISCLAIMER = "※ AIによる自動要約です。正確な情報は元記事を確認してください。"
-SEPARATOR = "──────────"
+SEPARATOR = "━━━━━━━━━━"
+ITEM_SEPARATOR = "┄┄┄┄┄┄┄┄┄┄"
+# Posts are plain text (no bold/size/colour), so a coloured emoji per source stands in for colour.
+SOURCE_MARKS = {
+    "AWS What's New": "🟠",
+    "Publickey": "🔵",
+    "AWS Security Bulletins": "🔴",
+    "Google Cloud Security Bulletins": "🟢",
+    "MSRC (Azure)": "🟣",
+    "JPCERT/CC": "🟡",
+}
+DEFAULT_MARK = "⚪"
 JST = timezone(timedelta(hours=9))
 _EPOCH = datetime(1970, 1, 1, tzinfo=timezone.utc)
 # XML 1.0 forbids most control characters; one stray char from a source feed would break the whole feed.
@@ -20,24 +31,24 @@ def render_entry(
     """Overview list first, details after: Viva Engage folds long posts, so the top must stand alone."""
     heading = f"【{label} {day.month}/{day.day}】"
     overview = "\n".join(_render_overview_line(number, item) for number, item in enumerate(items, start=1))
-    details = "\n\n".join(_render_detail(number, item) for number, item in enumerate(items, start=1))
+    details = f"\n\n{ITEM_SEPARATOR}\n\n".join(_render_detail(number, item) for number, item in enumerate(items, start=1))
     return DigestEntry(
         id=f"{id_prefix}-{day.isoformat()}",
         title=heading,
         published=datetime.combine(day, time(0, 0), tzinfo=JST),
-        body=f"{heading}\n今日の {len(items)} 件\n{overview}\n\n{SEPARATOR}\n\n{details}\n\n{DISCLAIMER}",
+        body=f"{heading}\n📰 今日の {len(items)} 件\n{overview}\n\n{SEPARATOR}\n\n{details}\n\n{DISCLAIMER}",
     )
 
 
 def _render_overview_line(number: int, item: DigestItem) -> str:
-    return f"{number}. {item.headline or item.title}（{item.source}）"
+    return f"{SOURCE_MARKS.get(item.source, DEFAULT_MARK)} {number}. {item.headline or item.title}（{item.source}）"
 
 
 def _render_detail(number: int, item: DigestItem) -> str:
-    lines = [f"{number}. {item.title}"]
+    lines = [f"▼ {number}. {item.headline or item.title}"]
     if item.summary:
         lines.append(item.summary)
-    lines.append(f"→ {item.url}")
+    lines.append(f"🔗 元記事：{item.url}")
     return "\n".join(lines)
 
 
